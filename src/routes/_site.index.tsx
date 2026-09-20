@@ -57,7 +57,9 @@ function Home() {
         <div className="mx-auto grid max-w-6xl gap-16 px-6 pb-24 pt-28 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <Reveal>
             <div className="flex flex-col gap-6">
-              <Badge>Portaria 888 · Registro DAEE</Badge>
+              <div className="flex">
+                <Badge>Portaria 888 · Registro DAEE</Badge>
+              </div>
               <h1 className="font-display text-4xl font-extrabold leading-[1.1] md:text-6xl">
                 Vid&rsquo;Água – Mais de 30 anos tratando e cuidando da qualidade da água.
               </h1>
