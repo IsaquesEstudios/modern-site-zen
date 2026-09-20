@@ -50,9 +50,9 @@ export const HOME: PageDef = {
     "qualidade da água",
     "vidagua",
   ],
-  title: "Vid'Água — Empresa de Tratamento de Água | 30+ anos",
+  title: "Vid'Água | Empresa de Tratamento de Água | Mais de 30 Anos de Experiência",
   description:
-    "Empresa de tratamento de água com mais de 30 anos de experiência em análise, tratamento e legalização de poços. Laudos conforme a Portaria 888. Atendimento nacional.",
+    "Empresa de análise e tratamento de água confiável. A Vid'Água oferece soluções em potabilidade, poços e adequação à Portaria 888. Fale com um especialista!",
   h1: "Vid'Água – Mais de 30 anos tratando e cuidando da qualidade da água.",
   intro:
     "Laudos técnicos em conformidade com a Portaria 888 e registro junto ao DAEE. Atendemos residências, condomínios e indústrias em todo o Brasil.",
