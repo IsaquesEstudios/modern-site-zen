@@ -26,6 +26,7 @@ import { Route as SiteContaminacaoAguaRouteImport } from './routes/_site.contami
 import { Route as SiteBombaDosadoraCloroRouteImport } from './routes/_site.bomba-dosadora-cloro'
 import { Route as SiteBombaDosadoraAguaRouteImport } from './routes/_site.bomba-dosadora-agua'
 import { Route as SiteBlogRouteImport } from './routes/_site.blog'
+import { Route as SiteAnaliseDeAguaRouteImport } from './routes/_site.analise-de-agua'
 import { Route as SiteAguaTurvaCheiroCloroRouteImport } from './routes/_site.agua-turva-cheiro-cloro'
 import { Route as SiteAguaDuraRouteImport } from './routes/_site.agua-dura'
 import { Route as SiteAguaDestiladaRouteImport } from './routes/_site.agua-destilada'
@@ -133,6 +134,11 @@ const SiteBlogRoute = SiteBlogRouteImport.update({
   path: '/blog',
   getParentRoute: () => SiteRoute,
 } as any)
+const SiteAnaliseDeAguaRoute = SiteAnaliseDeAguaRouteImport.update({
+  id: '/analise-de-agua',
+  path: '/analise-de-agua',
+  getParentRoute: () => SiteRoute,
+} as any)
 const SiteAguaTurvaCheiroCloroRoute =
   SiteAguaTurvaCheiroCloroRouteImport.update({
     id: '/agua-turva-cheiro-cloro',
@@ -238,6 +244,7 @@ export interface FileRoutesByFullPath {
   '/agua-destilada': typeof SiteAguaDestiladaRoute
   '/agua-dura': typeof SiteAguaDuraRoute
   '/agua-turva-cheiro-cloro': typeof SiteAguaTurvaCheiroCloroRoute
+  '/analise-de-agua': typeof SiteAnaliseDeAguaRoute
   '/blog': typeof SiteBlogRoute
   '/bomba-dosadora-agua': typeof SiteBombaDosadoraAguaRoute
   '/bomba-dosadora-cloro': typeof SiteBombaDosadoraCloroRoute
@@ -272,6 +279,7 @@ export interface FileRoutesByTo {
   '/agua-destilada': typeof SiteAguaDestiladaRoute
   '/agua-dura': typeof SiteAguaDuraRoute
   '/agua-turva-cheiro-cloro': typeof SiteAguaTurvaCheiroCloroRoute
+  '/analise-de-agua': typeof SiteAnaliseDeAguaRoute
   '/blog': typeof SiteBlogRoute
   '/bomba-dosadora-agua': typeof SiteBombaDosadoraAguaRoute
   '/bomba-dosadora-cloro': typeof SiteBombaDosadoraCloroRoute
@@ -309,6 +317,7 @@ export interface FileRoutesById {
   '/_site/agua-destilada': typeof SiteAguaDestiladaRoute
   '/_site/agua-dura': typeof SiteAguaDuraRoute
   '/_site/agua-turva-cheiro-cloro': typeof SiteAguaTurvaCheiroCloroRoute
+  '/_site/analise-de-agua': typeof SiteAnaliseDeAguaRoute
   '/_site/blog': typeof SiteBlogRoute
   '/_site/bomba-dosadora-agua': typeof SiteBombaDosadoraAguaRoute
   '/_site/bomba-dosadora-cloro': typeof SiteBombaDosadoraCloroRoute
@@ -347,6 +356,7 @@ export interface FileRouteTypes {
     | '/agua-destilada'
     | '/agua-dura'
     | '/agua-turva-cheiro-cloro'
+    | '/analise-de-agua'
     | '/blog'
     | '/bomba-dosadora-agua'
     | '/bomba-dosadora-cloro'
@@ -381,6 +391,7 @@ export interface FileRouteTypes {
     | '/agua-destilada'
     | '/agua-dura'
     | '/agua-turva-cheiro-cloro'
+    | '/analise-de-agua'
     | '/blog'
     | '/bomba-dosadora-agua'
     | '/bomba-dosadora-cloro'
@@ -417,6 +428,7 @@ export interface FileRouteTypes {
     | '/_site/agua-destilada'
     | '/_site/agua-dura'
     | '/_site/agua-turva-cheiro-cloro'
+    | '/_site/analise-de-agua'
     | '/_site/blog'
     | '/_site/bomba-dosadora-agua'
     | '/_site/bomba-dosadora-cloro'
@@ -574,6 +586,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteBlogRouteImport
       parentRoute: typeof SiteRoute
     }
+    '/_site/analise-de-agua': {
+      id: '/_site/analise-de-agua'
+      path: '/analise-de-agua'
+      fullPath: '/analise-de-agua'
+      preLoaderRoute: typeof SiteAnaliseDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
     '/_site/agua-turva-cheiro-cloro': {
       id: '/_site/agua-turva-cheiro-cloro'
       path: '/agua-turva-cheiro-cloro'
@@ -702,6 +721,7 @@ interface SiteRouteChildren {
   SiteAguaDestiladaRoute: typeof SiteAguaDestiladaRoute
   SiteAguaDuraRoute: typeof SiteAguaDuraRoute
   SiteAguaTurvaCheiroCloroRoute: typeof SiteAguaTurvaCheiroCloroRoute
+  SiteAnaliseDeAguaRoute: typeof SiteAnaliseDeAguaRoute
   SiteBlogRoute: typeof SiteBlogRoute
   SiteBombaDosadoraAguaRoute: typeof SiteBombaDosadoraAguaRoute
   SiteBombaDosadoraCloroRoute: typeof SiteBombaDosadoraCloroRoute
@@ -736,6 +756,7 @@ const SiteRouteChildren: SiteRouteChildren = {
   SiteAguaDestiladaRoute: SiteAguaDestiladaRoute,
   SiteAguaDuraRoute: SiteAguaDuraRoute,
   SiteAguaTurvaCheiroCloroRoute: SiteAguaTurvaCheiroCloroRoute,
+  SiteAnaliseDeAguaRoute: SiteAnaliseDeAguaRoute,
   SiteBlogRoute: SiteBlogRoute,
   SiteBombaDosadoraAguaRoute: SiteBombaDosadoraAguaRoute,
   SiteBombaDosadoraCloroRoute: SiteBombaDosadoraCloroRoute,
