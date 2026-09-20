@@ -125,7 +125,7 @@ function Home() {
               <div className="flex">
                 <Badge>Portaria 888 · DAEE</Badge>
               </div>
-              <h1 className="font-display text-4xl font-extrabold leading-[1.1] md:text-6xl">
+              <h1 className="font-display text-3xl font-extrabold leading-[1.15] md:text-5xl">
                 Vid&rsquo;Água – Mais de 30 anos tratando e cuidando da qualidade da água.
               </h1>
               <p className="max-w-xl text-lg leading-relaxed text-muted">
