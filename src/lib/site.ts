@@ -99,8 +99,8 @@ export const PAGES: PageDef[] = [
       s("Perguntas frequentes"),
     ],
     related: [
-      { label: "Tratamento de Água", to: "/tratamento-de-agua" },
-      { label: "Monitoramento Contínuo", to: "/monitoramento-qualidade-agua" },
+      { label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" },
+      { label: "Monitoramento Contínuo", to: "/servicos/monitoramento-qualidade-agua" },
     ],
   },
   {
@@ -139,7 +139,7 @@ export const PAGES: PageDef[] = [
       { label: "Água com Ferro e Manganês", to: "/agua-com-ferro-manganes" },
       { label: "Água Turva, Cheiro e Cloro", to: "/agua-turva-cheiro-cloro" },
       { label: "Contaminação da Água", to: "/contaminacao-agua" },
-      { label: "Manutenção de Sistemas", to: "/manutencao-sistemas-tratamento" },
+      { label: "Manutenção de Sistemas", to: "/servicos/manutencao-sistemas-tratamento" },
     ],
   },
   {
@@ -173,7 +173,7 @@ export const PAGES: PageDef[] = [
     ],
     related: [
       { label: "Abrandador de Água", to: "/abrandador-de-agua" },
-      { label: "Análise de Água", to: "/analise-de-agua" },
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
     ],
   },
   {
@@ -203,7 +203,7 @@ export const PAGES: PageDef[] = [
     ],
     related: [
       { label: "Filtros de Água", to: "/filtros-de-agua" },
-      { label: "Análise de Água", to: "/analise-de-agua" },
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
     ],
   },
   {
@@ -260,8 +260,8 @@ export const PAGES: PageDef[] = [
       s("Desinfecção e tratamento corretivo"),
     ],
     related: [
-      { label: "Análise de Água", to: "/analise-de-agua" },
-      { label: "Tratamento de Água", to: "/tratamento-de-agua" },
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" },
     ],
   },
   {
@@ -289,7 +289,7 @@ export const PAGES: PageDef[] = [
       s("Documentação exigida"),
       s("Prazos e renovação"),
     ],
-    related: [{ label: "Manutenção de Poço Artesiano", to: "/manutencao-poco-artesiano" }],
+    related: [{ label: "Manutenção de Poço Artesiano", to: "/servicos/manutencao-poco-artesiano" }],
   },
   {
     slug: "manutencao-poco-artesiano",
@@ -314,7 +314,7 @@ export const PAGES: PageDef[] = [
       s("Tratamento da água de poço"),
       s("Laudo após manutenção"),
     ],
-    related: [{ label: "Legalização de Poço Artesiano", to: "/legalizacao-poco-artesiano" }],
+    related: [{ label: "Legalização de Poço Artesiano", to: "/servicos/legalizacao-poco-artesiano" }],
   },
   {
     slug: "bomba-dosadora-cloro",
@@ -363,7 +363,7 @@ export const PAGES: PageDef[] = [
       s("Dimensionamento"),
       s("Preço e condições"),
     ],
-    related: [{ label: "Tratamento para Empresas", to: "/tratamento-de-agua-industrial" }],
+    related: [{ label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" }],
   },
   {
     slug: "filtros-de-agua",
@@ -394,7 +394,7 @@ export const PAGES: PageDef[] = [
       s("Filtro industrial"),
       s("Elementos filtrantes e troca"),
     ],
-    related: [{ label: "Tratamento de Água", to: "/tratamento-de-agua" }],
+    related: [{ label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" }],
   },
   {
     slug: "abrandador-de-agua",
@@ -500,7 +500,7 @@ export const PAGES: PageDef[] = [
       s("Laudos e histórico"),
       s("Ações corretivas"),
     ],
-    related: [{ label: "Análise de Água", to: "/analise-de-agua" }],
+    related: [{ label: "Análise de Água", to: "/servicos/analise-de-agua" }],
   },
   {
     slug: "manutencao-sistemas-tratamento",
@@ -625,7 +625,7 @@ export const PAGES: PageDef[] = [
     h1: "Tratamento de Efluentes",
     intro: "Conformidade ambiental com processos dimensionados para cada efluente.",
     sections: [s("Caracterização do efluente"), s("Processos de tratamento"), s("Conformidade e licenças")],
-    related: [{ label: "Água de Reuso", to: "/agua-de-reuso" }],
+    related: [{ label: "Água de Reuso", to: "/servicos/agua-de-reuso" }],
   },
   {
     slug: "agua-de-reuso",
@@ -681,15 +681,15 @@ export const PAGES: PageDef[] = [
     intro: "Hub de navegação com todos os serviços prestados.",
     sections: [],
     related: [
-      { label: "Análise de Água", to: "/analise-de-agua" },
-      { label: "Tratamento de Água", to: "/tratamento-de-agua" },
-      { label: "Legalização de Poço Artesiano", to: "/legalizacao-poco-artesiano" },
-      { label: "Manutenção de Poço Artesiano", to: "/manutencao-poco-artesiano" },
-      { label: "Monitoramento da Qualidade da Água", to: "/monitoramento-qualidade-agua" },
-      { label: "Manutenção de Sistemas", to: "/manutencao-sistemas-tratamento" },
-      { label: "Tratamento de Efluentes", to: "/tratamento-efluentes" },
-      { label: "Água de Reuso", to: "/agua-de-reuso" },
-      { label: "Tratamento para Empresas", to: "/tratamento-de-agua-industrial" },
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" },
+      { label: "Legalização de Poço Artesiano", to: "/servicos/legalizacao-poco-artesiano" },
+      { label: "Manutenção de Poço Artesiano", to: "/servicos/manutencao-poco-artesiano" },
+      { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
+      { label: "Manutenção de Sistemas", to: "/servicos/manutencao-sistemas-tratamento" },
+      { label: "Tratamento de Efluentes", to: "/servicos/tratamento-efluentes" },
+      { label: "Água de Reuso", to: "/servicos/agua-de-reuso" },
+      { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
     ],
   },
   {
@@ -774,14 +774,42 @@ export const PAGES_BY_SLUG: Record<string, PageDef> = Object.fromEntries(
 export const NAV = [
   { label: "Serviços", to: "/servicos" },
   { label: "Produtos", to: "/produtos" },
-  { label: "Para Empresas", to: "/tratamento-de-agua-industrial" },
+  { label: "Para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
   { label: "Blog", to: "/blog" },
   { label: "Sobre", to: "/sobre" },
   { label: "Contato", to: "/contato" },
 ];
 
+/** Slugs que passaram a viver dentro de /servicos. */
+export const SERVICE_SLUGS = [
+  "analise-de-agua",
+  "tratamento-de-agua",
+  "legalizacao-poco-artesiano",
+  "manutencao-poco-artesiano",
+  "monitoramento-qualidade-agua",
+  "manutencao-sistemas-tratamento",
+  "tratamento-efluentes",
+  "agua-de-reuso",
+  "tratamento-de-agua-industrial",
+] as const;
+
+export function pathFor(slug: string) {
+  if (!slug) return "/";
+  return (SERVICE_SLUGS as readonly string[]).includes(slug)
+    ? `/servicos/${slug}`
+    : `/${slug}`;
+}
+
+/** Lista fixa exibida na coluna lateral das páginas de serviço. */
+export const SERVICE_LINKS = SERVICE_SLUGS.map((slug) => ({
+  slug,
+  label: PAGES_BY_SLUG[slug]?.nav ?? slug,
+  to: `/servicos/${slug}`,
+}));
+
 export function headFor(p: PageDef) {
-  const url = p.slug ? `/${p.slug}` : "/";
+  const url = pathFor(p.slug);
+
   return {
     meta: [
       { title: p.title },

@@ -119,16 +119,16 @@ function Footer() {
         </div>
 
         <FooterColumn title="Serviços">
-          <Link to="/analise-de-agua" className={footerLink}>
+          <Link to="/servicos/analise-de-agua" className={footerLink}>
             Análise de Água
           </Link>
-          <Link to="/tratamento-de-agua" className={footerLink}>
+          <Link to="/servicos/tratamento-de-agua" className={footerLink}>
             Tratamento de Água
           </Link>
-          <Link to="/legalizacao-poco-artesiano" className={footerLink}>
+          <Link to="/servicos/legalizacao-poco-artesiano" className={footerLink}>
             Legalização de Poço
           </Link>
-          <Link to="/monitoramento-qualidade-agua" className={footerLink}>
+          <Link to="/servicos/monitoramento-qualidade-agua" className={footerLink}>
             Monitoramento
           </Link>
           <Link to="/servicos" className={footerLink}>

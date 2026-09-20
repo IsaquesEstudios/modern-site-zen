@@ -1,14 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { PageTemplate } from "@/components/PageTemplate";
-import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 
-const page = PAGES_BY_SLUG["tratamento-de-agua-industrial"];
-
+// Endereço antigo — redireciona permanentemente para o novo caminho em /servicos.
 export const Route = createFileRoute("/_site/tratamento-de-agua-industrial")({
-  head: () => headFor(page),
-  component: TratamentoDeAguaIndustrialPage,
+  beforeLoad: () => {
+    throw redirect({ to: "/servicos/tratamento-de-agua-industrial", statusCode: 301 });
+  },
 });
-
-function TratamentoDeAguaIndustrialPage() {
-  return <PageTemplate page={page} />;
-}
