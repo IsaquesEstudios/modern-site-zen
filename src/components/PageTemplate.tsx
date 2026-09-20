@@ -155,27 +155,6 @@ export function PageTemplate({ page }: { page: PageDef }) {
         </Section>
       ) : null}
 
-      <Section>
-        <SectionTitle eyebrow="Referência SEO" title="Palavras-chave desta página" />
-        <Reveal>
-          <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted">
-                Keyword principal
-              </p>
-              <p className="font-display text-2xl font-bold">{page.keyword}</p>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {page.secondary.map((k) => (
-                <Badge key={k} variant="neutral">
-                  {k}
-                </Badge>
-              ))}
-            </div>
-          </div>
-        </Reveal>
-      </Section>
-
       <CTASection />
     </>
   );
