@@ -1,12 +1,20 @@
 @import "tailwindcss" source(none);
 @source "../src";
+@source "./design-system/cozy-code-library-1062b4/**/*.{ts,tsx,css}";
+@import "./design-system/cozy-code-library-1062b4/design-system/isaques/theme.css";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: var(--ds-font-sans);
+  background-color: var(--ds-background);
+  color: var(--ds-foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
