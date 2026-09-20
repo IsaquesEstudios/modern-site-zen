@@ -9,6 +9,8 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SiteRouteImport } from './routes/_site'
+import { Route as SiteIndexRouteImport } from './routes/_site.index'
 import { Route as SiteTratamentoEfluentesRouteImport } from './routes/_site.tratamento-efluentes'
 import { Route as SiteTratamentoDeAguaIndustrialRouteImport } from './routes/_site.tratamento-de-agua-industrial'
 import { Route as SiteTratamentoDeAguaRouteImport } from './routes/_site.tratamento-de-agua'
@@ -42,167 +44,176 @@ import { Route as SiteAbrandadorDeAguaRouteImport } from './routes/_site.abranda
 import { Route as Char91__mockupChar93PreviewSplatRouteImport } from './routes/[__mockup].preview.$'
 import { Route as Char91__componentChar93PreviewSplatRouteImport } from './routes/[__component].preview.$'
 
-const SiteTratamentoEfluentesRoute = SiteTratamentoEfluentesRouteImport.update({
-  id: '/_site/tratamento-efluentes',
-  path: '/tratamento-efluentes',
+const SiteRoute = SiteRouteImport.update({
+  id: '/_site',
   getParentRoute: () => rootRouteImport,
+} as any)
+const SiteIndexRoute = SiteIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteTratamentoEfluentesRoute = SiteTratamentoEfluentesRouteImport.update({
+  id: '/tratamento-efluentes',
+  path: '/tratamento-efluentes',
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteTratamentoDeAguaIndustrialRoute =
   SiteTratamentoDeAguaIndustrialRouteImport.update({
-    id: '/_site/tratamento-de-agua-industrial',
+    id: '/tratamento-de-agua-industrial',
     path: '/tratamento-de-agua-industrial',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteTratamentoDeAguaRoute = SiteTratamentoDeAguaRouteImport.update({
-  id: '/_site/tratamento-de-agua',
+  id: '/tratamento-de-agua',
   path: '/tratamento-de-agua',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteTratamentoAguaRestauranteRoute =
   SiteTratamentoAguaRestauranteRouteImport.update({
-    id: '/_site/tratamento-agua-restaurante',
+    id: '/tratamento-agua-restaurante',
     path: '/tratamento-agua-restaurante',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteTratamentoAguaPiscinaRoute =
   SiteTratamentoAguaPiscinaRouteImport.update({
-    id: '/_site/tratamento-agua-piscina',
+    id: '/tratamento-agua-piscina',
     path: '/tratamento-agua-piscina',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteTratamentoAguaHotelRoute = SiteTratamentoAguaHotelRouteImport.update({
-  id: '/_site/tratamento-agua-hotel',
+  id: '/tratamento-agua-hotel',
   path: '/tratamento-agua-hotel',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteTratamentoAguaComercialRoute =
   SiteTratamentoAguaComercialRouteImport.update({
-    id: '/_site/tratamento-agua-comercial',
+    id: '/tratamento-agua-comercial',
     path: '/tratamento-agua-comercial',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteSobreRoute = SiteSobreRouteImport.update({
-  id: '/_site/sobre',
+  id: '/sobre',
   path: '/sobre',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteServicosRoute = SiteServicosRouteImport.update({
-  id: '/_site/servicos',
+  id: '/servicos',
   path: '/servicos',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteProdutosQuimicosAguaRoute =
   SiteProdutosQuimicosAguaRouteImport.update({
-    id: '/_site/produtos-quimicos-agua',
+    id: '/produtos-quimicos-agua',
     path: '/produtos-quimicos-agua',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteProdutosRoute = SiteProdutosRouteImport.update({
-  id: '/_site/produtos',
+  id: '/produtos',
   path: '/produtos',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SitePorQueVidaguaRoute = SitePorQueVidaguaRouteImport.update({
-  id: '/_site/por-que-vidagua',
+  id: '/por-que-vidagua',
   path: '/por-que-vidagua',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteMonitoramentoQualidadeAguaRoute =
   SiteMonitoramentoQualidadeAguaRouteImport.update({
-    id: '/_site/monitoramento-qualidade-agua',
+    id: '/monitoramento-qualidade-agua',
     path: '/monitoramento-qualidade-agua',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteManutencaoSistemasTratamentoRoute =
   SiteManutencaoSistemasTratamentoRouteImport.update({
-    id: '/_site/manutencao-sistemas-tratamento',
+    id: '/manutencao-sistemas-tratamento',
     path: '/manutencao-sistemas-tratamento',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteManutencaoPocoArtesianoRoute =
   SiteManutencaoPocoArtesianoRouteImport.update({
-    id: '/_site/manutencao-poco-artesiano',
+    id: '/manutencao-poco-artesiano',
     path: '/manutencao-poco-artesiano',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteLegalizacaoPocoArtesianoRoute =
   SiteLegalizacaoPocoArtesianoRouteImport.update({
-    id: '/_site/legalizacao-poco-artesiano',
+    id: '/legalizacao-poco-artesiano',
     path: '/legalizacao-poco-artesiano',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteFiltrosDeAguaRoute = SiteFiltrosDeAguaRouteImport.update({
-  id: '/_site/filtros-de-agua',
+  id: '/filtros-de-agua',
   path: '/filtros-de-agua',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteDesmineralizadorDeAguaRoute =
   SiteDesmineralizadorDeAguaRouteImport.update({
-    id: '/_site/desmineralizador-de-agua',
+    id: '/desmineralizador-de-agua',
     path: '/desmineralizador-de-agua',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteContatoRoute = SiteContatoRouteImport.update({
-  id: '/_site/contato',
+  id: '/contato',
   path: '/contato',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteContaminacaoAguaRoute = SiteContaminacaoAguaRouteImport.update({
-  id: '/_site/contaminacao-agua',
+  id: '/contaminacao-agua',
   path: '/contaminacao-agua',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteBombaDosadoraCloroRoute = SiteBombaDosadoraCloroRouteImport.update({
-  id: '/_site/bomba-dosadora-cloro',
+  id: '/bomba-dosadora-cloro',
   path: '/bomba-dosadora-cloro',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteBombaDosadoraAguaRoute = SiteBombaDosadoraAguaRouteImport.update({
-  id: '/_site/bomba-dosadora-agua',
+  id: '/bomba-dosadora-agua',
   path: '/bomba-dosadora-agua',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteBlogRoute = SiteBlogRouteImport.update({
-  id: '/_site/blog',
+  id: '/blog',
   path: '/blog',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteAnaliseDeAguaRoute = SiteAnaliseDeAguaRouteImport.update({
-  id: '/_site/analise-de-agua',
+  id: '/analise-de-agua',
   path: '/analise-de-agua',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteAguaTurvaCheiroCloroRoute =
   SiteAguaTurvaCheiroCloroRouteImport.update({
-    id: '/_site/agua-turva-cheiro-cloro',
+    id: '/agua-turva-cheiro-cloro',
     path: '/agua-turva-cheiro-cloro',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteAguaDuraRoute = SiteAguaDuraRouteImport.update({
-  id: '/_site/agua-dura',
+  id: '/agua-dura',
   path: '/agua-dura',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteAguaDestiladaRoute = SiteAguaDestiladaRouteImport.update({
-  id: '/_site/agua-destilada',
+  id: '/agua-destilada',
   path: '/agua-destilada',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteAguaDeReusoRoute = SiteAguaDeReusoRouteImport.update({
-  id: '/_site/agua-de-reuso',
+  id: '/agua-de-reuso',
   path: '/agua-de-reuso',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteAguaComFerroManganesRoute =
   SiteAguaComFerroManganesRouteImport.update({
-    id: '/_site/agua-com-ferro-manganes',
+    id: '/agua-com-ferro-manganes',
     path: '/agua-com-ferro-manganes',
-    getParentRoute: () => rootRouteImport,
+    getParentRoute: () => SiteRoute,
   } as any)
 const SiteAbrandadorDeAguaRoute = SiteAbrandadorDeAguaRouteImport.update({
-  id: '/_site/abrandador-de-agua',
+  id: '/abrandador-de-agua',
   path: '/abrandador-de-agua',
-  getParentRoute: () => rootRouteImport,
+  getParentRoute: () => SiteRoute,
 } as any)
 const Char91__mockupChar93PreviewSplatRoute =
   Char91__mockupChar93PreviewSplatRouteImport.update({
@@ -218,6 +229,7 @@ const Char91__componentChar93PreviewSplatRoute =
   } as any)
 
 export interface FileRoutesByFullPath {
+  '/': typeof SiteIndexRoute
   '/abrandador-de-agua': typeof SiteAbrandadorDeAguaRoute
   '/agua-com-ferro-manganes': typeof SiteAguaComFerroManganesRoute
   '/agua-de-reuso': typeof SiteAguaDeReusoRoute
@@ -282,11 +294,13 @@ export interface FileRoutesByTo {
   '/tratamento-de-agua': typeof SiteTratamentoDeAguaRoute
   '/tratamento-de-agua-industrial': typeof SiteTratamentoDeAguaIndustrialRoute
   '/tratamento-efluentes': typeof SiteTratamentoEfluentesRoute
+  '/': typeof SiteIndexRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/_site': typeof SiteRouteWithChildren
   '/_site/abrandador-de-agua': typeof SiteAbrandadorDeAguaRoute
   '/_site/agua-com-ferro-manganes': typeof SiteAguaComFerroManganesRoute
   '/_site/agua-de-reuso': typeof SiteAguaDeReusoRoute
@@ -317,12 +331,14 @@ export interface FileRoutesById {
   '/_site/tratamento-de-agua': typeof SiteTratamentoDeAguaRoute
   '/_site/tratamento-de-agua-industrial': typeof SiteTratamentoDeAguaIndustrialRoute
   '/_site/tratamento-efluentes': typeof SiteTratamentoEfluentesRoute
+  '/_site/': typeof SiteIndexRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
+    | '/'
     | '/abrandador-de-agua'
     | '/agua-com-ferro-manganes'
     | '/agua-de-reuso'
@@ -387,10 +403,12 @@ export interface FileRouteTypes {
     | '/tratamento-de-agua'
     | '/tratamento-de-agua-industrial'
     | '/tratamento-efluentes'
+    | '/'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
   id:
     | '__root__'
+    | '/_site'
     | '/_site/abrandador-de-agua'
     | '/_site/agua-com-ferro-manganes'
     | '/_site/agua-de-reuso'
@@ -421,11 +439,261 @@ export interface FileRouteTypes {
     | '/_site/tratamento-de-agua'
     | '/_site/tratamento-de-agua-industrial'
     | '/_site/tratamento-efluentes'
+    | '/_site/'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
+  SiteRoute: typeof SiteRouteWithChildren
+  Char91__componentChar93PreviewSplatRoute: typeof Char91__componentChar93PreviewSplatRoute
+  Char91__mockupChar93PreviewSplatRoute: typeof Char91__mockupChar93PreviewSplatRoute
+}
+
+declare module '@tanstack/react-router' {
+  interface FileRoutesByPath {
+    '/_site': {
+      id: '/_site'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof SiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_site/': {
+      id: '/_site/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof SiteIndexRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/tratamento-efluentes': {
+      id: '/_site/tratamento-efluentes'
+      path: '/tratamento-efluentes'
+      fullPath: '/tratamento-efluentes'
+      preLoaderRoute: typeof SiteTratamentoEfluentesRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/tratamento-de-agua-industrial': {
+      id: '/_site/tratamento-de-agua-industrial'
+      path: '/tratamento-de-agua-industrial'
+      fullPath: '/tratamento-de-agua-industrial'
+      preLoaderRoute: typeof SiteTratamentoDeAguaIndustrialRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/tratamento-de-agua': {
+      id: '/_site/tratamento-de-agua'
+      path: '/tratamento-de-agua'
+      fullPath: '/tratamento-de-agua'
+      preLoaderRoute: typeof SiteTratamentoDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/tratamento-agua-restaurante': {
+      id: '/_site/tratamento-agua-restaurante'
+      path: '/tratamento-agua-restaurante'
+      fullPath: '/tratamento-agua-restaurante'
+      preLoaderRoute: typeof SiteTratamentoAguaRestauranteRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/tratamento-agua-piscina': {
+      id: '/_site/tratamento-agua-piscina'
+      path: '/tratamento-agua-piscina'
+      fullPath: '/tratamento-agua-piscina'
+      preLoaderRoute: typeof SiteTratamentoAguaPiscinaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/tratamento-agua-hotel': {
+      id: '/_site/tratamento-agua-hotel'
+      path: '/tratamento-agua-hotel'
+      fullPath: '/tratamento-agua-hotel'
+      preLoaderRoute: typeof SiteTratamentoAguaHotelRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/tratamento-agua-comercial': {
+      id: '/_site/tratamento-agua-comercial'
+      path: '/tratamento-agua-comercial'
+      fullPath: '/tratamento-agua-comercial'
+      preLoaderRoute: typeof SiteTratamentoAguaComercialRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/sobre': {
+      id: '/_site/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SiteSobreRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/servicos': {
+      id: '/_site/servicos'
+      path: '/servicos'
+      fullPath: '/servicos'
+      preLoaderRoute: typeof SiteServicosRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos-quimicos-agua': {
+      id: '/_site/produtos-quimicos-agua'
+      path: '/produtos-quimicos-agua'
+      fullPath: '/produtos-quimicos-agua'
+      preLoaderRoute: typeof SiteProdutosQuimicosAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos': {
+      id: '/_site/produtos'
+      path: '/produtos'
+      fullPath: '/produtos'
+      preLoaderRoute: typeof SiteProdutosRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/por-que-vidagua': {
+      id: '/_site/por-que-vidagua'
+      path: '/por-que-vidagua'
+      fullPath: '/por-que-vidagua'
+      preLoaderRoute: typeof SitePorQueVidaguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/monitoramento-qualidade-agua': {
+      id: '/_site/monitoramento-qualidade-agua'
+      path: '/monitoramento-qualidade-agua'
+      fullPath: '/monitoramento-qualidade-agua'
+      preLoaderRoute: typeof SiteMonitoramentoQualidadeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/manutencao-sistemas-tratamento': {
+      id: '/_site/manutencao-sistemas-tratamento'
+      path: '/manutencao-sistemas-tratamento'
+      fullPath: '/manutencao-sistemas-tratamento'
+      preLoaderRoute: typeof SiteManutencaoSistemasTratamentoRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/manutencao-poco-artesiano': {
+      id: '/_site/manutencao-poco-artesiano'
+      path: '/manutencao-poco-artesiano'
+      fullPath: '/manutencao-poco-artesiano'
+      preLoaderRoute: typeof SiteManutencaoPocoArtesianoRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/legalizacao-poco-artesiano': {
+      id: '/_site/legalizacao-poco-artesiano'
+      path: '/legalizacao-poco-artesiano'
+      fullPath: '/legalizacao-poco-artesiano'
+      preLoaderRoute: typeof SiteLegalizacaoPocoArtesianoRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/filtros-de-agua': {
+      id: '/_site/filtros-de-agua'
+      path: '/filtros-de-agua'
+      fullPath: '/filtros-de-agua'
+      preLoaderRoute: typeof SiteFiltrosDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/desmineralizador-de-agua': {
+      id: '/_site/desmineralizador-de-agua'
+      path: '/desmineralizador-de-agua'
+      fullPath: '/desmineralizador-de-agua'
+      preLoaderRoute: typeof SiteDesmineralizadorDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/contato': {
+      id: '/_site/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof SiteContatoRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/contaminacao-agua': {
+      id: '/_site/contaminacao-agua'
+      path: '/contaminacao-agua'
+      fullPath: '/contaminacao-agua'
+      preLoaderRoute: typeof SiteContaminacaoAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/bomba-dosadora-cloro': {
+      id: '/_site/bomba-dosadora-cloro'
+      path: '/bomba-dosadora-cloro'
+      fullPath: '/bomba-dosadora-cloro'
+      preLoaderRoute: typeof SiteBombaDosadoraCloroRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/bomba-dosadora-agua': {
+      id: '/_site/bomba-dosadora-agua'
+      path: '/bomba-dosadora-agua'
+      fullPath: '/bomba-dosadora-agua'
+      preLoaderRoute: typeof SiteBombaDosadoraAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/blog': {
+      id: '/_site/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof SiteBlogRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/analise-de-agua': {
+      id: '/_site/analise-de-agua'
+      path: '/analise-de-agua'
+      fullPath: '/analise-de-agua'
+      preLoaderRoute: typeof SiteAnaliseDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/agua-turva-cheiro-cloro': {
+      id: '/_site/agua-turva-cheiro-cloro'
+      path: '/agua-turva-cheiro-cloro'
+      fullPath: '/agua-turva-cheiro-cloro'
+      preLoaderRoute: typeof SiteAguaTurvaCheiroCloroRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/agua-dura': {
+      id: '/_site/agua-dura'
+      path: '/agua-dura'
+      fullPath: '/agua-dura'
+      preLoaderRoute: typeof SiteAguaDuraRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/agua-destilada': {
+      id: '/_site/agua-destilada'
+      path: '/agua-destilada'
+      fullPath: '/agua-destilada'
+      preLoaderRoute: typeof SiteAguaDestiladaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/agua-de-reuso': {
+      id: '/_site/agua-de-reuso'
+      path: '/agua-de-reuso'
+      fullPath: '/agua-de-reuso'
+      preLoaderRoute: typeof SiteAguaDeReusoRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/agua-com-ferro-manganes': {
+      id: '/_site/agua-com-ferro-manganes'
+      path: '/agua-com-ferro-manganes'
+      fullPath: '/agua-com-ferro-manganes'
+      preLoaderRoute: typeof SiteAguaComFerroManganesRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/abrandador-de-agua': {
+      id: '/_site/abrandador-de-agua'
+      path: '/abrandador-de-agua'
+      fullPath: '/abrandador-de-agua'
+      preLoaderRoute: typeof SiteAbrandadorDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/__mockup/preview/$': {
+      id: '/__mockup/preview/$'
+      path: '/__mockup/preview/$'
+      fullPath: '/__mockup/preview/$'
+      preLoaderRoute: typeof Char91__mockupChar93PreviewSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/__component/preview/$': {
+      id: '/__component/preview/$'
+      path: '/__component/preview/$'
+      fullPath: '/__component/preview/$'
+      preLoaderRoute: typeof Char91__componentChar93PreviewSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+  }
+}
+
+interface SiteRouteChildren {
   SiteAbrandadorDeAguaRoute: typeof SiteAbrandadorDeAguaRoute
   SiteAguaComFerroManganesRoute: typeof SiteAguaComFerroManganesRoute
   SiteAguaDeReusoRoute: typeof SiteAguaDeReusoRoute
@@ -456,240 +724,10 @@ export interface RootRouteChildren {
   SiteTratamentoDeAguaRoute: typeof SiteTratamentoDeAguaRoute
   SiteTratamentoDeAguaIndustrialRoute: typeof SiteTratamentoDeAguaIndustrialRoute
   SiteTratamentoEfluentesRoute: typeof SiteTratamentoEfluentesRoute
-  Char91__componentChar93PreviewSplatRoute: typeof Char91__componentChar93PreviewSplatRoute
-  Char91__mockupChar93PreviewSplatRoute: typeof Char91__mockupChar93PreviewSplatRoute
+  SiteIndexRoute: typeof SiteIndexRoute
 }
 
-declare module '@tanstack/react-router' {
-  interface FileRoutesByPath {
-    '/_site/tratamento-efluentes': {
-      id: '/_site/tratamento-efluentes'
-      path: '/tratamento-efluentes'
-      fullPath: '/tratamento-efluentes'
-      preLoaderRoute: typeof SiteTratamentoEfluentesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/tratamento-de-agua-industrial': {
-      id: '/_site/tratamento-de-agua-industrial'
-      path: '/tratamento-de-agua-industrial'
-      fullPath: '/tratamento-de-agua-industrial'
-      preLoaderRoute: typeof SiteTratamentoDeAguaIndustrialRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/tratamento-de-agua': {
-      id: '/_site/tratamento-de-agua'
-      path: '/tratamento-de-agua'
-      fullPath: '/tratamento-de-agua'
-      preLoaderRoute: typeof SiteTratamentoDeAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/tratamento-agua-restaurante': {
-      id: '/_site/tratamento-agua-restaurante'
-      path: '/tratamento-agua-restaurante'
-      fullPath: '/tratamento-agua-restaurante'
-      preLoaderRoute: typeof SiteTratamentoAguaRestauranteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/tratamento-agua-piscina': {
-      id: '/_site/tratamento-agua-piscina'
-      path: '/tratamento-agua-piscina'
-      fullPath: '/tratamento-agua-piscina'
-      preLoaderRoute: typeof SiteTratamentoAguaPiscinaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/tratamento-agua-hotel': {
-      id: '/_site/tratamento-agua-hotel'
-      path: '/tratamento-agua-hotel'
-      fullPath: '/tratamento-agua-hotel'
-      preLoaderRoute: typeof SiteTratamentoAguaHotelRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/tratamento-agua-comercial': {
-      id: '/_site/tratamento-agua-comercial'
-      path: '/tratamento-agua-comercial'
-      fullPath: '/tratamento-agua-comercial'
-      preLoaderRoute: typeof SiteTratamentoAguaComercialRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/sobre': {
-      id: '/_site/sobre'
-      path: '/sobre'
-      fullPath: '/sobre'
-      preLoaderRoute: typeof SiteSobreRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/servicos': {
-      id: '/_site/servicos'
-      path: '/servicos'
-      fullPath: '/servicos'
-      preLoaderRoute: typeof SiteServicosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/produtos-quimicos-agua': {
-      id: '/_site/produtos-quimicos-agua'
-      path: '/produtos-quimicos-agua'
-      fullPath: '/produtos-quimicos-agua'
-      preLoaderRoute: typeof SiteProdutosQuimicosAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/produtos': {
-      id: '/_site/produtos'
-      path: '/produtos'
-      fullPath: '/produtos'
-      preLoaderRoute: typeof SiteProdutosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/por-que-vidagua': {
-      id: '/_site/por-que-vidagua'
-      path: '/por-que-vidagua'
-      fullPath: '/por-que-vidagua'
-      preLoaderRoute: typeof SitePorQueVidaguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/monitoramento-qualidade-agua': {
-      id: '/_site/monitoramento-qualidade-agua'
-      path: '/monitoramento-qualidade-agua'
-      fullPath: '/monitoramento-qualidade-agua'
-      preLoaderRoute: typeof SiteMonitoramentoQualidadeAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/manutencao-sistemas-tratamento': {
-      id: '/_site/manutencao-sistemas-tratamento'
-      path: '/manutencao-sistemas-tratamento'
-      fullPath: '/manutencao-sistemas-tratamento'
-      preLoaderRoute: typeof SiteManutencaoSistemasTratamentoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/manutencao-poco-artesiano': {
-      id: '/_site/manutencao-poco-artesiano'
-      path: '/manutencao-poco-artesiano'
-      fullPath: '/manutencao-poco-artesiano'
-      preLoaderRoute: typeof SiteManutencaoPocoArtesianoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/legalizacao-poco-artesiano': {
-      id: '/_site/legalizacao-poco-artesiano'
-      path: '/legalizacao-poco-artesiano'
-      fullPath: '/legalizacao-poco-artesiano'
-      preLoaderRoute: typeof SiteLegalizacaoPocoArtesianoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/filtros-de-agua': {
-      id: '/_site/filtros-de-agua'
-      path: '/filtros-de-agua'
-      fullPath: '/filtros-de-agua'
-      preLoaderRoute: typeof SiteFiltrosDeAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/desmineralizador-de-agua': {
-      id: '/_site/desmineralizador-de-agua'
-      path: '/desmineralizador-de-agua'
-      fullPath: '/desmineralizador-de-agua'
-      preLoaderRoute: typeof SiteDesmineralizadorDeAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/contato': {
-      id: '/_site/contato'
-      path: '/contato'
-      fullPath: '/contato'
-      preLoaderRoute: typeof SiteContatoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/contaminacao-agua': {
-      id: '/_site/contaminacao-agua'
-      path: '/contaminacao-agua'
-      fullPath: '/contaminacao-agua'
-      preLoaderRoute: typeof SiteContaminacaoAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/bomba-dosadora-cloro': {
-      id: '/_site/bomba-dosadora-cloro'
-      path: '/bomba-dosadora-cloro'
-      fullPath: '/bomba-dosadora-cloro'
-      preLoaderRoute: typeof SiteBombaDosadoraCloroRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/bomba-dosadora-agua': {
-      id: '/_site/bomba-dosadora-agua'
-      path: '/bomba-dosadora-agua'
-      fullPath: '/bomba-dosadora-agua'
-      preLoaderRoute: typeof SiteBombaDosadoraAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/blog': {
-      id: '/_site/blog'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof SiteBlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/analise-de-agua': {
-      id: '/_site/analise-de-agua'
-      path: '/analise-de-agua'
-      fullPath: '/analise-de-agua'
-      preLoaderRoute: typeof SiteAnaliseDeAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/agua-turva-cheiro-cloro': {
-      id: '/_site/agua-turva-cheiro-cloro'
-      path: '/agua-turva-cheiro-cloro'
-      fullPath: '/agua-turva-cheiro-cloro'
-      preLoaderRoute: typeof SiteAguaTurvaCheiroCloroRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/agua-dura': {
-      id: '/_site/agua-dura'
-      path: '/agua-dura'
-      fullPath: '/agua-dura'
-      preLoaderRoute: typeof SiteAguaDuraRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/agua-destilada': {
-      id: '/_site/agua-destilada'
-      path: '/agua-destilada'
-      fullPath: '/agua-destilada'
-      preLoaderRoute: typeof SiteAguaDestiladaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/agua-de-reuso': {
-      id: '/_site/agua-de-reuso'
-      path: '/agua-de-reuso'
-      fullPath: '/agua-de-reuso'
-      preLoaderRoute: typeof SiteAguaDeReusoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/agua-com-ferro-manganes': {
-      id: '/_site/agua-com-ferro-manganes'
-      path: '/agua-com-ferro-manganes'
-      fullPath: '/agua-com-ferro-manganes'
-      preLoaderRoute: typeof SiteAguaComFerroManganesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_site/abrandador-de-agua': {
-      id: '/_site/abrandador-de-agua'
-      path: '/abrandador-de-agua'
-      fullPath: '/abrandador-de-agua'
-      preLoaderRoute: typeof SiteAbrandadorDeAguaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/__mockup/preview/$': {
-      id: '/__mockup/preview/$'
-      path: '/__mockup/preview/$'
-      fullPath: '/__mockup/preview/$'
-      preLoaderRoute: typeof Char91__mockupChar93PreviewSplatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/__component/preview/$': {
-      id: '/__component/preview/$'
-      path: '/__component/preview/$'
-      fullPath: '/__component/preview/$'
-      preLoaderRoute: typeof Char91__componentChar93PreviewSplatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-  }
-}
-
-const rootRouteChildren: RootRouteChildren = {
+const SiteRouteChildren: SiteRouteChildren = {
   SiteAbrandadorDeAguaRoute: SiteAbrandadorDeAguaRoute,
   SiteAguaComFerroManganesRoute: SiteAguaComFerroManganesRoute,
   SiteAguaDeReusoRoute: SiteAguaDeReusoRoute,
@@ -720,6 +758,13 @@ const rootRouteChildren: RootRouteChildren = {
   SiteTratamentoDeAguaRoute: SiteTratamentoDeAguaRoute,
   SiteTratamentoDeAguaIndustrialRoute: SiteTratamentoDeAguaIndustrialRoute,
   SiteTratamentoEfluentesRoute: SiteTratamentoEfluentesRoute,
+  SiteIndexRoute: SiteIndexRoute,
+}
+
+const SiteRouteWithChildren = SiteRoute._addFileChildren(SiteRouteChildren)
+
+const rootRouteChildren: RootRouteChildren = {
+  SiteRoute: SiteRouteWithChildren,
   Char91__componentChar93PreviewSplatRoute:
     Char91__componentChar93PreviewSplatRoute,
   Char91__mockupChar93PreviewSplatRoute: Char91__mockupChar93PreviewSplatRoute,
