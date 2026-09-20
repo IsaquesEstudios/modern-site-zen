@@ -1,0 +1,498 @@
+{
+  "meta": {
+    "name": "Cozy Code Library",
+    "package": "@ws-67c861547ad852b10bbd/99f7056a-b46f-4959-a4e5-8db028d40000",
+    "version": "1.0.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system",
+    "theme_files": [
+      "src/design-system/isaques/theme.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "8e0c3bb62b697556428e4d1278276d74604fb275f0c7d282bef4d8f922ef3f39",
+      ".dsignore": "5dc76db8e8768ad1270090c0bd33946d",
+      ".gitignore": "6059213806e442947666752f3db6bfdc",
+      ".lovable/meta.yaml": "5a2373b91d18ce168dfa059d91d7bfbf",
+      ".lovable/plan/starter-design-system-from-the-shared-references-2026-09-20.md": "d094c181f6119dbada28655d32343995",
+      ".lovable/sources.yaml": "a2988e6e8018a9e5c16ac61560e06f1c",
+      ".lovable/system.md": "ff9126d0d180589c3288856605d15447",
+      "README.md": "d19675c449605f23c7cfa133c69b398b",
+      "bunfig.toml": "25f4c8696b22b0943db7191e0cdf7942",
+      "eslint.config.js": "07a67437fb1a45ab36d6de0145ff09de",
+      "lovable.toml": "b32568cbef680de9cbb176344986f1a3",
+      "mockupPreviewPlugin.ts": "9187302ab0c1423ec8ec0b8f9e8da0bf",
+      "package.json": "3f85e0c059cdc8823566d12b7c1c3260",
+      "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
+      "roadmap.md": "2211f9947c8a534139640af1b3beb649",
+      "src/design-system/isaques/components/badge.tsx": "17555f91364790e29b0fe93caf189c8d",
+      "src/design-system/isaques/components/button.tsx": "96610a8ceacf0701cedb1795647e85c9",
+      "src/design-system/isaques/components/card.tsx": "7316db1023736536d0cfb34f440cdfef",
+      "src/design-system/isaques/components/input.tsx": "e288bdd68252ab9c7f86bf8eed190177",
+      "src/design-system/isaques/components/selection.tsx": "234b7aac3799ba9003684dd5acf9289f",
+      "src/design-system/isaques/components/stat.tsx": "2f5a20a8df1aaf97fe2ec25a88a31fef",
+      "src/design-system/isaques/index.ts": "58e471093a691345e3ee975c7490ea01",
+      "src/design-system/isaques/lib/utils.ts": "dddce4dd0222d6166a755ff3ce91378a",
+      "src/design-system/isaques/theme.css": "54db30e2091119456dd106d817dcaa6c",
+      "src/index.ts": "46ef466ba97ad38bf688750d1c86587d",
+      "src/mockup-preview.d.ts": "ae9d81e2b8514e13fd59b5b6bece9a64",
+      "src/routeTree.gen.ts": "4fd75eb72aeb2d60f12add8cac402a7e",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/[__component].preview.$.tsx": "e4bf310e591541d31abf0cfeeb1121a4",
+      "src/routes/[__mockup].preview.$.tsx": "5d9f42470848aa60148f20f9580e240e",
+      "src/routes/__root.tsx": "04cdf2e88b7e3e1aa57229a6984765e0",
+      "src/routes/index.tsx": "9a142f55f22049627126730d3e6c1778",
+      "src/showcase/showcase.tsx": "c002dacb9a302e8fe2d3e82e403e150c",
+      "src/styles.css": "a332148a60d1eb4f14596aaff7741735",
+      "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
+      "vite.config.ts": "ffe5f3f21f5340cc993ebd37a7ed814e",
+      "wrangler.jsonc": "680b897d48e44bcc65fe437c29b38f3b"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--ds-background",
+        "raw": "#ffffff",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-foreground",
+        "raw": "#222d56",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-surface",
+        "raw": "#ffffff",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-surface-soft",
+        "raw": "#eef5fa",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-primary",
+        "raw": "#014f94",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-primary-foreground",
+        "raw": "#ffffff",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-accent",
+        "raw": "#3892cc",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-accent-strong",
+        "raw": "#5ba2d4",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-accent-soft",
+        "raw": "#b5cfe5",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-muted",
+        "raw": "#6b7693",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-border",
+        "raw": "#d8e4ee",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-danger",
+        "raw": "#b42318",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-danger-foreground",
+        "raw": "#ffffff",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-focus",
+        "raw": "#3892cc",
+        "source": "src/design-system/isaques/theme.css"
+      }
+    ],
+    "spacing": [
+      {
+        "name": "--ds-space-1",
+        "raw": "0.25rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-space-2",
+        "raw": "0.5rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-space-3",
+        "raw": "0.75rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-space-4",
+        "raw": "1rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-space-6",
+        "raw": "1.5rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-space-8",
+        "raw": "2rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-space-12",
+        "raw": "3rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-space-16",
+        "raw": "4rem",
+        "source": "src/design-system/isaques/theme.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--ds-font-sans",
+        "raw": "\"Manrope\", ui-sans-serif, system-ui, sans-serif",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-font-display",
+        "raw": "\"Manrope\", ui-sans-serif, system-ui, sans-serif",
+        "source": "src/design-system/isaques/theme.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--ds-radius-sm",
+        "raw": "0.375rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-radius-md",
+        "raw": "0.5rem",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-radius-lg",
+        "raw": "0.75rem",
+        "source": "src/design-system/isaques/theme.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--ds-shadow",
+        "raw": "0 18px 50px rgb(34 45 86 / 0.09)",
+        "source": "src/design-system/isaques/theme.css"
+      }
+    ],
+    "other": [
+      {
+        "name": "--ds-gradient-action",
+        "raw": "linear-gradient(110deg, #014f94 0%, #3892cc 58%, #5ba2d4 100%)",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-gradient-soft",
+        "raw": "linear-gradient(145deg, #b5cfe5 0%, #ffffff 72%)",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-gradient-depth",
+        "raw": "linear-gradient(145deg, #222d56 0%, #014f94 58%, #3892cc 100%)",
+        "source": "src/design-system/isaques/theme.css"
+      },
+      {
+        "name": "--ds-gradient-surface",
+        "raw": "linear-gradient(180deg, rgb(181 207 229 / 0.42) 0%, #ffffff 100%)",
+        "source": "src/design-system/isaques/theme.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Badge",
+      "file": "src/design-system/isaques/components/badge.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "accent",
+            "neutral",
+            "outline",
+            "success"
+          ],
+          "default": "accent"
+        }
+      ],
+      "usage": "Use for compact status, category, or contextual labels.",
+      "examples": [
+        {
+          "label": "Status",
+          "code": "\u003cBadge variant=\"success\"\u003eOn track\u003c/Badge\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use a Badge as an interactive control."
+      ]
+    },
+    {
+      "name": "Button",
+      "file": "src/design-system/isaques/components/button.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "primary",
+            "gradient",
+            "secondary",
+            "outline",
+            "ghost",
+            "danger"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg",
+            "icon"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use for clear user-initiated commands, with one primary action per decision area. Use the gradient variant only for the leading branded action.",
+      "examples": [
+        {
+          "label": "Gradient action",
+          "code": "\u003cButton variant=\"gradient\"\u003eView report\u003c/Button\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use buttons for navigation links.",
+        "Do not place multiple primary or gradient buttons in one decision area."
+      ]
+    },
+    {
+      "name": "Card",
+      "file": "src/design-system/isaques/components/card.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "tone",
+          "type": "enum",
+          "values": [
+            "default",
+            "soft",
+            "ink",
+            "gradientSoft",
+            "gradientDepth"
+          ],
+          "default": "default"
+        }
+      ],
+      "usage": "Use to frame one repeated item, tool, or grouped summary. Gradient tones provide soft or high-emphasis brand depth.",
+      "examples": [
+        {
+          "label": "Soft gradient card",
+          "code": "\u003cCard tone=\"gradientSoft\"\u003e\u003cCardHeader\u003e\u003cCardTitle\u003eCampaign health\u003c/CardTitle\u003e\u003c/CardHeader\u003e\u003c/Card\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not wrap every page section in a Card.",
+        "Do not nest Cards for decoration.",
+        "Do not mix multiple gradient tones in one compact group without a clear hierarchy."
+      ]
+    },
+    {
+      "name": "CardHeader",
+      "file": "src/design-system/isaques/components/card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "CardContent",
+      "file": "src/design-system/isaques/components/card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "CardFooter",
+      "file": "src/design-system/isaques/components/card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "CardTitle",
+      "file": "src/design-system/isaques/components/card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "CardDescription",
+      "file": "src/design-system/isaques/components/card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "Input",
+      "file": "src/design-system/isaques/components/input.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "invalid",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use for a single line of user-entered text or structured values.",
+      "examples": [
+        {
+          "label": "Email field",
+          "code": "\u003cInput type=\"email\" placeholder=\"name@company.com\" /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not omit a visible associated label in forms."
+      ]
+    },
+    {
+      "name": "Textarea",
+      "file": "src/design-system/isaques/components/input.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "invalid",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use for messages or context that require multiple lines.",
+      "examples": [
+        {
+          "label": "Project context",
+          "code": "\u003cTextarea placeholder=\"Share the goals and constraints…\" /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for short, predictable values."
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "file": "src/design-system/isaques/components/selection.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        }
+      ],
+      "usage": "Use for independent selections where multiple items may be selected.",
+      "examples": [
+        {
+          "label": "Preference",
+          "code": "\u003cCheckbox aria-label=\"Include weekly summary\" /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for an immediate on/off setting; use Switch."
+      ]
+    },
+    {
+      "name": "Switch",
+      "file": "src/design-system/isaques/components/selection.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        }
+      ],
+      "usage": "Use for a binary setting that takes effect immediately.",
+      "examples": [
+        {
+          "label": "Notification setting",
+          "code": "\u003cSwitch aria-label=\"Email alerts\" defaultChecked /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not use for selections that require a separate submit action."
+      ]
+    },
+    {
+      "name": "Stat",
+      "file": "src/design-system/isaques/components/stat.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "required": true
+        },
+        {
+          "name": "detail",
+          "type": "string"
+        },
+        {
+          "name": "trend",
+          "type": "enum",
+          "values": [
+            "up",
+            "down",
+            "neutral"
+          ],
+          "default": "neutral"
+        }
+      ],
+      "usage": "Use for a leading measure paired with context and optional direction.",
+      "examples": [
+        {
+          "label": "Positive trend",
+          "code": "\u003cStat label=\"Conversion lift\" value=\"18.4%\" detail=\"↑ 3.2%\" trend=\"up\" /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not show a number without a meaningful label."
+      ]
+    }
+  ]
+}
