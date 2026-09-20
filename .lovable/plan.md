@@ -43,6 +43,8 @@ Conteúdo do PDF, na coluna de 80%:
 4. **Custos, prazos e urgência** — preço variável por escopo, bloco de urgência e box "Orçamento Rápido" com botão.
 5. **Próximos passos** — 4 problemas → soluções, com links para abrandador, filtros, bombas dosadoras e monitoramento.
 6. **CTA final + formulário** — nome, WhatsApp/telefone, e-mail, motivo da análise (lista: Consumo Humano / Poço Artesiano / Vigilância Sanitária - Indústria / Outros) e botão "Solicitar Preço da Análise de Água", com a nota de rodapé.
+7. **Bloco azul "Fale com um especialista"** — mantido no fim da página, como está hoje (largura total, abaixo das duas colunas).
+
 
 Imagens: blocos marcados "Imagem", como na página inicial. Nenhuma imagem será gerada.
 
