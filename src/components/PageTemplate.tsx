@@ -94,6 +94,44 @@ export function CTASection() {
 }
 
 export function PageTemplate({ page }: { page: PageDef }) {
+  const isService = (SERVICE_SLUGS as readonly string[]).includes(page.slug);
+
+  const outline =
+    page.sections.length > 0 ? (
+      <>
+        <SectionTitle eyebrow="Outline da página" title={`Conteúdo sobre ${page.keyword}`} />
+        <div className="flex flex-col gap-12">
+          {page.sections.map((section, i) => (
+            <Reveal key={section.heading} delay={i * 50}>
+              <article className="grid gap-4 border-t border-border pt-8 md:grid-cols-[minmax(0,18rem)_1fr] md:gap-12">
+                <h2 className="font-display text-xl font-bold leading-snug">{section.heading}</h2>
+                <div className="flex flex-col gap-4">
+                  <p className="leading-relaxed text-muted">{section.body}</p>
+                  {section.bullets ? (
+                    <ul className="flex flex-col gap-2">
+                      {section.bullets.map((b) => (
+                        <li key={b} className="flex gap-3 text-sm text-muted">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-sm bg-accent" />
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </div>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </>
+    ) : null;
+
+  const related = page.related?.length ? (
+    <>
+      <SectionTitle eyebrow="Links internos" title="Páginas relacionadas" />
+      <LinkGrid items={page.related} />
+    </>
+  ) : null;
+
   return (
     <>
       <section className="bg-gradient-surface">
@@ -121,44 +159,22 @@ export function PageTemplate({ page }: { page: PageDef }) {
         </div>
       </section>
 
-      {page.sections.length > 0 ? (
-        <Section>
-          <SectionTitle eyebrow="Outline da página" title={`Conteúdo sobre ${page.keyword}`} />
-          <div className="flex flex-col gap-12">
-            {page.sections.map((section, i) => (
-              <Reveal key={section.heading} delay={i * 50}>
-                <article className="grid gap-4 border-t border-border pt-8 md:grid-cols-[minmax(0,18rem)_1fr] md:gap-12">
-                  <h2 className="font-display text-xl font-bold leading-snug">
-                    {section.heading}
-                  </h2>
-                  <div className="flex flex-col gap-4">
-                    <p className="leading-relaxed text-muted">{section.body}</p>
-                    {section.bullets ? (
-                      <ul className="flex flex-col gap-2">
-                        {section.bullets.map((b) => (
-                          <li key={b} className="flex gap-3 text-sm text-muted">
-                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-sm bg-accent" />
-                            {b}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
-                  </div>
-                </article>
-              </Reveal>
-            ))}
+      {isService ? (
+        <ServiceGrid currentSlug={page.slug}>
+          <div className="flex flex-col gap-16">
+            {outline}
+            {related}
           </div>
-        </Section>
-      ) : null}
-
-      {page.related?.length ? (
-        <Section soft={page.sections.length > 0}>
-          <SectionTitle eyebrow="Links internos" title="Páginas relacionadas" />
-          <LinkGrid items={page.related} />
-        </Section>
-      ) : null}
+        </ServiceGrid>
+      ) : (
+        <>
+          {outline ? <Section>{outline}</Section> : null}
+          {related ? <Section soft={page.sections.length > 0}>{related}</Section> : null}
+        </>
+      )}
 
       <CTASection />
     </>
   );
 }
+
