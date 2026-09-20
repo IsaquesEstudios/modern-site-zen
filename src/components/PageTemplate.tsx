@@ -18,16 +18,19 @@ export const WHATSAPP_URL = "https://wa.me/5511999999999";
 export function Section({
   children,
   soft = false,
+  id,
 }: {
   children: React.ReactNode;
   soft?: boolean;
+  id?: string;
 }) {
   return (
-    <section className={soft ? "bg-surface-soft" : "bg-background"}>
+    <section id={id} className={soft ? "bg-surface-soft" : "bg-background"}>
       <div className="mx-auto max-w-6xl px-6 py-20">{children}</div>
     </section>
   );
 }
+
 
 export function SectionTitle({ eyebrow, title }: { eyebrow?: string; title: string }) {
   return (
