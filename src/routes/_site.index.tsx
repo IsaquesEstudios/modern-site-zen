@@ -24,27 +24,27 @@ export const Route = createFileRoute("/_site/")({
 const services = [
   {
     label: "Análise de Água",
-    to: "/analise-de-agua",
+    to: "/servicos/analise-de-agua",
     desc: "Diagnóstico laboratorial completo e emissão de laudos técnicos de potabilidade.",
   },
   {
     label: "Tratamento de Água",
-    to: "/tratamento-de-agua",
+    to: "/servicos/tratamento-de-agua",
     desc: "Sistemas eficientes e sob medida para purificação e adequação hídrica.",
   },
   {
     label: "Poço Artesiano",
-    to: "/manutencao-poco-artesiano",
+    to: "/servicos/manutencao-poco-artesiano",
     desc: "Manutenção técnica, adequação estrutural e soluções para captação subterrânea.",
   },
   {
     label: "Monitoramento Contínuo",
-    to: "/monitoramento-qualidade-agua",
+    to: "/servicos/monitoramento-qualidade-agua",
     desc: "Controle recorrente e preventivo da qualidade para indústrias e condomínios.",
   },
   {
     label: "Soluções para Empresas",
-    to: "/tratamento-de-agua-industrial",
+    to: "/servicos/tratamento-de-agua-industrial",
     desc: "Projetos de tratamento de água industrial para hotéis, restaurantes e fábricas.",
   },
   {
@@ -73,7 +73,7 @@ const problems = [
   {
     q: "Seu poço artesiano está sem outorga ou documentação?",
     action: "Ver como legalizar seu poço",
-    to: "/legalizacao-poco-artesiano",
+    to: "/servicos/legalizacao-poco-artesiano",
   },
   {
     q: "Água muito “dura”, entupindo torneiras, canos e chuveiros?",
