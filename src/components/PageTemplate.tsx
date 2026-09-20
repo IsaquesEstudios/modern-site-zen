@@ -10,6 +10,8 @@ import {
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
 import { WhiteButton } from "@/components/WhiteButton";
+import { ServiceGrid } from "@/components/ServiceSidebar";
+import { SERVICE_SLUGS } from "@/lib/site";
 import type { PageDef } from "@/lib/site";
 
 // TODO: substituir pelo número de WhatsApp oficial da Vid'Água
