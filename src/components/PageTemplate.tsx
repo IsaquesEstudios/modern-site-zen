@@ -9,7 +9,11 @@ import {
   CardTitle,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
+import { WhiteButton } from "@/components/WhiteButton";
 import type { PageDef } from "@/lib/site";
+
+// TODO: substituir pelo número de WhatsApp oficial da Vid'Água
+export const WHATSAPP_URL = "https://wa.me/5511999999999";
 
 export function Section({
   children,

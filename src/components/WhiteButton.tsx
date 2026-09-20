@@ -1,4 +1,5 @@
-import { Button, type ButtonProps } from "@/design-system/cozy-code-library-1062b4";
+import { Button } from "@/design-system/cozy-code-library-1062b4";
+import type { ButtonProps } from "@/design-system/cozy-code-library-1062b4/design-system/isaques/components/button";
 
 /**
  * Variação clara do botão do design system, para uso sobre superfícies escuras
