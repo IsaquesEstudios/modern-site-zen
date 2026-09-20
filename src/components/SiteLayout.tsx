@@ -2,6 +2,7 @@ import { Link, Outlet } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { Button } from "@/design-system/cozy-code-library-1062b4";
 import { NAV } from "@/lib/site";
+import logo from "@/assets/vidagua-logo.png.asset.json";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,8 +25,12 @@ function Header() {
       ].join(" ")}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link to="/" className="font-display text-xl font-extrabold tracking-tight text-primary">
-          Vid&rsquo;Água
+        <Link to="/" aria-label="Vid'Água — Soluções para Água">
+          <img
+            src={logo.url}
+            alt="Vid'Água — Soluções para Água"
+            className="h-10 w-auto md:h-11"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -102,7 +107,11 @@ function Footer() {
     <footer className="border-t border-border bg-surface-soft">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-4">
         <div className="flex flex-col gap-4">
-          <span className="font-display text-xl font-extrabold text-primary">Vid&rsquo;Água</span>
+          <img
+            src={logo.url}
+            alt="Vid'Água — Soluções para Água"
+            className="h-10 w-auto self-start"
+          />
           <p className="max-w-xs text-sm leading-relaxed text-muted">
             Análise, tratamento e legalização de poços há mais de 30 anos. Atendemos em todo o
             Brasil.
