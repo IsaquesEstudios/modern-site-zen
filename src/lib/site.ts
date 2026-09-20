@@ -780,8 +780,36 @@ export const NAV = [
   { label: "Contato", to: "/contato" },
 ];
 
+/** Slugs que passaram a viver dentro de /servicos. */
+export const SERVICE_SLUGS = [
+  "analise-de-agua",
+  "tratamento-de-agua",
+  "legalizacao-poco-artesiano",
+  "manutencao-poco-artesiano",
+  "monitoramento-qualidade-agua",
+  "manutencao-sistemas-tratamento",
+  "tratamento-efluentes",
+  "agua-de-reuso",
+  "tratamento-de-agua-industrial",
+] as const;
+
+export function pathFor(slug: string) {
+  if (!slug) return "/";
+  return (SERVICE_SLUGS as readonly string[]).includes(slug)
+    ? `/servicos/${slug}`
+    : `/${slug}`;
+}
+
+/** Lista fixa exibida na coluna lateral das páginas de serviço. */
+export const SERVICE_LINKS = SERVICE_SLUGS.map((slug) => ({
+  slug,
+  label: PAGES_BY_SLUG[slug]?.nav ?? slug,
+  to: `/servicos/${slug}`,
+}));
+
 export function headFor(p: PageDef) {
-  const url = p.slug ? `/${p.slug}` : "/";
+  const url = pathFor(p.slug);
+
   return {
     meta: [
       { title: p.title },
