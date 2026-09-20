@@ -9,7 +9,11 @@ import {
   CardTitle,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
+import { WhiteButton } from "@/components/WhiteButton";
 import type { PageDef } from "@/lib/site";
+
+// TODO: substituir pelo número de WhatsApp oficial da Vid'Água
+export const WHATSAPP_URL = "https://wa.me/5511999999999";
 
 export function Section({
   children,
@@ -72,11 +76,12 @@ export function CTASection() {
           <CardContent>
             <div className="flex flex-wrap gap-4">
               <Link to="/contato">
-                <Button variant="gradient">Solicitar orçamento</Button>
+                <Button variant="gradient">Orçamento por e-mail</Button>
               </Link>
-              <Link to="/analise-de-agua">
-                <Button variant="outline">Solicitar análise de água</Button>
-              </Link>
+              {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <WhiteButton>Orçamento pelo WhatsApp</WhiteButton>
+              </a>
             </div>
           </CardContent>
         </Card>
@@ -149,27 +154,6 @@ export function PageTemplate({ page }: { page: PageDef }) {
           <LinkGrid items={page.related} />
         </Section>
       ) : null}
-
-      <Section>
-        <SectionTitle eyebrow="Referência SEO" title="Palavras-chave desta página" />
-        <Reveal>
-          <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted">
-                Keyword principal
-              </p>
-              <p className="font-display text-2xl font-bold">{page.keyword}</p>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {page.secondary.map((k) => (
-                <Badge key={k} variant="neutral">
-                  {k}
-                </Badge>
-              ))}
-            </div>
-          </div>
-        </Reveal>
-      </Section>
 
       <CTASection />
     </>
