@@ -1,7 +1,7 @@
 @import "tailwindcss" source(none);
+@import "./design-system/cozy-code-library-1062b4/design-system/isaques/theme.css";
 @source "../src";
 @source "./design-system/cozy-code-library-1062b4/**/*.{ts,tsx,css}";
-@import "./design-system/cozy-code-library-1062b4/design-system/isaques/theme.css";
 
 html {
   scroll-behavior: smooth;
