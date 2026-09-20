@@ -72,11 +72,12 @@ export function CTASection() {
           <CardContent>
             <div className="flex flex-wrap gap-4">
               <Link to="/contato">
-                <Button variant="gradient">Solicitar orçamento</Button>
+                <Button variant="gradient">Orçamento por e-mail</Button>
               </Link>
-              <Link to="/analise-de-agua">
-                <Button variant="outline">Solicitar análise de água</Button>
-              </Link>
+              {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <WhiteButton>Orçamento pelo WhatsApp</WhiteButton>
+              </a>
             </div>
           </CardContent>
         </Card>
