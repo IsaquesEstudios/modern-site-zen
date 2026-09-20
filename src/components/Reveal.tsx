@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ElementType, type ReactNode } from "react";
 
 type RevealProps = {
   children: ReactNode;
@@ -11,7 +11,7 @@ type RevealProps = {
 export function Reveal({ children, delay = 0, as = "div", className }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
-  const Tag = as as keyof JSX.IntrinsicElements;
+  const Tag: ElementType = as;
 
   useEffect(() => {
     const node = ref.current;
