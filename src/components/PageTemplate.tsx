@@ -68,7 +68,7 @@ export function CTASection() {
         <Card tone="gradientDepth">
           <CardHeader>
             <CardTitle>Fale com um especialista</CardTitle>
-            <CardDescription>
+            <CardDescription className="text-primary-foreground">
               Solicite um orçamento de análise ou tratamento de água. Atendimento em horário
               comercial com retorno ágil, em todo o Brasil.
             </CardDescription>
