@@ -1,7 +1,7 @@
 import { Link, Outlet } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { Button } from "@/design-system/cozy-code-library-1062b4";
-import { NAV } from "@/lib/site";
+import { NAV, CONTACT } from "@/lib/site";
 import logo from "@/assets/vidagua-logo.png.asset.json";
 
 function Header() {
@@ -116,6 +116,31 @@ function Footer() {
             Análise, tratamento e legalização de poços há mais de 30 anos. Atendemos em todo o
             Brasil.
           </p>
+          <div className="flex flex-col gap-1">
+            {CONTACT.phones.map((phone, i) => (
+              <a key={phone} href={CONTACT.phoneHrefs[i]} className={footerLink}>
+                {phone}
+              </a>
+            ))}
+            <a
+              href={CONTACT.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={footerLink}
+            >
+              WhatsApp {CONTACT.whatsapp}
+            </a>
+            <a href={CONTACT.emailHref} className={footerLink}>
+              {CONTACT.email}
+            </a>
+          </div>
+          <address className="max-w-xs text-sm not-italic leading-relaxed text-muted">
+            {CONTACT.addressLines.map((line) => (
+              <span key={line} className="block">
+                {line}
+              </span>
+            ))}
+          </address>
         </div>
 
         <FooterColumn title="Serviços">
