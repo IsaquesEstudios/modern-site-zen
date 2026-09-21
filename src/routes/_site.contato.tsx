@@ -111,23 +111,57 @@ function ContatoPage() {
               <Card tone="soft">
                 <CardHeader>
                   <CardTitle>Canais de atendimento</CardTitle>
-                  <CardDescription>
-                    Telefone, WhatsApp e e-mail serão preenchidos com os dados oficiais.
-                  </CardDescription>
                 </CardHeader>
+                <CardContent>
+                  <div className="flex flex-col gap-2">
+                    {CONTACT.phones.map((phone, i) => (
+                      <a key={phone} href={CONTACT.phoneHrefs[i]} className={contactLink}>
+                        {phone}
+                      </a>
+                    ))}
+                    <a
+                      href={CONTACT.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={contactLink}
+                    >
+                      WhatsApp {CONTACT.whatsapp}
+                    </a>
+                    <a href={CONTACT.emailHref} className={contactLink}>
+                      {CONTACT.email}
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card tone="soft">
+                <CardHeader>
+                  <CardTitle>Endereço</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <address className="text-sm not-italic leading-relaxed text-muted">
+                    {CONTACT.addressLines.map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </address>
+                </CardContent>
               </Card>
               <Card tone="soft">
                 <CardHeader>
                   <CardTitle>Horário de atendimento</CardTitle>
                   <CardDescription>
-                    Segunda a sexta, em horário comercial. Retorno no mesmo dia útil.
+                    {CONTACT.hours}. Retorno em até 1 dia útil.
                   </CardDescription>
                 </CardHeader>
               </Card>
               <Card tone="soft">
                 <CardHeader>
                   <CardTitle>Área de atuação</CardTitle>
-                  <CardDescription>Atendemos em todo o Brasil.</CardDescription>
+                  <CardDescription>
+                    Atendimento técnico em São Paulo e região; fornecimento de equipamentos e
+                    insumos para todo o Brasil.
+                  </CardDescription>
                 </CardHeader>
               </Card>
             </div>
