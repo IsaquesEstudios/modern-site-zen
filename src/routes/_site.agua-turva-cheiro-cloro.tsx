@@ -200,7 +200,7 @@ function AguaTurvaPage() {
               <p className="leading-relaxed text-muted">
                 <em>Nota técnica:</em> caso a origem do problema seja um poço artesiano sem
                 cloração, nossa engenharia também instala{" "}
-                <Link to="/bomba-dosadora-cloro" className={inlineLink}>
+                <Link to="/produtos/bomba-dosadora-cloro" className={inlineLink}>
                   bombas dosadoras
                 </Link>{" "}
                 automáticas para garantir a desinfecção na medida exata.

@@ -166,7 +166,7 @@ function MonitoramentoQualidadeAguaPage() {
               </div>
               <p className="leading-relaxed text-muted">
                 Conheça também nossas{" "}
-                <Link to="/bomba-dosadora-cloro" className={inlineLink}>
+                <Link to="/produtos/bomba-dosadora-cloro" className={inlineLink}>
                   bombas dosadoras
                 </Link>{" "}
                 e a{" "}

@@ -179,7 +179,7 @@ function AguaDuraPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Link to="/abrandador-de-agua">
+                  <Link to="/produtos/abrandador-de-agua">
                     <Button variant="outline">Acessar a página do Abrandador de Água</Button>
                   </Link>
                 </CardContent>

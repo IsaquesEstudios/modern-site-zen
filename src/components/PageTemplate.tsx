@@ -11,7 +11,8 @@ import {
 import { Reveal } from "@/components/Reveal";
 import { WhiteButton } from "@/components/WhiteButton";
 import { ServiceGrid } from "@/components/ServiceSidebar";
-import { SERVICE_SLUGS } from "@/lib/site";
+import { ProductGrid } from "@/components/ProductSidebar";
+import { SERVICE_SLUGS, PRODUCT_SLUGS } from "@/lib/site";
 import type { PageDef } from "@/lib/site";
 
 // TODO: substituir pelo número de WhatsApp oficial da Vid'Água
@@ -97,6 +98,7 @@ export function CTASection() {
 
 export function PageTemplate({ page }: { page: PageDef }) {
   const isService = (SERVICE_SLUGS as readonly string[]).includes(page.slug);
+  const isProduct = (PRODUCT_SLUGS as readonly string[]).includes(page.slug);
 
   const outline =
     page.sections.length > 0 ? (
@@ -176,6 +178,14 @@ export function PageTemplate({ page }: { page: PageDef }) {
             {problems}
           </div>
         </ServiceGrid>
+      ) : isProduct ? (
+        <ProductGrid currentSlug={page.slug}>
+          <div className="flex flex-col gap-16">
+            {outline}
+            {related}
+            {problems}
+          </div>
+        </ProductGrid>
       ) : (
         <>
           {outline ? <Section>{outline}</Section> : null}

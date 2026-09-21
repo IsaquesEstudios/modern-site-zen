@@ -137,13 +137,13 @@ function Footer() {
         </FooterColumn>
 
         <FooterColumn title="Produtos">
-          <Link to="/filtros-de-agua" className={footerLink}>
+          <Link to="/produtos/filtros-de-agua" className={footerLink}>
             Filtros de Água
           </Link>
-          <Link to="/abrandador-de-agua" className={footerLink}>
+          <Link to="/produtos/abrandador-de-agua" className={footerLink}>
             Abrandador de Água
           </Link>
-          <Link to="/bomba-dosadora-cloro" className={footerLink}>
+          <Link to="/produtos/bomba-dosadora-cloro" className={footerLink}>
             Bomba Dosadora de Cloro
           </Link>
           <Link to="/produtos" className={footerLink}>

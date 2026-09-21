@@ -173,7 +173,7 @@ export const PAGES: PageDef[] = [
       s("Manutenção e regeneração"),
     ],
     related: [
-      { label: "Abrandador de Água", to: "/abrandador-de-agua" },
+      { label: "Abrandador de Água", to: "/produtos/abrandador-de-agua" },
       { label: "Análise de Água", to: "/servicos/analise-de-agua" },
     ],
   },
@@ -203,7 +203,7 @@ export const PAGES: PageDef[] = [
       s("Manutenção periódica"),
     ],
     related: [
-      { label: "Filtros de Água", to: "/filtros-de-agua" },
+      { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
       { label: "Análise de Água", to: "/servicos/analise-de-agua" },
     ],
   },
@@ -231,8 +231,8 @@ export const PAGES: PageDef[] = [
       s("Filtração e ajuste de dosagem"),
     ],
     related: [
-      { label: "Filtros de Água", to: "/filtros-de-agua" },
-      { label: "Bomba Dosadora de Cloro", to: "/bomba-dosadora-cloro" },
+      { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
+      { label: "Bomba Dosadora de Cloro", to: "/produtos/bomba-dosadora-cloro" },
     ],
   },
   {
@@ -340,7 +340,7 @@ export const PAGES: PageDef[] = [
       s("Instalação e ajuste"),
       s("Manutenção e insumos"),
     ],
-    related: [{ label: "Produtos Químicos", to: "/produtos-quimicos-agua" }],
+    related: [{ label: "Produtos Químicos", to: "/produtos/produtos-quimicos-agua" }],
   },
   {
     slug: "bomba-dosadora-agua",
@@ -717,13 +717,13 @@ export const PAGES: PageDef[] = [
     intro: "Linha de produtos com foco em qualidade e conformidade técnica.",
     sections: [],
     related: [
-      { label: "Bomba Dosadora de Cloro", to: "/bomba-dosadora-cloro" },
-      { label: "Bomba Dosadora de Água", to: "/bomba-dosadora-agua" },
-      { label: "Filtros de Água", to: "/filtros-de-agua" },
-      { label: "Abrandador de Água", to: "/abrandador-de-agua" },
-      { label: "Desmineralizador de Água", to: "/desmineralizador-de-agua" },
-      { label: "Água Destilada", to: "/agua-destilada" },
-      { label: "Produtos Químicos", to: "/produtos-quimicos-agua" },
+      { label: "Bomba Dosadora de Cloro", to: "/produtos/bomba-dosadora-cloro" },
+      { label: "Bomba Dosadora de Água", to: "/produtos/bomba-dosadora-agua" },
+      { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
+      { label: "Abrandador de Água", to: "/produtos/abrandador-de-agua" },
+      { label: "Desmineralizador de Água", to: "/produtos/desmineralizador-de-agua" },
+      { label: "Água Destilada", to: "/produtos/agua-destilada" },
+      { label: "Produtos Químicos", to: "/produtos/produtos-quimicos-agua" },
     ],
   },
   {
@@ -800,11 +800,22 @@ export const SERVICE_SLUGS = [
   "tratamento-de-agua-industrial",
 ] as const;
 
+/** Slugs que passaram a viver dentro de /produtos. */
+export const PRODUCT_SLUGS = [
+  "bomba-dosadora-cloro",
+  "bomba-dosadora-agua",
+  "filtros-de-agua",
+  "abrandador-de-agua",
+  "desmineralizador-de-agua",
+  "agua-destilada",
+  "produtos-quimicos-agua",
+] as const;
+
 export function pathFor(slug: string) {
   if (!slug) return "/";
-  return (SERVICE_SLUGS as readonly string[]).includes(slug)
-    ? `/servicos/${slug}`
-    : `/${slug}`;
+  if ((SERVICE_SLUGS as readonly string[]).includes(slug)) return `/servicos/${slug}`;
+  if ((PRODUCT_SLUGS as readonly string[]).includes(slug)) return `/produtos/${slug}`;
+  return `/${slug}`;
 }
 
 /** Lista fixa exibida na coluna lateral das páginas de serviço. */
@@ -812,6 +823,13 @@ export const SERVICE_LINKS = SERVICE_SLUGS.map((slug) => ({
   slug,
   label: PAGES_BY_SLUG[slug]?.nav ?? slug,
   to: `/servicos/${slug}`,
+}));
+
+/** Lista fixa exibida na coluna lateral das páginas de produto. */
+export const PRODUCT_LINKS = PRODUCT_SLUGS.map((slug) => ({
+  slug,
+  label: PAGES_BY_SLUG[slug]?.nav ?? slug,
+  to: `/produtos/${slug}`,
 }));
 
 export function headFor(p: PageDef) {
