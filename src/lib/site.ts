@@ -359,6 +359,19 @@ export const PAGES: PageDef[] = [
     h1: "Água Destilada",
     intro: "Fornecimento com controle de qualidade e embalagens adequadas ao uso.",
     sections: [],
+  },
+  {
+    slug: "produtos-quimicos-agua",
+    nav: "Produtos Químicos",
+    type: "Produto",
+    priority: "Média",
+    keyword: "produtos químicos para tratamento de água",
+    secondary: [
+      "cloro para tratamento de água",
+      "sal para abrandador",
+      "coagulante para água",
+      "insumos tratamento de água",
+    ],
     title: "Produtos Químicos para Tratamento de Água | Vid'Água",
     description:
       "Cloro, coagulantes, sal para abrandador e demais insumos para tratamento de água com orientação técnica de uso.",
