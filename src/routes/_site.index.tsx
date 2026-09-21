@@ -14,7 +14,7 @@ import { Reveal } from "@/components/Reveal";
 import { Section, SectionTitle } from "@/components/PageTemplate";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { HOME, headFor } from "@/lib/site";
+import { HOME, headFor, CONTACT } from "@/lib/site";
 
 export const Route = createFileRoute("/_site/")({
   head: () => headFor(HOME),
@@ -309,11 +309,31 @@ function Home() {
                 pronta para entender sua necessidade e propor a melhor solução técnica. Atendemos em
                 todo o Brasil.
               </p>
+              <div className="flex flex-col gap-1 text-sm text-muted">
+                {CONTACT.phones.map((phone, i) => (
+                  <a
+                    key={phone}
+                    href={CONTACT.phoneHrefs[i]}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {phone}
+                  </a>
+                ))}
+                <a
+                  href={CONTACT.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-primary"
+                >
+                  WhatsApp {CONTACT.whatsapp}
+                </a>
+                <a href={CONTACT.emailHref} className="transition-colors hover:text-primary">
+                  {CONTACT.email}
+                </a>
+              </div>
               <p className="text-sm text-muted">
-                {/* TODO: inserir horário oficial de atendimento */}
-                Horário de atendimento: segunda a sexta, das [inserir horário] às [inserir horário].
+                {CONTACT.hours}. Respondemos sua solicitação em até 1 dia útil.
               </p>
-              <p className="text-sm text-muted">Respondemos sua solicitação em até 1 dia útil.</p>
             </div>
           </Reveal>
 
