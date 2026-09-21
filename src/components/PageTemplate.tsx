@@ -178,6 +178,14 @@ export function PageTemplate({ page }: { page: PageDef }) {
             {problems}
           </div>
         </ServiceGrid>
+      ) : isProduct ? (
+        <ProductGrid currentSlug={page.slug}>
+          <div className="flex flex-col gap-16">
+            {outline}
+            {related}
+            {problems}
+          </div>
+        </ProductGrid>
       ) : (
         <>
           {outline ? <Section>{outline}</Section> : null}
