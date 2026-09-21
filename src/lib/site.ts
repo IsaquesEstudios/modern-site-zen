@@ -455,13 +455,233 @@ export const PAGES: PageDef[] = [
       "Tratamento de água para hotéis e pousadas: conforto do hóspede, proteção de equipamentos e conformidade sanitária.",
     h1: "Tratamento de Água para Hotéis",
     intro: "Alta rotatividade exige água consistente em todos os pontos de uso.",
+    sections: [
+      {
+        heading: "Desafios do segmento hoteleiro",
+        body: "Em hotéis e pousadas, a água circula em chuveiros, cozinha, lavanderia, piscina e caldeiras ao mesmo tempo. Variações de dureza, ferro ou cloro aparecem rapidamente na experiência do hóspede: manchas em louças e box, toalhas ásperas, cheiro na água do banho e incrustação nos aquecedores.",
+        bullets: [
+          "Reclamações de hóspedes sobre cheiro, cor ou gosto da água",
+          "Incrustação em aquecedores, caldeiras e tubulações",
+          "Lavanderia consumindo mais sabão e desgastando enxovais",
+          "Exigência de laudos de potabilidade pela vigilância sanitária",
+        ],
+      },
+      {
+        heading: "Solução recomendada pela Vid'Água",
+        body: "Começamos pela análise laboratorial da água que abastece o hotel, seja da rede pública ou de poço artesiano. Com o resultado em mãos, dimensionamos filtração central, abrandamento para a linha quente e a lavanderia e, quando há captação própria, dosagem automática de cloro para garantir desinfecção contínua.",
+      },
+      {
+        heading: "Manutenção programada e laudos",
+        body: "Hotelaria não pode parar. Trabalhamos com contratos de manutenção preventiva e monitoramento periódico, com visitas programadas fora do horário de pico, troca de mídias no prazo correto e emissão dos laudos exigidos pelos órgãos fiscalizadores.",
+      },
+    ],
+    related: [
+      { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
+      { label: "Abrandador de Água", to: "/produtos/abrandador-de-agua" },
+      { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
+    ],
+  },
+  {
+    slug: "tratamento-agua-restaurante",
+    nav: "Restaurantes",
+    type: "Setor",
+    priority: "Média",
+    keyword: "tratamento de água para restaurantes",
+    secondary: [
+      "filtro água cozinha industrial",
+      "água para máquina de gelo",
+      "vigilância sanitária água",
+    ],
+    title: "Tratamento de Água para Restaurantes | Vid'Água",
+    description:
+      "Água tratada para cozinhas industriais, máquinas de gelo e conformidade com a vigilância sanitária.",
+    h1: "Tratamento de Água para Restaurantes",
+    intro: "Segurança alimentar começa pela qualidade da água.",
+    sections: [
+      {
+        heading: "Pontos críticos de uma cozinha industrial",
+        body: "A água entra em contato direto com o alimento: no cozimento, na higienização de hortaliças, na lavagem de utensílios e na produção de gelo. Qualquer contaminação biológica ou excesso de cloro compromete o sabor do prato e, principalmente, a segurança de quem consome.",
+        bullets: [
+          "Gelo com cheiro, gosto ou aspecto turvo",
+          "Incrustação em máquinas de lavar louça e cafeteiras",
+          "Bebidas e cafés com sabor alterado",
+          "Notificação da vigilância sanitária por falta de laudo",
+        ],
+      },
+      {
+        heading: "Filtração dimensionada para o seu volume",
+        body: "Projetamos o sistema a partir da vazão real da cozinha e do resultado da análise da água. Em geral, a solução combina filtração central para retenção de partículas e cloro residual, abrandamento onde há dureza elevada e pontos de uso específicos para gelo e café.",
+      },
+      {
+        heading: "Laudos e fiscalização",
+        body: "Emitimos laudos de potabilidade em conformidade com a Portaria 888 e mantemos um cronograma de análises periódicas, de modo que o restaurante tenha sempre documentação válida para apresentar em uma fiscalização.",
+      },
+    ],
+    related: [
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
+      { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
+    ],
+  },
+  {
+    slug: "tratamento-agua-piscina",
+    nav: "Piscinas",
+    type: "Setor",
+    priority: "Média",
+    keyword: "tratamento de água de piscina",
+    secondary: [
+      "água de piscina verde",
+      "dosagem cloro piscina",
+      "manutenção piscina condomínio",
+    ],
+    title: "Tratamento de Água de Piscina | Vid'Água",
+    description:
+      "Tratamento de água de piscina para condomínios, clubes e hotéis: equilíbrio químico, dosagem e manutenção.",
+    h1: "Tratamento de Água de Piscina",
+    intro: "Equilíbrio químico estável evita água turva e desconforto aos usuários.",
+    sections: [
+      {
+        heading: "Parâmetros que precisam ficar sob controle",
+        body: "Água de piscina esverdeada, turva ou com cheiro forte é quase sempre consequência de desequilíbrio químico, não de falta de cloro. O controle correto envolve cloro residual livre, pH, alcalinidade e dureza cálcica trabalhando juntos.",
+        bullets: [
+          "pH fora da faixa reduz drasticamente o poder do cloro",
+          "Alcalinidade baixa faz o pH oscilar a cada aplicação",
+          "Dureza inadequada corrói ou incrusta o revestimento",
+          "Filtragem insuficiente deixa a água turva mesmo com cloro alto",
+        ],
+      },
+      {
+        heading: "Dosagem automática em vez de correção manual",
+        body: "Para condomínios, clubes e hotéis, a dosagem manual é imprecisa e depende da rotina do funcionário. Instalamos bombas dosadoras que aplicam cloro e corretor de pH de forma contínua e proporcional, mantendo a água estável todos os dias, inclusive nos fins de semana de maior uso.",
+      },
+      {
+        heading: "Rotina de manutenção e análise",
+        body: "Complementamos com limpeza e troca das mídias do filtro, verificação da bomba de recirculação e análises periódicas da água, com registro dos resultados para a administração do condomínio ou do clube.",
+      },
+    ],
+    related: [
+      { label: "Bomba Dosadora de Cloro", to: "/produtos/bomba-dosadora-cloro" },
+      { label: "Produtos Químicos", to: "/produtos/produtos-quimicos-agua" },
+      { label: "Manutenção de Sistemas", to: "/servicos/manutencao-sistemas-tratamento" },
+    ],
+  },
+  {
+    slug: "tratamento-agua-comercial",
+    nav: "Academias e Clínicas",
+    type: "Setor",
+    priority: "Baixa-Média",
+    keyword: "tratamento água academia",
+    secondary: ["tratamento água clínica", "tratamento água consultório"],
+    title: "Tratamento de Água para Academias, Clínicas e Consultórios | Vid'Água",
+    description:
+      "Soluções de tratamento de água para academias, clínicas e consultórios, com laudos e manutenção programada.",
+    h1: "Tratamento de Água para Academias, Clínicas e Consultórios",
+    intro: "Três segmentos com necessidades próximas e soluções compactas.",
+    sections: [
+      {
+        heading: "Academias",
+        body: "Vestiários com uso intenso expõem qualquer falha da água: chuveiros com baixa pressão por incrustação, manchas nos boxes e cheiro de cloro no ambiente fechado. Filtração central e abrandamento resolvem o conforto do aluno e ainda prolongam a vida útil de aquecedores e torneiras.",
+      },
+      {
+        heading: "Clínicas",
+        body: "Procedimentos de higienização, autoclaves e equipamentos sensíveis exigem água livre de partículas e com dureza controlada. Dimensionamos o sistema a partir da análise laboratorial e emitimos os laudos de potabilidade exigidos pela vigilância sanitária.",
+      },
+      {
+        heading: "Consultórios",
+        body: "Consultórios odontológicos e de pequeno porte precisam de soluções compactas: filtração no ponto de uso, controle de cloro e análises periódicas. Projetos simples de instalar, com manutenção programada e custo previsível.",
+      },
+    ],
+    related: [
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
+      { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
+    ],
+  },
+  {
+    slug: "tratamento-efluentes",
+    nav: "Efluentes",
+    type: "Serviço",
+    priority: "Média",
+    keyword: "tratamento de efluentes",
+    secondary: [
+      "estação de tratamento de efluentes",
+      "efluente industrial",
+      "descarte de efluentes",
+    ],
+    title: "Tratamento de Efluentes Industriais | Vid'Água",
+    description:
+      "Projetos de tratamento de efluentes com foco em conformidade ambiental e redução de custo de descarte.",
+    h1: "Tratamento de Efluentes",
+    intro: "Conformidade ambiental com processos dimensionados para cada efluente.",
     sections: [],
+    related: [{ label: "Água de Reuso", to: "/servicos/agua-de-reuso" }],
+  },
+  {
+    slug: "agua-de-reuso",
+    nav: "Água de Reuso",
+    type: "Serviço",
+    priority: "Média",
+    keyword: "água de reuso",
+    secondary: ["reuso de água industrial", "sistema de reuso de água", "economia de água"],
+    title: "Água de Reuso: Sistemas e Economia | Vid'Água",
+    description:
+      "Sistemas de água de reuso para indústrias e condomínios: redução de consumo e retorno sobre investimento.",
+    h1: "Água de Reuso",
+    intro: "Reduzir consumo de água potável com segurança técnica e sanitária.",
+    sections: [],
+    related: [{ label: "Tratamento de Efluentes", to: "/servicos/tratamento-efluentes" }],
+  },
+  {
+    slug: "por-que-vidagua",
+    nav: "Por que Vid'Água",
+    type: "Institucional",
+    priority: "Alta",
+    keyword: "empresa confiável tratamento água",
+    secondary: [
+      "melhor empresa análise de água",
+      "empresa especializada poço artesiano",
+      "vidagua análise água",
+      "vidagua tratamento água",
+      "vidagua confiável",
+    ],
     title: "Por que escolher a Vid'Água | Empresa Confiável em Tratamento de Água",
     description:
       "Mais de 30 anos, equipe técnica própria e laudos em conformidade. Conheça diferenciais, certificações e depoimentos.",
     h1: "Por que escolher a Vid'Água",
-    intro: "Apresentação genuína: história, equipe, certificações e experiências de clientes.",
-    sections: [],
+    intro:
+      "Mais de três décadas resolvendo problemas de água em residências, condomínios, hotéis e indústrias, com laboratório próprio em São Paulo.",
+    sections: [
+      {
+        heading: "Mais de 30 anos de experiência prática",
+        body: "A Vid'Água nasceu em São Paulo e construiu sua reputação resolvendo casos reais: poços com ferro e manganês, condomínios notificados pela vigilância, indústrias com incrustação em linhas de vapor. Essa bagagem encurta o caminho entre o problema e a solução certa.",
+      },
+      {
+        heading: "Laboratório próprio: diagnóstico antes do orçamento",
+        body: "Nosso maior diferencial é analisar a sua água antes de indicar qualquer equipamento. Avaliamos os componentes químicos e biológicos da amostra e só então dimensionamos as mídias filtrantes e a dosagem necessárias. Não vendemos solução de prateleira.",
+        bullets: [
+          "Análise físico-química e microbiológica da amostra",
+          "Dimensionamento por vazão, pressão e carga contaminante",
+          "Proposta técnica com o que é necessário, sem excedente",
+        ],
+      },
+      {
+        heading: "Conformidade legal como padrão",
+        body: "Emitimos laudos com validade legal, em conformidade com a Portaria 888 do Ministério da Saúde, e cuidamos de todo o processo de outorga e regularização de poços artesianos junto ao DAEE e demais órgãos ambientais.",
+      },
+      {
+        heading: "Equipe técnica própria",
+        body: "Engenheiros, geólogos e técnicos químicos acompanham o projeto do diagnóstico à manutenção. A mesma equipe que analisa a água instala e mantém o sistema, o que evita diagnósticos contraditórios e retrabalho.",
+      },
+      {
+        heading: "Soluções escaláveis e atendimento nacional",
+        body: "Atendemos desde uma residência com poço até complexos industriais e condomínios de grande porte, com contratos de manutenção preventiva e monitoramento contínuo. Fornecemos equipamentos e insumos para todo o Brasil.",
+      },
+    ],
+    related: [
+      { label: "Sobre a Vid'Água", to: "/sobre" },
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
+    ],
   },
   {
     slug: "servicos",
