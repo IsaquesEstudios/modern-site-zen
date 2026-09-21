@@ -134,6 +134,13 @@ export function PageTemplate({ page }: { page: PageDef }) {
     </>
   ) : null;
 
+  const problems = page.problems?.length ? (
+    <div className={related ? "mt-16" : undefined}>
+      <SectionTitle eyebrow="Links internos" title="Problema específico" />
+      <LinkGrid items={page.problems} />
+    </div>
+  ) : null;
+
   return (
     <>
       <section className="bg-gradient-surface">
@@ -166,12 +173,18 @@ export function PageTemplate({ page }: { page: PageDef }) {
           <div className="flex flex-col gap-16">
             {outline}
             {related}
+            {problems}
           </div>
         </ServiceGrid>
       ) : (
         <>
           {outline ? <Section>{outline}</Section> : null}
-          {related ? <Section soft={page.sections.length > 0}>{related}</Section> : null}
+          {related || problems ? (
+            <Section soft={page.sections.length > 0}>
+              {related}
+              {problems}
+            </Section>
+          ) : null}
         </>
       )}
 
