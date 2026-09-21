@@ -866,3 +866,28 @@ export function headFor(p: PageDef) {
     links: [{ rel: "canonical", href: url }],
   };
 }
+
+/** Dados oficiais de contato da Vid'Água. */
+export const CONTACT = {
+  phones: ["(11) 3746-6747", "(11) 3746-0889"],
+  phoneHrefs: ["tel:+551137466747", "tel:+551137460889"],
+  whatsapp: "(11) 97796-7170",
+  whatsappUrl: "https://wa.me/5511977967170",
+  email: "vidagua@vidagua.com.br",
+  emailHref: "mailto:vidagua@vidagua.com.br",
+  addressLines: [
+    "R. José Pedro do Amaral, 379",
+    "Jardim Monte Kemel — São Paulo/SP",
+    "CEP: 05632-030",
+  ],
+  hours: "Segunda a sexta, em horário comercial",
+} as const;
+
+const PAGE_BY_PATH: Record<string, PageDef> = Object.fromEntries(
+  PAGES.map((p) => [pathFor(p.slug), p]),
+);
+
+/** Descrição curta usada nos cartões de links internos. */
+export function summaryForPath(to: string) {
+  return PAGE_BY_PATH[to]?.description ?? "";
+}
