@@ -768,6 +768,18 @@ export const PAGES: PageDef[] = [
     h1: "Sobre a Vid'Água",
     intro: "Apresentação institucional, sem linguagem de propaganda.",
     sections: [],
+  },
+  {
+    slug: "contato",
+    nav: "Contato",
+    type: "Conversão",
+    priority: "Alta",
+    keyword: "contato Vid'Água",
+    secondary: [
+      "orçamento tratamento de água",
+      "falar com especialista em água",
+      "solicitar análise de água",
+    ],
     title: "Contato e Orçamento | Vid'Água",
     description:
       "Fale com os especialistas da Vid'Água e solicite seu orçamento de análise ou tratamento de água.",
