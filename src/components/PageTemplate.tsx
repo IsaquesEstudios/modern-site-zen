@@ -54,9 +54,7 @@ export function LinkGrid({ items }: { items: { label: string; to: string }[] }) 
             <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
               <CardHeader>
                 <CardTitle>{item.label}</CardTitle>
-                <CardDescription>
-                  Texto de preenchimento com uma linha descritiva da página.
-                </CardDescription>
+                <CardDescription>{summaryForPath(item.to)}</CardDescription>
               </CardHeader>
             </Card>
           </Link>
@@ -150,7 +148,6 @@ export function PageTemplate({ page }: { page: PageDef }) {
             <div className="flex max-w-3xl flex-col gap-6">
               <div className="flex flex-wrap gap-2">
                 <Badge>{page.type}</Badge>
-                <Badge variant="outline">Prioridade {page.priority}</Badge>
               </div>
               <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
                 {page.h1}
