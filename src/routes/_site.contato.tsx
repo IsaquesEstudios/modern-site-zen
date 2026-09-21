@@ -23,6 +23,8 @@ export const Route = createFileRoute("/_site/contato")({
 
 const field = "flex flex-col gap-2";
 const label = "text-sm font-medium";
+const contactLink =
+  "text-sm text-muted transition-colors duration-200 hover:text-primary";
 
 function ContatoPage() {
   return (
