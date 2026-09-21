@@ -280,21 +280,21 @@ function AnaliseDeAguaPage() {
               <ul className="flex flex-col gap-3">
                 <Bullet>
                   Excesso de cálcio e magnésio (água dura)?{" "}
-                  <Link to="/abrandador-de-agua" className={inlineLink}>
+                  <Link to="/produtos/abrandador-de-agua" className={inlineLink}>
                     Conheça nossos abrandadores
                   </Link>
                   .
                 </Bullet>
                 <Bullet>
                   Excesso de ferro ou manganês (água amarelada)?{" "}
-                  <Link to="/filtros-de-agua" className={inlineLink}>
+                  <Link to="/produtos/filtros-de-agua" className={inlineLink}>
                     Sistemas de filtração específicos
                   </Link>
                   .
                 </Bullet>
                 <Bullet>
                   Contaminação bacteriológica?{" "}
-                  <Link to="/bomba-dosadora-cloro" className={inlineLink}>
+                  <Link to="/produtos/bomba-dosadora-cloro" className={inlineLink}>
                     Soluções de desinfecção e bombas dosadoras
                   </Link>
                   .

@@ -20,7 +20,6 @@ import { Route as SiteTratamentoAguaHotelRouteImport } from './routes/_site.trat
 import { Route as SiteTratamentoAguaComercialRouteImport } from './routes/_site.tratamento-agua-comercial'
 import { Route as SiteSobreRouteImport } from './routes/_site.sobre'
 import { Route as SiteProdutosQuimicosAguaRouteImport } from './routes/_site.produtos-quimicos-agua'
-import { Route as SiteProdutosRouteImport } from './routes/_site.produtos'
 import { Route as SitePorQueVidaguaRouteImport } from './routes/_site.por-que-vidagua'
 import { Route as SiteMonitoramentoQualidadeAguaRouteImport } from './routes/_site.monitoramento-qualidade-agua'
 import { Route as SiteManutencaoSistemasTratamentoRouteImport } from './routes/_site.manutencao-sistemas-tratamento'
@@ -41,6 +40,7 @@ import { Route as SiteAguaDeReusoRouteImport } from './routes/_site.agua-de-reus
 import { Route as SiteAguaComFerroManganesRouteImport } from './routes/_site.agua-com-ferro-manganes'
 import { Route as SiteAbrandadorDeAguaRouteImport } from './routes/_site.abrandador-de-agua'
 import { Route as SiteServicosIndexRouteImport } from './routes/_site.servicos.index'
+import { Route as SiteProdutosIndexRouteImport } from './routes/_site.produtos.index'
 import { Route as SiteServicosTratamentoEfluentesRouteImport } from './routes/_site.servicos.tratamento-efluentes'
 import { Route as SiteServicosTratamentoDeAguaIndustrialRouteImport } from './routes/_site.servicos.tratamento-de-agua-industrial'
 import { Route as SiteServicosTratamentoDeAguaRouteImport } from './routes/_site.servicos.tratamento-de-agua'
@@ -112,11 +112,6 @@ const SiteProdutosQuimicosAguaRoute =
     path: '/produtos-quimicos-agua',
     getParentRoute: () => SiteRoute,
   } as any)
-const SiteProdutosRoute = SiteProdutosRouteImport.update({
-  id: '/produtos',
-  path: '/produtos',
-  getParentRoute: () => SiteRoute,
-} as any)
 const SitePorQueVidaguaRoute = SitePorQueVidaguaRouteImport.update({
   id: '/por-que-vidagua',
   path: '/por-que-vidagua',
@@ -224,6 +219,11 @@ const SiteServicosIndexRoute = SiteServicosIndexRouteImport.update({
   path: '/servicos/',
   getParentRoute: () => SiteRoute,
 } as any)
+const SiteProdutosIndexRoute = SiteProdutosIndexRouteImport.update({
+  id: '/produtos/',
+  path: '/produtos/',
+  getParentRoute: () => SiteRoute,
+} as any)
 const SiteServicosTratamentoEfluentesRoute =
   SiteServicosTratamentoEfluentesRouteImport.update({
     id: '/servicos/tratamento-efluentes',
@@ -311,7 +311,6 @@ export interface FileRoutesByFullPath {
   '/manutencao-sistemas-tratamento': typeof SiteManutencaoSistemasTratamentoRoute
   '/monitoramento-qualidade-agua': typeof SiteMonitoramentoQualidadeAguaRoute
   '/por-que-vidagua': typeof SitePorQueVidaguaRoute
-  '/produtos': typeof SiteProdutosRoute
   '/produtos-quimicos-agua': typeof SiteProdutosQuimicosAguaRoute
   '/sobre': typeof SiteSobreRoute
   '/tratamento-agua-comercial': typeof SiteTratamentoAguaComercialRoute
@@ -332,6 +331,7 @@ export interface FileRoutesByFullPath {
   '/servicos/tratamento-de-agua': typeof SiteServicosTratamentoDeAguaRoute
   '/servicos/tratamento-de-agua-industrial': typeof SiteServicosTratamentoDeAguaIndustrialRoute
   '/servicos/tratamento-efluentes': typeof SiteServicosTratamentoEfluentesRoute
+  '/produtos/': typeof SiteProdutosIndexRoute
   '/servicos/': typeof SiteServicosIndexRoute
 }
 export interface FileRoutesByTo {
@@ -354,7 +354,6 @@ export interface FileRoutesByTo {
   '/manutencao-sistemas-tratamento': typeof SiteManutencaoSistemasTratamentoRoute
   '/monitoramento-qualidade-agua': typeof SiteMonitoramentoQualidadeAguaRoute
   '/por-que-vidagua': typeof SitePorQueVidaguaRoute
-  '/produtos': typeof SiteProdutosRoute
   '/produtos-quimicos-agua': typeof SiteProdutosQuimicosAguaRoute
   '/sobre': typeof SiteSobreRoute
   '/tratamento-agua-comercial': typeof SiteTratamentoAguaComercialRoute
@@ -376,6 +375,7 @@ export interface FileRoutesByTo {
   '/servicos/tratamento-de-agua': typeof SiteServicosTratamentoDeAguaRoute
   '/servicos/tratamento-de-agua-industrial': typeof SiteServicosTratamentoDeAguaIndustrialRoute
   '/servicos/tratamento-efluentes': typeof SiteServicosTratamentoEfluentesRoute
+  '/produtos': typeof SiteProdutosIndexRoute
   '/servicos': typeof SiteServicosIndexRoute
 }
 export interface FileRoutesById {
@@ -400,7 +400,6 @@ export interface FileRoutesById {
   '/_site/manutencao-sistemas-tratamento': typeof SiteManutencaoSistemasTratamentoRoute
   '/_site/monitoramento-qualidade-agua': typeof SiteMonitoramentoQualidadeAguaRoute
   '/_site/por-que-vidagua': typeof SitePorQueVidaguaRoute
-  '/_site/produtos': typeof SiteProdutosRoute
   '/_site/produtos-quimicos-agua': typeof SiteProdutosQuimicosAguaRoute
   '/_site/sobre': typeof SiteSobreRoute
   '/_site/tratamento-agua-comercial': typeof SiteTratamentoAguaComercialRoute
@@ -422,6 +421,7 @@ export interface FileRoutesById {
   '/_site/servicos/tratamento-de-agua': typeof SiteServicosTratamentoDeAguaRoute
   '/_site/servicos/tratamento-de-agua-industrial': typeof SiteServicosTratamentoDeAguaIndustrialRoute
   '/_site/servicos/tratamento-efluentes': typeof SiteServicosTratamentoEfluentesRoute
+  '/_site/produtos/': typeof SiteProdutosIndexRoute
   '/_site/servicos/': typeof SiteServicosIndexRoute
 }
 export interface FileRouteTypes {
@@ -447,7 +447,6 @@ export interface FileRouteTypes {
     | '/manutencao-sistemas-tratamento'
     | '/monitoramento-qualidade-agua'
     | '/por-que-vidagua'
-    | '/produtos'
     | '/produtos-quimicos-agua'
     | '/sobre'
     | '/tratamento-agua-comercial'
@@ -468,6 +467,7 @@ export interface FileRouteTypes {
     | '/servicos/tratamento-de-agua'
     | '/servicos/tratamento-de-agua-industrial'
     | '/servicos/tratamento-efluentes'
+    | '/produtos/'
     | '/servicos/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -490,7 +490,6 @@ export interface FileRouteTypes {
     | '/manutencao-sistemas-tratamento'
     | '/monitoramento-qualidade-agua'
     | '/por-que-vidagua'
-    | '/produtos'
     | '/produtos-quimicos-agua'
     | '/sobre'
     | '/tratamento-agua-comercial'
@@ -512,6 +511,7 @@ export interface FileRouteTypes {
     | '/servicos/tratamento-de-agua'
     | '/servicos/tratamento-de-agua-industrial'
     | '/servicos/tratamento-efluentes'
+    | '/produtos'
     | '/servicos'
   id:
     | '__root__'
@@ -535,7 +535,6 @@ export interface FileRouteTypes {
     | '/_site/manutencao-sistemas-tratamento'
     | '/_site/monitoramento-qualidade-agua'
     | '/_site/por-que-vidagua'
-    | '/_site/produtos'
     | '/_site/produtos-quimicos-agua'
     | '/_site/sobre'
     | '/_site/tratamento-agua-comercial'
@@ -557,6 +556,7 @@ export interface FileRouteTypes {
     | '/_site/servicos/tratamento-de-agua'
     | '/_site/servicos/tratamento-de-agua-industrial'
     | '/_site/servicos/tratamento-efluentes'
+    | '/_site/produtos/'
     | '/_site/servicos/'
   fileRoutesById: FileRoutesById
 }
@@ -643,13 +643,6 @@ declare module '@tanstack/react-router' {
       path: '/produtos-quimicos-agua'
       fullPath: '/produtos-quimicos-agua'
       preLoaderRoute: typeof SiteProdutosQuimicosAguaRouteImport
-      parentRoute: typeof SiteRoute
-    }
-    '/_site/produtos': {
-      id: '/_site/produtos'
-      path: '/produtos'
-      fullPath: '/produtos'
-      preLoaderRoute: typeof SiteProdutosRouteImport
       parentRoute: typeof SiteRoute
     }
     '/_site/por-que-vidagua': {
@@ -792,6 +785,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteServicosIndexRouteImport
       parentRoute: typeof SiteRoute
     }
+    '/_site/produtos/': {
+      id: '/_site/produtos/'
+      path: '/produtos'
+      fullPath: '/produtos/'
+      preLoaderRoute: typeof SiteProdutosIndexRouteImport
+      parentRoute: typeof SiteRoute
+    }
     '/_site/servicos/tratamento-efluentes': {
       id: '/_site/servicos/tratamento-efluentes'
       path: '/servicos/tratamento-efluentes'
@@ -892,7 +892,6 @@ interface SiteRouteChildren {
   SiteManutencaoSistemasTratamentoRoute: typeof SiteManutencaoSistemasTratamentoRoute
   SiteMonitoramentoQualidadeAguaRoute: typeof SiteMonitoramentoQualidadeAguaRoute
   SitePorQueVidaguaRoute: typeof SitePorQueVidaguaRoute
-  SiteProdutosRoute: typeof SiteProdutosRoute
   SiteProdutosQuimicosAguaRoute: typeof SiteProdutosQuimicosAguaRoute
   SiteSobreRoute: typeof SiteSobreRoute
   SiteTratamentoAguaComercialRoute: typeof SiteTratamentoAguaComercialRoute
@@ -912,6 +911,7 @@ interface SiteRouteChildren {
   SiteServicosTratamentoDeAguaRoute: typeof SiteServicosTratamentoDeAguaRoute
   SiteServicosTratamentoDeAguaIndustrialRoute: typeof SiteServicosTratamentoDeAguaIndustrialRoute
   SiteServicosTratamentoEfluentesRoute: typeof SiteServicosTratamentoEfluentesRoute
+  SiteProdutosIndexRoute: typeof SiteProdutosIndexRoute
   SiteServicosIndexRoute: typeof SiteServicosIndexRoute
 }
 
@@ -935,7 +935,6 @@ const SiteRouteChildren: SiteRouteChildren = {
   SiteManutencaoSistemasTratamentoRoute: SiteManutencaoSistemasTratamentoRoute,
   SiteMonitoramentoQualidadeAguaRoute: SiteMonitoramentoQualidadeAguaRoute,
   SitePorQueVidaguaRoute: SitePorQueVidaguaRoute,
-  SiteProdutosRoute: SiteProdutosRoute,
   SiteProdutosQuimicosAguaRoute: SiteProdutosQuimicosAguaRoute,
   SiteSobreRoute: SiteSobreRoute,
   SiteTratamentoAguaComercialRoute: SiteTratamentoAguaComercialRoute,
@@ -960,6 +959,7 @@ const SiteRouteChildren: SiteRouteChildren = {
   SiteServicosTratamentoDeAguaIndustrialRoute:
     SiteServicosTratamentoDeAguaIndustrialRoute,
   SiteServicosTratamentoEfluentesRoute: SiteServicosTratamentoEfluentesRoute,
+  SiteProdutosIndexRoute: SiteProdutosIndexRoute,
   SiteServicosIndexRoute: SiteServicosIndexRoute,
 }
 

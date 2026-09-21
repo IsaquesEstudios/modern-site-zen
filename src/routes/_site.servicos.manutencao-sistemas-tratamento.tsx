@@ -172,7 +172,7 @@ function ManutencaoSistemasTratamentoPage() {
                 <Bullet>
                   <strong className="text-foreground">Filtros centrais e industriais:</strong>{" "}
                   retrolavagem e troca de leito filtrante para remoção de barro e areia.{" "}
-                  <Link to="/filtros-de-agua" className={inlineLink}>
+                  <Link to="/produtos/filtros-de-agua" className={inlineLink}>
                     Veja nossos filtros de água
                   </Link>
                   .
@@ -184,7 +184,7 @@ function ManutencaoSistemasTratamentoPage() {
                 <Bullet>
                   <strong className="text-foreground">Abrandadores:</strong> troca de resina
                   catiônica e manutenção no tanque de salmoura.{" "}
-                  <Link to="/abrandador-de-agua" className={inlineLink}>
+                  <Link to="/produtos/abrandador-de-agua" className={inlineLink}>
                     Saiba mais sobre abrandadores
                   </Link>
                   .
@@ -192,7 +192,7 @@ function ManutencaoSistemasTratamentoPage() {
                 <Bullet>
                   <strong className="text-foreground">Bombas dosadoras de cloro:</strong> limpeza de
                   injetores e substituição de mangueiras.{" "}
-                  <Link to="/bomba-dosadora-cloro" className={inlineLink}>
+                  <Link to="/produtos/bomba-dosadora-cloro" className={inlineLink}>
                     Veja nossas bombas dosadoras
                   </Link>
                   .
