@@ -800,11 +800,22 @@ export const SERVICE_SLUGS = [
   "tratamento-de-agua-industrial",
 ] as const;
 
+/** Slugs que passaram a viver dentro de /produtos. */
+export const PRODUCT_SLUGS = [
+  "bomba-dosadora-cloro",
+  "bomba-dosadora-agua",
+  "filtros-de-agua",
+  "abrandador-de-agua",
+  "desmineralizador-de-agua",
+  "agua-destilada",
+  "produtos-quimicos-agua",
+] as const;
+
 export function pathFor(slug: string) {
   if (!slug) return "/";
-  return (SERVICE_SLUGS as readonly string[]).includes(slug)
-    ? `/servicos/${slug}`
-    : `/${slug}`;
+  if ((SERVICE_SLUGS as readonly string[]).includes(slug)) return `/servicos/${slug}`;
+  if ((PRODUCT_SLUGS as readonly string[]).includes(slug)) return `/produtos/${slug}`;
+  return `/${slug}`;
 }
 
 /** Lista fixa exibida na coluna lateral das páginas de serviço. */
@@ -812,6 +823,13 @@ export const SERVICE_LINKS = SERVICE_SLUGS.map((slug) => ({
   slug,
   label: PAGES_BY_SLUG[slug]?.nav ?? slug,
   to: `/servicos/${slug}`,
+}));
+
+/** Lista fixa exibida na coluna lateral das páginas de produto. */
+export const PRODUCT_LINKS = PRODUCT_SLUGS.map((slug) => ({
+  slug,
+  label: PAGES_BY_SLUG[slug]?.nav ?? slug,
+  to: `/produtos/${slug}`,
 }));
 
 export function headFor(p: PageDef) {

@@ -50,6 +50,13 @@ import { Route as SiteServicosManutencaoPocoArtesianoRouteImport } from './route
 import { Route as SiteServicosLegalizacaoPocoArtesianoRouteImport } from './routes/_site.servicos.legalizacao-poco-artesiano'
 import { Route as SiteServicosAnaliseDeAguaRouteImport } from './routes/_site.servicos.analise-de-agua'
 import { Route as SiteServicosAguaDeReusoRouteImport } from './routes/_site.servicos.agua-de-reuso'
+import { Route as SiteProdutosProdutosQuimicosAguaRouteImport } from './routes/_site.produtos.produtos-quimicos-agua'
+import { Route as SiteProdutosFiltrosDeAguaRouteImport } from './routes/_site.produtos.filtros-de-agua'
+import { Route as SiteProdutosDesmineralizadorDeAguaRouteImport } from './routes/_site.produtos.desmineralizador-de-agua'
+import { Route as SiteProdutosBombaDosadoraCloroRouteImport } from './routes/_site.produtos.bomba-dosadora-cloro'
+import { Route as SiteProdutosBombaDosadoraAguaRouteImport } from './routes/_site.produtos.bomba-dosadora-agua'
+import { Route as SiteProdutosAguaDestiladaRouteImport } from './routes/_site.produtos.agua-destilada'
+import { Route as SiteProdutosAbrandadorDeAguaRouteImport } from './routes/_site.produtos.abrandador-de-agua'
 import { Route as Char91__mockupChar93PreviewSplatRouteImport } from './routes/[__mockup].preview.$'
 import { Route as Char91__componentChar93PreviewSplatRouteImport } from './routes/[__component].preview.$'
 
@@ -277,6 +284,48 @@ const SiteServicosAguaDeReusoRoute = SiteServicosAguaDeReusoRouteImport.update({
   path: '/servicos/agua-de-reuso',
   getParentRoute: () => SiteRoute,
 } as any)
+const SiteProdutosProdutosQuimicosAguaRoute =
+  SiteProdutosProdutosQuimicosAguaRouteImport.update({
+    id: '/produtos/produtos-quimicos-agua',
+    path: '/produtos/produtos-quimicos-agua',
+    getParentRoute: () => SiteRoute,
+  } as any)
+const SiteProdutosFiltrosDeAguaRoute =
+  SiteProdutosFiltrosDeAguaRouteImport.update({
+    id: '/produtos/filtros-de-agua',
+    path: '/produtos/filtros-de-agua',
+    getParentRoute: () => SiteRoute,
+  } as any)
+const SiteProdutosDesmineralizadorDeAguaRoute =
+  SiteProdutosDesmineralizadorDeAguaRouteImport.update({
+    id: '/produtos/desmineralizador-de-agua',
+    path: '/produtos/desmineralizador-de-agua',
+    getParentRoute: () => SiteRoute,
+  } as any)
+const SiteProdutosBombaDosadoraCloroRoute =
+  SiteProdutosBombaDosadoraCloroRouteImport.update({
+    id: '/produtos/bomba-dosadora-cloro',
+    path: '/produtos/bomba-dosadora-cloro',
+    getParentRoute: () => SiteRoute,
+  } as any)
+const SiteProdutosBombaDosadoraAguaRoute =
+  SiteProdutosBombaDosadoraAguaRouteImport.update({
+    id: '/produtos/bomba-dosadora-agua',
+    path: '/produtos/bomba-dosadora-agua',
+    getParentRoute: () => SiteRoute,
+  } as any)
+const SiteProdutosAguaDestiladaRoute =
+  SiteProdutosAguaDestiladaRouteImport.update({
+    id: '/produtos/agua-destilada',
+    path: '/produtos/agua-destilada',
+    getParentRoute: () => SiteRoute,
+  } as any)
+const SiteProdutosAbrandadorDeAguaRoute =
+  SiteProdutosAbrandadorDeAguaRouteImport.update({
+    id: '/produtos/abrandador-de-agua',
+    path: '/produtos/abrandador-de-agua',
+    getParentRoute: () => SiteRoute,
+  } as any)
 const Char91__mockupChar93PreviewSplatRoute =
   Char91__mockupChar93PreviewSplatRouteImport.update({
     id: '/__mockup/preview/$',
@@ -322,6 +371,13 @@ export interface FileRoutesByFullPath {
   '/tratamento-efluentes': typeof SiteTratamentoEfluentesRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
+  '/produtos/abrandador-de-agua': typeof SiteProdutosAbrandadorDeAguaRoute
+  '/produtos/agua-destilada': typeof SiteProdutosAguaDestiladaRoute
+  '/produtos/bomba-dosadora-agua': typeof SiteProdutosBombaDosadoraAguaRoute
+  '/produtos/bomba-dosadora-cloro': typeof SiteProdutosBombaDosadoraCloroRoute
+  '/produtos/desmineralizador-de-agua': typeof SiteProdutosDesmineralizadorDeAguaRoute
+  '/produtos/filtros-de-agua': typeof SiteProdutosFiltrosDeAguaRoute
+  '/produtos/produtos-quimicos-agua': typeof SiteProdutosProdutosQuimicosAguaRoute
   '/servicos/agua-de-reuso': typeof SiteServicosAguaDeReusoRoute
   '/servicos/analise-de-agua': typeof SiteServicosAnaliseDeAguaRoute
   '/servicos/legalizacao-poco-artesiano': typeof SiteServicosLegalizacaoPocoArtesianoRoute
@@ -366,6 +422,13 @@ export interface FileRoutesByTo {
   '/': typeof SiteIndexRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
+  '/produtos/abrandador-de-agua': typeof SiteProdutosAbrandadorDeAguaRoute
+  '/produtos/agua-destilada': typeof SiteProdutosAguaDestiladaRoute
+  '/produtos/bomba-dosadora-agua': typeof SiteProdutosBombaDosadoraAguaRoute
+  '/produtos/bomba-dosadora-cloro': typeof SiteProdutosBombaDosadoraCloroRoute
+  '/produtos/desmineralizador-de-agua': typeof SiteProdutosDesmineralizadorDeAguaRoute
+  '/produtos/filtros-de-agua': typeof SiteProdutosFiltrosDeAguaRoute
+  '/produtos/produtos-quimicos-agua': typeof SiteProdutosProdutosQuimicosAguaRoute
   '/servicos/agua-de-reuso': typeof SiteServicosAguaDeReusoRoute
   '/servicos/analise-de-agua': typeof SiteServicosAnaliseDeAguaRoute
   '/servicos/legalizacao-poco-artesiano': typeof SiteServicosLegalizacaoPocoArtesianoRoute
@@ -412,6 +475,13 @@ export interface FileRoutesById {
   '/_site/': typeof SiteIndexRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
+  '/_site/produtos/abrandador-de-agua': typeof SiteProdutosAbrandadorDeAguaRoute
+  '/_site/produtos/agua-destilada': typeof SiteProdutosAguaDestiladaRoute
+  '/_site/produtos/bomba-dosadora-agua': typeof SiteProdutosBombaDosadoraAguaRoute
+  '/_site/produtos/bomba-dosadora-cloro': typeof SiteProdutosBombaDosadoraCloroRoute
+  '/_site/produtos/desmineralizador-de-agua': typeof SiteProdutosDesmineralizadorDeAguaRoute
+  '/_site/produtos/filtros-de-agua': typeof SiteProdutosFiltrosDeAguaRoute
+  '/_site/produtos/produtos-quimicos-agua': typeof SiteProdutosProdutosQuimicosAguaRoute
   '/_site/servicos/agua-de-reuso': typeof SiteServicosAguaDeReusoRoute
   '/_site/servicos/analise-de-agua': typeof SiteServicosAnaliseDeAguaRoute
   '/_site/servicos/legalizacao-poco-artesiano': typeof SiteServicosLegalizacaoPocoArtesianoRoute
@@ -458,6 +528,13 @@ export interface FileRouteTypes {
     | '/tratamento-efluentes'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
+    | '/produtos/abrandador-de-agua'
+    | '/produtos/agua-destilada'
+    | '/produtos/bomba-dosadora-agua'
+    | '/produtos/bomba-dosadora-cloro'
+    | '/produtos/desmineralizador-de-agua'
+    | '/produtos/filtros-de-agua'
+    | '/produtos/produtos-quimicos-agua'
     | '/servicos/agua-de-reuso'
     | '/servicos/analise-de-agua'
     | '/servicos/legalizacao-poco-artesiano'
@@ -502,6 +579,13 @@ export interface FileRouteTypes {
     | '/'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
+    | '/produtos/abrandador-de-agua'
+    | '/produtos/agua-destilada'
+    | '/produtos/bomba-dosadora-agua'
+    | '/produtos/bomba-dosadora-cloro'
+    | '/produtos/desmineralizador-de-agua'
+    | '/produtos/filtros-de-agua'
+    | '/produtos/produtos-quimicos-agua'
     | '/servicos/agua-de-reuso'
     | '/servicos/analise-de-agua'
     | '/servicos/legalizacao-poco-artesiano'
@@ -547,6 +631,13 @@ export interface FileRouteTypes {
     | '/_site/'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
+    | '/_site/produtos/abrandador-de-agua'
+    | '/_site/produtos/agua-destilada'
+    | '/_site/produtos/bomba-dosadora-agua'
+    | '/_site/produtos/bomba-dosadora-cloro'
+    | '/_site/produtos/desmineralizador-de-agua'
+    | '/_site/produtos/filtros-de-agua'
+    | '/_site/produtos/produtos-quimicos-agua'
     | '/_site/servicos/agua-de-reuso'
     | '/_site/servicos/analise-de-agua'
     | '/_site/servicos/legalizacao-poco-artesiano'
@@ -855,6 +946,55 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteServicosAguaDeReusoRouteImport
       parentRoute: typeof SiteRoute
     }
+    '/_site/produtos/produtos-quimicos-agua': {
+      id: '/_site/produtos/produtos-quimicos-agua'
+      path: '/produtos/produtos-quimicos-agua'
+      fullPath: '/produtos/produtos-quimicos-agua'
+      preLoaderRoute: typeof SiteProdutosProdutosQuimicosAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos/filtros-de-agua': {
+      id: '/_site/produtos/filtros-de-agua'
+      path: '/produtos/filtros-de-agua'
+      fullPath: '/produtos/filtros-de-agua'
+      preLoaderRoute: typeof SiteProdutosFiltrosDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos/desmineralizador-de-agua': {
+      id: '/_site/produtos/desmineralizador-de-agua'
+      path: '/produtos/desmineralizador-de-agua'
+      fullPath: '/produtos/desmineralizador-de-agua'
+      preLoaderRoute: typeof SiteProdutosDesmineralizadorDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos/bomba-dosadora-cloro': {
+      id: '/_site/produtos/bomba-dosadora-cloro'
+      path: '/produtos/bomba-dosadora-cloro'
+      fullPath: '/produtos/bomba-dosadora-cloro'
+      preLoaderRoute: typeof SiteProdutosBombaDosadoraCloroRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos/bomba-dosadora-agua': {
+      id: '/_site/produtos/bomba-dosadora-agua'
+      path: '/produtos/bomba-dosadora-agua'
+      fullPath: '/produtos/bomba-dosadora-agua'
+      preLoaderRoute: typeof SiteProdutosBombaDosadoraAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos/agua-destilada': {
+      id: '/_site/produtos/agua-destilada'
+      path: '/produtos/agua-destilada'
+      fullPath: '/produtos/agua-destilada'
+      preLoaderRoute: typeof SiteProdutosAguaDestiladaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/produtos/abrandador-de-agua': {
+      id: '/_site/produtos/abrandador-de-agua'
+      path: '/produtos/abrandador-de-agua'
+      fullPath: '/produtos/abrandador-de-agua'
+      preLoaderRoute: typeof SiteProdutosAbrandadorDeAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
     '/__mockup/preview/$': {
       id: '/__mockup/preview/$'
       path: '/__mockup/preview/$'
@@ -902,6 +1042,13 @@ interface SiteRouteChildren {
   SiteTratamentoDeAguaIndustrialRoute: typeof SiteTratamentoDeAguaIndustrialRoute
   SiteTratamentoEfluentesRoute: typeof SiteTratamentoEfluentesRoute
   SiteIndexRoute: typeof SiteIndexRoute
+  SiteProdutosAbrandadorDeAguaRoute: typeof SiteProdutosAbrandadorDeAguaRoute
+  SiteProdutosAguaDestiladaRoute: typeof SiteProdutosAguaDestiladaRoute
+  SiteProdutosBombaDosadoraAguaRoute: typeof SiteProdutosBombaDosadoraAguaRoute
+  SiteProdutosBombaDosadoraCloroRoute: typeof SiteProdutosBombaDosadoraCloroRoute
+  SiteProdutosDesmineralizadorDeAguaRoute: typeof SiteProdutosDesmineralizadorDeAguaRoute
+  SiteProdutosFiltrosDeAguaRoute: typeof SiteProdutosFiltrosDeAguaRoute
+  SiteProdutosProdutosQuimicosAguaRoute: typeof SiteProdutosProdutosQuimicosAguaRoute
   SiteServicosAguaDeReusoRoute: typeof SiteServicosAguaDeReusoRoute
   SiteServicosAnaliseDeAguaRoute: typeof SiteServicosAnaliseDeAguaRoute
   SiteServicosLegalizacaoPocoArtesianoRoute: typeof SiteServicosLegalizacaoPocoArtesianoRoute
@@ -945,6 +1092,14 @@ const SiteRouteChildren: SiteRouteChildren = {
   SiteTratamentoDeAguaIndustrialRoute: SiteTratamentoDeAguaIndustrialRoute,
   SiteTratamentoEfluentesRoute: SiteTratamentoEfluentesRoute,
   SiteIndexRoute: SiteIndexRoute,
+  SiteProdutosAbrandadorDeAguaRoute: SiteProdutosAbrandadorDeAguaRoute,
+  SiteProdutosAguaDestiladaRoute: SiteProdutosAguaDestiladaRoute,
+  SiteProdutosBombaDosadoraAguaRoute: SiteProdutosBombaDosadoraAguaRoute,
+  SiteProdutosBombaDosadoraCloroRoute: SiteProdutosBombaDosadoraCloroRoute,
+  SiteProdutosDesmineralizadorDeAguaRoute:
+    SiteProdutosDesmineralizadorDeAguaRoute,
+  SiteProdutosFiltrosDeAguaRoute: SiteProdutosFiltrosDeAguaRoute,
+  SiteProdutosProdutosQuimicosAguaRoute: SiteProdutosProdutosQuimicosAguaRoute,
   SiteServicosAguaDeReusoRoute: SiteServicosAguaDeReusoRoute,
   SiteServicosAnaliseDeAguaRoute: SiteServicosAnaliseDeAguaRoute,
   SiteServicosLegalizacaoPocoArtesianoRoute:
