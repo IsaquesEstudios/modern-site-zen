@@ -14,6 +14,7 @@ import { QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import filtrosAsset from "@/assets/filtros-vidagua.png.asset.json";
 
 const page = PAGES_BY_SLUG["bomba-dosadora-cloro"];
 
@@ -76,7 +77,12 @@ function BombaDosadoraCloroPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-20">
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-center">
-              <ImagePlaceholder label="Imagem" ratio="aspect-[3/4]" />
+              <img
+                src={filtrosAsset.url}
+                alt="Filtros e sistema de tratamento de água instalados pela Vid'Água"
+                loading="lazy"
+                className="aspect-3/4 w-full rounded-md border border-border object-cover"
+              />
               <div className="flex flex-col gap-6">
                 <Badge>Produto</Badge>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
