@@ -12,7 +12,7 @@ import {
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/PageTemplate";
-import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import { PAGES_BY_SLUG, headFor, CONTACT } from "@/lib/site";
 
 const page = PAGES_BY_SLUG["contato"];
 
