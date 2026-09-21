@@ -27,6 +27,7 @@ export type PageDef = {
   intro: string;
   sections: PageSection[];
   related?: { label: string; to: string }[];
+  problems?: { label: string; to: string }[];
 };
 
 const lorem =
@@ -690,6 +691,12 @@ export const PAGES: PageDef[] = [
       { label: "Tratamento de Efluentes", to: "/servicos/tratamento-efluentes" },
       { label: "Água de Reuso", to: "/servicos/agua-de-reuso" },
       { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
+    ],
+    problems: [
+      { label: "Água Dura", to: "/agua-dura" },
+      { label: "Água com Ferro e Manganês", to: "/agua-com-ferro-manganes" },
+      { label: "Água com Cheiro", to: "/agua-turva-cheiro-cloro" },
+      { label: "Água com Bactéria", to: "/contaminacao-agua" },
     ],
   },
   {
