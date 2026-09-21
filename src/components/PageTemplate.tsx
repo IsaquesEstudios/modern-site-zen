@@ -12,11 +12,10 @@ import { Reveal } from "@/components/Reveal";
 import { WhiteButton } from "@/components/WhiteButton";
 import { ServiceGrid } from "@/components/ServiceSidebar";
 import { ProductGrid } from "@/components/ProductSidebar";
-import { SERVICE_SLUGS, PRODUCT_SLUGS } from "@/lib/site";
+import { SERVICE_SLUGS, PRODUCT_SLUGS, CONTACT, summaryForPath } from "@/lib/site";
 import type { PageDef } from "@/lib/site";
 
-// TODO: substituir pelo número de WhatsApp oficial da Vid'Água
-export const WHATSAPP_URL = "https://wa.me/5511999999999";
+export const WHATSAPP_URL = CONTACT.whatsappUrl;
 
 export function Section({
   children,
