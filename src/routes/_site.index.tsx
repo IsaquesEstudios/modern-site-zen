@@ -159,7 +159,7 @@ function Home() {
                 </Card>
                 <Card>
                   <CardContent>
-                    <Stat label="Atuação" value="Brasil" detail="atendimento nacional" />
+                    <Stat label="Atuação" value="São Paulo" detail="e atendimento nacional" />
                   </CardContent>
                 </Card>
               </div>
