@@ -60,7 +60,6 @@ function ContaminacaoAguaPage() {
                   ou toxina, devolvendo a potabilidade absoluta à sua rede.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <Button variant="gradient">Falar com um Especialista Agora</Button>
                   </a>
@@ -302,7 +301,6 @@ function ContaminacaoAguaPage() {
                       <Button type="submit" variant="gradient">
                         Solicitar Intervenção / Tratamento
                       </Button>
-                      {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                         <Button variant="outline" type="button">
                           Falar no WhatsApp

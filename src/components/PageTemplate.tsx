@@ -12,11 +12,10 @@ import { Reveal } from "@/components/Reveal";
 import { WhiteButton } from "@/components/WhiteButton";
 import { ServiceGrid } from "@/components/ServiceSidebar";
 import { ProductGrid } from "@/components/ProductSidebar";
-import { SERVICE_SLUGS, PRODUCT_SLUGS } from "@/lib/site";
+import { SERVICE_SLUGS, PRODUCT_SLUGS, CONTACT, summaryForPath } from "@/lib/site";
 import type { PageDef } from "@/lib/site";
 
-// TODO: substituir pelo número de WhatsApp oficial da Vid'Água
-export const WHATSAPP_URL = "https://wa.me/5511999999999";
+export const WHATSAPP_URL = CONTACT.whatsappUrl;
 
 export function Section({
   children,
@@ -55,9 +54,7 @@ export function LinkGrid({ items }: { items: { label: string; to: string }[] }) 
             <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
               <CardHeader>
                 <CardTitle>{item.label}</CardTitle>
-                <CardDescription>
-                  Texto de preenchimento com uma linha descritiva da página.
-                </CardDescription>
+                <CardDescription>{summaryForPath(item.to)}</CardDescription>
               </CardHeader>
             </Card>
           </Link>
@@ -84,7 +81,6 @@ export function CTASection() {
               <Link to="/contato">
                 <Button variant="gradient">Orçamento por e-mail</Button>
               </Link>
-              {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <WhiteButton>Orçamento pelo WhatsApp</WhiteButton>
               </a>
@@ -103,7 +99,7 @@ export function PageTemplate({ page }: { page: PageDef }) {
   const outline =
     page.sections.length > 0 ? (
       <>
-        <SectionTitle eyebrow="Outline da página" title={`Conteúdo sobre ${page.keyword}`} />
+        <SectionTitle eyebrow="Entenda o serviço" title="O que você precisa saber" />
         <div className="flex flex-col gap-12">
           {page.sections.map((section, i) => (
             <Reveal key={section.heading} delay={i * 50}>
@@ -151,7 +147,6 @@ export function PageTemplate({ page }: { page: PageDef }) {
             <div className="flex max-w-3xl flex-col gap-6">
               <div className="flex flex-wrap gap-2">
                 <Badge>{page.type}</Badge>
-                <Badge variant="outline">Prioridade {page.priority}</Badge>
               </div>
               <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
                 {page.h1}

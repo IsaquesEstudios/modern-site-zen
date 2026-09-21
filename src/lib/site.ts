@@ -30,15 +30,6 @@ export type PageDef = {
   problems?: { label: string; to: string }[];
 };
 
-const lorem =
-  "Texto de preenchimento. O conteúdo definitivo desta seção será enviado posteriormente e deve trabalhar a palavra-chave da página no corpo do texto, mantendo linguagem acessível e tom técnico de autoridade.";
-
-const s = (heading: string, bullets?: string[]): PageSection => ({
-  heading,
-  body: lorem,
-  bullets,
-});
-
 export const HOME: PageDef = {
   slug: "",
   nav: "Home",
@@ -85,20 +76,7 @@ export const PAGES: PageDef[] = [
     h1: "Análise de Água",
     intro:
       "Da dúvida inicial sobre onde fazer a análise até o laudo técnico em mãos, com parâmetros conforme a legislação vigente.",
-    sections: [
-      s("O que é a análise de água e quando fazer", [
-        "Água de poço artesiano",
-        "Água de rede pública com alteração de cor, gosto ou odor",
-        "Exigência de órgão fiscalizador",
-      ]),
-      s("Parâmetros avaliados e a Portaria 2914"),
-      s("Relatório de análise de água"),
-      s("Parecer técnico e certificado de análise"),
-      s("Laudo técnico de água: prazos e validade"),
-      s("Análise de água: preço e quanto custa"),
-      s("Análise urgente e coleta rápida"),
-      s("Perguntas frequentes"),
-    ],
+    sections: [],
     related: [
       { label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" },
       { label: "Monitoramento Contínuo", to: "/servicos/monitoramento-qualidade-agua" },
@@ -127,14 +105,7 @@ export const PAGES: PageDef[] = [
     h1: "Tratamento de Água",
     intro:
       "Página pilar de serviços: diagnóstico, dimensionamento, instalação e manutenção de sistemas de tratamento.",
-    sections: [
-      s("Como funciona um sistema de tratamento de água"),
-      s("Portaria 888 e os padrões de potabilidade"),
-      s("Tratamento residencial e para condomínios"),
-      s("Equipamentos e instalação"),
-      s("Manutenção do sistema"),
-      s("Tratamento de água: preço e quanto custa"),
-    ],
+    sections: [],
     related: [
       { label: "Água Dura", to: "/agua-dura" },
       { label: "Água com Ferro e Manganês", to: "/agua-com-ferro-manganes" },
@@ -161,17 +132,7 @@ export const PAGES: PageDef[] = [
       "Água dura entope tubulações e reduz a vida útil de equipamentos. Entenda a dureza da água e as soluções de abrandamento.",
     h1: "Água Dura: Tratamento e Solução",
     intro: "Sinais de dureza, medição em mg/L de CaCO₃ e caminhos de abrandamento.",
-    sections: [
-      s("Como identificar água dura", [
-        "Sabão que não faz espuma",
-        "Crostas brancas em torneiras e chuveiros",
-        "Manchas em louças e vidros",
-      ]),
-      s("Causas da dureza da água"),
-      s("Consequências para tubulações e equipamentos"),
-      s("Tratamento: abrandamento por resina"),
-      s("Manutenção e regeneração"),
-    ],
+    sections: [],
     related: [
       { label: "Abrandador de Água", to: "/produtos/abrandador-de-agua" },
       { label: "Análise de Água", to: "/servicos/analise-de-agua" },
@@ -195,13 +156,7 @@ export const PAGES: PageDef[] = [
       "Água amarelada, com manchas ou gosto de ferrugem indica ferro e manganês. Veja como identificar e tratar.",
     h1: "Água com Ferro e Manganês",
     intro: "Coloração, manchas em roupas e sabor metálico têm origem e tratamento definidos.",
-    sections: [
-      s("Sintomas típicos"),
-      s("Origem do ferro e do manganês na água"),
-      s("Oxidação e filtração"),
-      s("Dimensionamento do sistema"),
-      s("Manutenção periódica"),
-    ],
+    sections: [],
     related: [
       { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
       { label: "Análise de Água", to: "/servicos/analise-de-agua" },
@@ -224,12 +179,7 @@ export const PAGES: PageDef[] = [
       "Água turva, com odor ou excesso de cloro tem solução técnica por filtração e dosagem correta. Entenda as causas.",
     h1: "Água Turva, com Cheiro ou Cloro Forte",
     intro: "Sintomas diferentes com uma mesma linha de solução: filtração e dosagem adequada.",
-    sections: [
-      s("Água turva: causas e tratamento"),
-      s("Água com cheiro: o que pode indicar"),
-      s("Cloro forte não é sinal de qualidade"),
-      s("Filtração e ajuste de dosagem"),
-    ],
+    sections: [],
     related: [
       { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
       { label: "Bomba Dosadora de Cloro", to: "/produtos/bomba-dosadora-cloro" },
@@ -253,13 +203,7 @@ export const PAGES: PageDef[] = [
       "Suspeita de bactérias, coliformes ou contaminação química? Entenda os riscos, a análise necessária e o tratamento.",
     h1: "Contaminação Biológica e Química da Água",
     intro: "Riscos à saúde exigem análise laboratorial antes de qualquer tratamento.",
-    sections: [
-      s("Sinais de contaminação"),
-      s("Contaminação biológica: coliformes e E. coli"),
-      s("Contaminação química"),
-      s("Análise microbiológica e físico-química"),
-      s("Desinfecção e tratamento corretivo"),
-    ],
+    sections: [],
     related: [
       { label: "Análise de Água", to: "/servicos/analise-de-agua" },
       { label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" },
@@ -283,13 +227,7 @@ export const PAGES: PageDef[] = [
       "Como legalizar poço artesiano: outorga, registro no DAEE, documentos e prazos. Assessoria técnica completa.",
     h1: "Legalização de Poço Artesiano",
     intro: "Processo burocrático descomplicado: entenda a outorga e quando ela é necessária.",
-    sections: [
-      s("O que é outorga de uso da água"),
-      s("Quando a outorga é necessária e quando há dispensa"),
-      s("Registro no DAEE"),
-      s("Documentação exigida"),
-      s("Prazos e renovação"),
-    ],
+    sections: [],
     related: [{ label: "Manutenção de Poço Artesiano", to: "/servicos/manutencao-poco-artesiano" }],
   },
   {
@@ -309,12 +247,7 @@ export const PAGES: PageDef[] = [
       "Limpeza, desinfecção e tratamento de água de poço artesiano com laudo técnico. Manutenção preventiva e corretiva.",
     h1: "Manutenção e Tratamento de Poço Artesiano",
     intro: "Poço bem mantido entrega água segura e evita paradas não programadas.",
-    sections: [
-      s("Periodicidade recomendada"),
-      s("Limpeza e desinfecção"),
-      s("Tratamento da água de poço"),
-      s("Laudo após manutenção"),
-    ],
+    sections: [],
     related: [{ label: "Legalização de Poço Artesiano", to: "/servicos/legalizacao-poco-artesiano" }],
   },
   {
@@ -334,12 +267,7 @@ export const PAGES: PageDef[] = [
       "Bomba dosadora de cloro para poços e sistemas de abastecimento. Dosagem precisa, instalação e manutenção.",
     h1: "Bomba Dosadora de Cloro",
     intro: "Cloração automática com dosagem controlada e registro de consumo.",
-    sections: [
-      s("Para que serve"),
-      s("Modelos e capacidade de dosagem"),
-      s("Instalação e ajuste"),
-      s("Manutenção e insumos"),
-    ],
+    sections: [],
     related: [{ label: "Produtos Químicos", to: "/produtos/produtos-quimicos-agua" }],
   },
   {
@@ -358,12 +286,7 @@ export const PAGES: PageDef[] = [
       "Bombas dosadoras para dosagem precisa de produtos químicos em sistemas residenciais e industriais.",
     h1: "Bomba Dosadora de Água",
     intro: "Dosagem proporcional e confiável para diferentes portes de instalação.",
-    sections: [
-      s("Aplicações"),
-      s("Modelos industriais"),
-      s("Dimensionamento"),
-      s("Preço e condições"),
-    ],
+    sections: [],
     related: [{ label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" }],
   },
   {
@@ -387,14 +310,7 @@ export const PAGES: PageDef[] = [
       "Filtros de água para poço artesiano, uso residencial e industrial: carvão ativado, areia e elementos filtrantes.",
     h1: "Filtros de Água",
     intro: "Linha completa de filtração, do ponto de uso ao sistema industrial.",
-    sections: [
-      s("Filtro para poço artesiano"),
-      s("Filtro residencial"),
-      s("Filtro de carvão ativado"),
-      s("Filtro de areia"),
-      s("Filtro industrial"),
-      s("Elementos filtrantes e troca"),
-    ],
+    sections: [],
     related: [{ label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" }],
   },
   {
@@ -414,12 +330,7 @@ export const PAGES: PageDef[] = [
       "Abrandador de água por resina catiônica para reduzir a dureza e proteger tubulações e equipamentos.",
     h1: "Abrandador de Água",
     intro: "Solução direta para água dura em residências, condomínios e indústrias.",
-    sections: [
-      s("Como funciona a resina catiônica"),
-      s("Dimensionamento por vazão e dureza"),
-      s("Regeneração e consumo de sal"),
-      s("Preço e manutenção"),
-    ],
+    sections: [],
     related: [{ label: "Água Dura", to: "/agua-dura" }],
   },
   {
@@ -434,12 +345,7 @@ export const PAGES: PageDef[] = [
       "Desmineralizador de água para processos que exigem baixa condutividade. Projeto, instalação e suporte técnico.",
     h1: "Desmineralizador de Água",
     intro: "Remoção de sais dissolvidos para aplicações industriais e laboratoriais.",
-    sections: [
-      s("O que é água desmineralizada"),
-      s("Aplicações industriais"),
-      s("Leitos de troca iônica"),
-      s("Manutenção e regeneração"),
-    ],
+    sections: [],
   },
   {
     slug: "agua-destilada",
@@ -452,7 +358,7 @@ export const PAGES: PageDef[] = [
     description: "Água destilada para uso laboratorial, industrial e automotivo. Consulte preço e condições.",
     h1: "Água Destilada",
     intro: "Fornecimento com controle de qualidade e embalagens adequadas ao uso.",
-    sections: [s("Usos da água destilada"), s("Embalagens disponíveis"), s("Preço e pedidos")],
+    sections: [],
   },
   {
     slug: "produtos-quimicos-agua",
@@ -471,12 +377,7 @@ export const PAGES: PageDef[] = [
       "Cloro, coagulantes, sal para abrandador e demais insumos para tratamento de água com orientação técnica de uso.",
     h1: "Produtos Químicos para Tratamento de Água",
     intro: "Insumos com ficha técnica e orientação de dosagem.",
-    sections: [
-      s("Linha de produtos"),
-      s("Dosagem e segurança"),
-      s("Armazenamento"),
-      s("Fornecimento recorrente"),
-    ],
+    sections: [],
   },
   {
     slug: "monitoramento-qualidade-agua",
@@ -495,12 +396,7 @@ export const PAGES: PageDef[] = [
       "Planos de monitoramento com coletas periódicas, laudos recorrentes e acompanhamento técnico contínuo.",
     h1: "Monitoramento da Qualidade da Água",
     intro: "Rotina de coletas e laudos que mantém a conformidade ao longo do ano.",
-    sections: [
-      s("Como funciona o plano de monitoramento"),
-      s("Periodicidade das coletas"),
-      s("Laudos e histórico"),
-      s("Ações corretivas"),
-    ],
+    sections: [],
     related: [{ label: "Análise de Água", to: "/servicos/analise-de-agua" }],
   },
   {
@@ -520,12 +416,7 @@ export const PAGES: PageDef[] = [
       "Manutenção preventiva e corretiva de sistemas de tratamento: filtros, dosadoras, abrandadores e acessórios.",
     h1: "Manutenção de Sistemas de Tratamento",
     intro: "Contratos preventivos e atendimento corretivo com peças e insumos.",
-    sections: [
-      s("Manutenção preventiva"),
-      s("Manutenção corretiva"),
-      s("Troca de elementos filtrantes"),
-      s("Contratos de assistência"),
-    ],
+    sections: [],
   },
   {
     slug: "tratamento-de-agua-industrial",
@@ -544,12 +435,7 @@ export const PAGES: PageDef[] = [
       "Soluções de tratamento de água para indústrias, condomínios e empresas: projeto, instalação e manutenção.",
     h1: "Tratamento de Água para Empresas",
     intro: "Hub do setor empresarial: projetos dimensionados por segmento e volume.",
-    sections: [
-      s("Diagnóstico e projeto"),
-      s("Sistemas de filtração comercial"),
-      s("Dosagem industrial"),
-      s("Conformidade e laudos"),
-    ],
+    sections: [],
     related: [
       { label: "Hotéis", to: "/tratamento-agua-hotel" },
       { label: "Restaurantes", to: "/tratamento-agua-restaurante" },
@@ -569,7 +455,31 @@ export const PAGES: PageDef[] = [
       "Tratamento de água para hotéis e pousadas: conforto do hóspede, proteção de equipamentos e conformidade sanitária.",
     h1: "Tratamento de Água para Hotéis",
     intro: "Alta rotatividade exige água consistente em todos os pontos de uso.",
-    sections: [s("Desafios do segmento"), s("Solução recomendada"), s("Manutenção e laudos")],
+    sections: [
+      {
+        heading: "Desafios do segmento hoteleiro",
+        body: "Em hotéis e pousadas, a água circula em chuveiros, cozinha, lavanderia, piscina e caldeiras ao mesmo tempo. Variações de dureza, ferro ou cloro aparecem rapidamente na experiência do hóspede: manchas em louças e box, toalhas ásperas, cheiro na água do banho e incrustação nos aquecedores.",
+        bullets: [
+          "Reclamações de hóspedes sobre cheiro, cor ou gosto da água",
+          "Incrustação em aquecedores, caldeiras e tubulações",
+          "Lavanderia consumindo mais sabão e desgastando enxovais",
+          "Exigência de laudos de potabilidade pela vigilância sanitária",
+        ],
+      },
+      {
+        heading: "Solução recomendada pela Vid'Água",
+        body: "Começamos pela análise laboratorial da água que abastece o hotel, seja da rede pública ou de poço artesiano. Com o resultado em mãos, dimensionamos filtração central, abrandamento para a linha quente e a lavanderia e, quando há captação própria, dosagem automática de cloro para garantir desinfecção contínua.",
+      },
+      {
+        heading: "Manutenção programada e laudos",
+        body: "Hotelaria não pode parar. Trabalhamos com contratos de manutenção preventiva e monitoramento periódico, com visitas programadas fora do horário de pico, troca de mídias no prazo correto e emissão dos laudos exigidos pelos órgãos fiscalizadores.",
+      },
+    ],
+    related: [
+      { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
+      { label: "Abrandador de Água", to: "/produtos/abrandador-de-agua" },
+      { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
+    ],
   },
   {
     slug: "tratamento-agua-restaurante",
@@ -577,13 +487,41 @@ export const PAGES: PageDef[] = [
     type: "Setor",
     priority: "Média",
     keyword: "tratamento de água para restaurantes",
-    secondary: ["filtro água cozinha industrial", "água para máquina de gelo", "vigilância sanitária água"],
+    secondary: [
+      "filtro água cozinha industrial",
+      "água para máquina de gelo",
+      "vigilância sanitária água",
+    ],
     title: "Tratamento de Água para Restaurantes | Vid'Água",
     description:
       "Água tratada para cozinhas industriais, máquinas de gelo e conformidade com a vigilância sanitária.",
     h1: "Tratamento de Água para Restaurantes",
     intro: "Segurança alimentar começa pela qualidade da água.",
-    sections: [s("Pontos críticos"), s("Filtração para cozinha industrial"), s("Laudos e fiscalização")],
+    sections: [
+      {
+        heading: "Pontos críticos de uma cozinha industrial",
+        body: "A água entra em contato direto com o alimento: no cozimento, na higienização de hortaliças, na lavagem de utensílios e na produção de gelo. Qualquer contaminação biológica ou excesso de cloro compromete o sabor do prato e, principalmente, a segurança de quem consome.",
+        bullets: [
+          "Gelo com cheiro, gosto ou aspecto turvo",
+          "Incrustação em máquinas de lavar louça e cafeteiras",
+          "Bebidas e cafés com sabor alterado",
+          "Notificação da vigilância sanitária por falta de laudo",
+        ],
+      },
+      {
+        heading: "Filtração dimensionada para o seu volume",
+        body: "Projetamos o sistema a partir da vazão real da cozinha e do resultado da análise da água. Em geral, a solução combina filtração central para retenção de partículas e cloro residual, abrandamento onde há dureza elevada e pontos de uso específicos para gelo e café.",
+      },
+      {
+        heading: "Laudos e fiscalização",
+        body: "Emitimos laudos de potabilidade em conformidade com a Portaria 888 e mantemos um cronograma de análises periódicas, de modo que o restaurante tenha sempre documentação válida para apresentar em uma fiscalização.",
+      },
+    ],
+    related: [
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
+      { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
+    ],
   },
   {
     slug: "tratamento-agua-piscina",
@@ -591,13 +529,41 @@ export const PAGES: PageDef[] = [
     type: "Setor",
     priority: "Média",
     keyword: "tratamento de água de piscina",
-    secondary: ["água de piscina verde", "dosagem cloro piscina", "manutenção piscina condomínio"],
+    secondary: [
+      "água de piscina verde",
+      "dosagem cloro piscina",
+      "manutenção piscina condomínio",
+    ],
     title: "Tratamento de Água de Piscina | Vid'Água",
     description:
       "Tratamento de água de piscina para condomínios, clubes e hotéis: equilíbrio químico, dosagem e manutenção.",
     h1: "Tratamento de Água de Piscina",
     intro: "Equilíbrio químico estável evita água turva e desconforto aos usuários.",
-    sections: [s("Parâmetros de controle"), s("Dosagem automática"), s("Rotina de manutenção")],
+    sections: [
+      {
+        heading: "Parâmetros que precisam ficar sob controle",
+        body: "Água de piscina esverdeada, turva ou com cheiro forte é quase sempre consequência de desequilíbrio químico, não de falta de cloro. O controle correto envolve cloro residual livre, pH, alcalinidade e dureza cálcica trabalhando juntos.",
+        bullets: [
+          "pH fora da faixa reduz drasticamente o poder do cloro",
+          "Alcalinidade baixa faz o pH oscilar a cada aplicação",
+          "Dureza inadequada corrói ou incrusta o revestimento",
+          "Filtragem insuficiente deixa a água turva mesmo com cloro alto",
+        ],
+      },
+      {
+        heading: "Dosagem automática em vez de correção manual",
+        body: "Para condomínios, clubes e hotéis, a dosagem manual é imprecisa e depende da rotina do funcionário. Instalamos bombas dosadoras que aplicam cloro e corretor de pH de forma contínua e proporcional, mantendo a água estável todos os dias, inclusive nos fins de semana de maior uso.",
+      },
+      {
+        heading: "Rotina de manutenção e análise",
+        body: "Complementamos com limpeza e troca das mídias do filtro, verificação da bomba de recirculação e análises periódicas da água, com registro dos resultados para a administração do condomínio ou do clube.",
+      },
+    ],
+    related: [
+      { label: "Bomba Dosadora de Cloro", to: "/produtos/bomba-dosadora-cloro" },
+      { label: "Produtos Químicos", to: "/produtos/produtos-quimicos-agua" },
+      { label: "Manutenção de Sistemas", to: "/servicos/manutencao-sistemas-tratamento" },
+    ],
   },
   {
     slug: "tratamento-agua-comercial",
@@ -611,7 +577,25 @@ export const PAGES: PageDef[] = [
       "Soluções de tratamento de água para academias, clínicas e consultórios, com laudos e manutenção programada.",
     h1: "Tratamento de Água para Academias, Clínicas e Consultórios",
     intro: "Três segmentos com necessidades próximas e soluções compactas.",
-    sections: [s("Academias"), s("Clínicas"), s("Consultórios")],
+    sections: [
+      {
+        heading: "Academias",
+        body: "Vestiários com uso intenso expõem qualquer falha da água: chuveiros com baixa pressão por incrustação, manchas nos boxes e cheiro de cloro no ambiente fechado. Filtração central e abrandamento resolvem o conforto do aluno e ainda prolongam a vida útil de aquecedores e torneiras.",
+      },
+      {
+        heading: "Clínicas",
+        body: "Procedimentos de higienização, autoclaves e equipamentos sensíveis exigem água livre de partículas e com dureza controlada. Dimensionamos o sistema a partir da análise laboratorial e emitimos os laudos de potabilidade exigidos pela vigilância sanitária.",
+      },
+      {
+        heading: "Consultórios",
+        body: "Consultórios odontológicos e de pequeno porte precisam de soluções compactas: filtração no ponto de uso, controle de cloro e análises periódicas. Projetos simples de instalar, com manutenção programada e custo previsível.",
+      },
+    ],
+    related: [
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Filtros de Água", to: "/produtos/filtros-de-agua" },
+      { label: "Tratamento para Empresas", to: "/servicos/tratamento-de-agua-industrial" },
+    ],
   },
   {
     slug: "tratamento-efluentes",
@@ -619,13 +603,17 @@ export const PAGES: PageDef[] = [
     type: "Serviço",
     priority: "Média",
     keyword: "tratamento de efluentes",
-    secondary: ["estação de tratamento de efluentes", "efluente industrial", "descarte de efluentes"],
+    secondary: [
+      "estação de tratamento de efluentes",
+      "efluente industrial",
+      "descarte de efluentes",
+    ],
     title: "Tratamento de Efluentes Industriais | Vid'Água",
     description:
       "Projetos de tratamento de efluentes com foco em conformidade ambiental e redução de custo de descarte.",
     h1: "Tratamento de Efluentes",
     intro: "Conformidade ambiental com processos dimensionados para cada efluente.",
-    sections: [s("Caracterização do efluente"), s("Processos de tratamento"), s("Conformidade e licenças")],
+    sections: [],
     related: [{ label: "Água de Reuso", to: "/servicos/agua-de-reuso" }],
   },
   {
@@ -640,7 +628,8 @@ export const PAGES: PageDef[] = [
       "Sistemas de água de reuso para indústrias e condomínios: redução de consumo e retorno sobre investimento.",
     h1: "Água de Reuso",
     intro: "Reduzir consumo de água potável com segurança técnica e sanitária.",
-    sections: [s("Aplicações do reuso"), s("Tecnologias empregadas"), s("Retorno sobre investimento")],
+    sections: [],
+    related: [{ label: "Tratamento de Efluentes", to: "/servicos/tratamento-efluentes" }],
   },
   {
     slug: "por-que-vidagua",
@@ -659,13 +648,39 @@ export const PAGES: PageDef[] = [
     description:
       "Mais de 30 anos, equipe técnica própria e laudos em conformidade. Conheça diferenciais, certificações e depoimentos.",
     h1: "Por que escolher a Vid'Água",
-    intro: "Apresentação genuína: história, equipe, certificações e experiências de clientes.",
+    intro:
+      "Mais de três décadas resolvendo problemas de água em residências, condomínios, hotéis e indústrias, com laboratório próprio em São Paulo.",
     sections: [
-      s("Nossa história"),
-      s("Diferenciais objetivos"),
-      s("Certificações e conformidade"),
-      s("Equipe técnica"),
-      s("Depoimentos de clientes"),
+      {
+        heading: "Mais de 30 anos de experiência prática",
+        body: "A Vid'Água nasceu em São Paulo e construiu sua reputação resolvendo casos reais: poços com ferro e manganês, condomínios notificados pela vigilância, indústrias com incrustação em linhas de vapor. Essa bagagem encurta o caminho entre o problema e a solução certa.",
+      },
+      {
+        heading: "Laboratório próprio: diagnóstico antes do orçamento",
+        body: "Nosso maior diferencial é analisar a sua água antes de indicar qualquer equipamento. Avaliamos os componentes químicos e biológicos da amostra e só então dimensionamos as mídias filtrantes e a dosagem necessárias. Não vendemos solução de prateleira.",
+        bullets: [
+          "Análise físico-química e microbiológica da amostra",
+          "Dimensionamento por vazão, pressão e carga contaminante",
+          "Proposta técnica com o que é necessário, sem excedente",
+        ],
+      },
+      {
+        heading: "Conformidade legal como padrão",
+        body: "Emitimos laudos com validade legal, em conformidade com a Portaria 888 do Ministério da Saúde, e cuidamos de todo o processo de outorga e regularização de poços artesianos junto ao DAEE e demais órgãos ambientais.",
+      },
+      {
+        heading: "Equipe técnica própria",
+        body: "Engenheiros, geólogos e técnicos químicos acompanham o projeto do diagnóstico à manutenção. A mesma equipe que analisa a água instala e mantém o sistema, o que evita diagnósticos contraditórios e retrabalho.",
+      },
+      {
+        heading: "Soluções escaláveis e atendimento nacional",
+        body: "Atendemos desde uma residência com poço até complexos industriais e condomínios de grande porte, com contratos de manutenção preventiva e monitoramento contínuo. Fornecemos equipamentos e insumos para todo o Brasil.",
+      },
+    ],
+    related: [
+      { label: "Sobre a Vid'Água", to: "/sobre" },
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
     ],
   },
   {
@@ -752,7 +767,7 @@ export const PAGES: PageDef[] = [
       "Conheça a Vid'Água: história, propósito, equipe técnica e atuação em análise e tratamento de água no Brasil.",
     h1: "Sobre a Vid'Água",
     intro: "Apresentação institucional, sem linguagem de propaganda.",
-    sections: [s("Nossa história"), s("Propósito e valores"), s("Equipe e estrutura"), s("Atuação nacional")],
+    sections: [],
   },
   {
     slug: "contato",
@@ -850,4 +865,29 @@ export function headFor(p: PageDef) {
     ],
     links: [{ rel: "canonical", href: url }],
   };
+}
+
+/** Dados oficiais de contato da Vid'Água. */
+export const CONTACT = {
+  phones: ["(11) 3746-6747", "(11) 3746-0889"],
+  phoneHrefs: ["tel:+551137466747", "tel:+551137460889"],
+  whatsapp: "(11) 97796-7170",
+  whatsappUrl: "https://wa.me/5511977967170",
+  email: "vidagua@vidagua.com.br",
+  emailHref: "mailto:vidagua@vidagua.com.br",
+  addressLines: [
+    "R. José Pedro do Amaral, 379",
+    "Jardim Monte Kemel — São Paulo/SP",
+    "CEP: 05632-030",
+  ],
+  hours: "Segunda a sexta, em horário comercial",
+} as const;
+
+const PAGE_BY_PATH: Record<string, PageDef> = Object.fromEntries(
+  PAGES.map((p) => [pathFor(p.slug), p]),
+);
+
+/** Descrição curta usada nos cartões de links internos. */
+export function summaryForPath(to: string) {
+  return PAGE_BY_PATH[to]?.description ?? "";
 }

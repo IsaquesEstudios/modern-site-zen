@@ -94,7 +94,6 @@ function AnaliseDeAguaPage() {
                   <a href={`#${QUOTE_ANCHOR}`}>
                     <Button variant="gradient">Consultar preço da análise de água</Button>
                   </a>
-                  {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <Button variant="outline">Falar com um Especialista no WhatsApp</Button>
                   </a>

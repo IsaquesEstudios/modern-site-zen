@@ -343,7 +343,6 @@ function MonitoramentoQualidadeAguaPage() {
                       <Button type="submit" variant="gradient">
                         Solicitar Proposta de Monitoramento
                       </Button>
-                      {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                         <Button variant="outline" type="button">
                           Falar no WhatsApp

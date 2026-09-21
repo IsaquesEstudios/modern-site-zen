@@ -68,7 +68,6 @@ function AguaTurvaPage() {
                   em suspensão, matéria orgânica e odores desagradáveis da sua rede.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <Button variant="gradient">Falar com um Especialista e Resolver Agora</Button>
                   </a>
@@ -306,7 +305,6 @@ function AguaTurvaPage() {
                       <Button type="submit" variant="gradient">
                         Solicitar Orçamento do Tratamento
                       </Button>
-                      {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                         <Button variant="outline" type="button">
                           Falar no WhatsApp

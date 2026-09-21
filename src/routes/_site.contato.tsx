@@ -12,7 +12,7 @@ import {
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/PageTemplate";
-import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import { PAGES_BY_SLUG, headFor, CONTACT } from "@/lib/site";
 
 const page = PAGES_BY_SLUG["contato"];
 
@@ -23,6 +23,8 @@ export const Route = createFileRoute("/_site/contato")({
 
 const field = "flex flex-col gap-2";
 const label = "text-sm font-medium";
+const contactLink =
+  "text-sm text-muted transition-colors duration-200 hover:text-primary";
 
 function ContatoPage() {
   return (
@@ -111,23 +113,57 @@ function ContatoPage() {
               <Card tone="soft">
                 <CardHeader>
                   <CardTitle>Canais de atendimento</CardTitle>
-                  <CardDescription>
-                    Telefone, WhatsApp e e-mail serão preenchidos com os dados oficiais.
-                  </CardDescription>
                 </CardHeader>
+                <CardContent>
+                  <div className="flex flex-col gap-2">
+                    {CONTACT.phones.map((phone, i) => (
+                      <a key={phone} href={CONTACT.phoneHrefs[i]} className={contactLink}>
+                        {phone}
+                      </a>
+                    ))}
+                    <a
+                      href={CONTACT.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={contactLink}
+                    >
+                      WhatsApp {CONTACT.whatsapp}
+                    </a>
+                    <a href={CONTACT.emailHref} className={contactLink}>
+                      {CONTACT.email}
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card tone="soft">
+                <CardHeader>
+                  <CardTitle>Endereço</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <address className="text-sm not-italic leading-relaxed text-muted">
+                    {CONTACT.addressLines.map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </address>
+                </CardContent>
               </Card>
               <Card tone="soft">
                 <CardHeader>
                   <CardTitle>Horário de atendimento</CardTitle>
                   <CardDescription>
-                    Segunda a sexta, em horário comercial. Retorno no mesmo dia útil.
+                    {CONTACT.hours}. Retorno em até 1 dia útil.
                   </CardDescription>
                 </CardHeader>
               </Card>
               <Card tone="soft">
                 <CardHeader>
                   <CardTitle>Área de atuação</CardTitle>
-                  <CardDescription>Atendemos em todo o Brasil.</CardDescription>
+                  <CardDescription>
+                    Atendimento técnico em São Paulo e região; fornecimento de equipamentos e
+                    insumos para todo o Brasil.
+                  </CardDescription>
                 </CardHeader>
               </Card>
             </div>

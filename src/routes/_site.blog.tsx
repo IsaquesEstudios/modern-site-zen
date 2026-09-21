@@ -1,7 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Badge,
-  Button,
   Card,
   CardContent,
   CardDescription,
@@ -20,11 +19,45 @@ export const Route = createFileRoute("/_site/blog")({
 });
 
 const categories = ["Problemas Comuns", "Qualidade da Água", "Legislação", "Manutenção"];
-const placeholders = Array.from({ length: 6 }, (_, i) => ({
-  id: i,
-  cat: categories[i % categories.length],
-  title: `Título do artigo ${i + 1}`,
-}));
+
+const guias = [
+  {
+    cat: "Problemas Comuns",
+    title: "Água dura: por que o sabão não faz espuma e o chuveiro entope",
+    body: "Como o excesso de cálcio e magnésio incrusta tubulações, danifica aquecedores e o que resolve o problema de forma definitiva.",
+    to: "/agua-dura",
+  },
+  {
+    cat: "Problemas Comuns",
+    title: "Manchas amareladas na roupa e na louça: ferro e manganês na água",
+    body: "Os sinais que identificam a presença de ferro e manganês e o tratamento por oxidação e filtração indicado para cada faixa de concentração.",
+    to: "/agua-com-ferro-manganes",
+  },
+  {
+    cat: "Qualidade da Água",
+    title: "Água turva, com cheiro ou gosto de cloro: o que está acontecendo",
+    body: "Turbidez, odor e sabor alterados quase sempre indicam matéria orgânica ou excesso de cloro. Entenda a causa antes de trocar o filtro.",
+    to: "/agua-turva-cheiro-cloro",
+  },
+  {
+    cat: "Qualidade da Água",
+    title: "Contaminação biológica e química: o risco que não se vê",
+    body: "Coliformes, bactérias e contaminantes químicos não mudam a aparência da água. Só a análise laboratorial revela o problema.",
+    to: "/contaminacao-agua",
+  },
+  {
+    cat: "Legislação",
+    title: "Legalização de poço artesiano: outorga, prazos e documentos",
+    body: "O que o DAEE exige, quais laudos acompanham o processo e o que acontece com quem opera um poço sem outorga.",
+    to: "/servicos/legalizacao-poco-artesiano",
+  },
+  {
+    cat: "Manutenção",
+    title: "Com que frequência manter o sistema de tratamento de água",
+    body: "Prazos de troca de mídias filtrantes, calibração de dosadoras e periodicidade das análises em uso residencial, comercial e industrial.",
+    to: "/servicos/manutencao-sistemas-tratamento",
+  },
+] as const;
 
 function BlogPage() {
   return (
@@ -56,23 +89,20 @@ function BlogPage() {
         </Reveal>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {placeholders.map((post, i) => (
-            <Reveal key={post.id} delay={i * 50}>
-              <Card className="h-full">
-                <CardHeader>
-                  <Badge variant="neutral">{post.cat}</Badge>
-                  <CardTitle>{post.title}</CardTitle>
-                  <CardDescription>
-                    Trecho de preenchimento com duas linhas de resumo do artigo, substituído pelo
-                    conteúdo definitivo.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Button variant="ghost" size="sm">
-                    Ler mais
-                  </Button>
-                </CardContent>
-              </Card>
+          {guias.map((post, i) => (
+            <Reveal key={post.title} delay={i * 50}>
+              <Link to={post.to} className="group block h-full">
+                <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
+                  <CardHeader>
+                    <Badge variant="neutral">{post.cat}</Badge>
+                    <CardTitle>{post.title}</CardTitle>
+                    <CardDescription>{post.body}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <span className="text-sm font-semibold text-accent">Ler o guia →</span>
+                  </CardContent>
+                </Card>
+              </Link>
             </Reveal>
           ))}
         </div>
