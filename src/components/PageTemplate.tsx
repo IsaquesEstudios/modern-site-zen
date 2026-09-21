@@ -100,7 +100,7 @@ export function PageTemplate({ page }: { page: PageDef }) {
   const outline =
     page.sections.length > 0 ? (
       <>
-        <SectionTitle eyebrow="Outline da página" title={`Conteúdo sobre ${page.keyword}`} />
+        <SectionTitle eyebrow="Entenda o serviço" title="O que você precisa saber" />
         <div className="flex flex-col gap-12">
           {page.sections.map((section, i) => (
             <Reveal key={section.heading} delay={i * 50}>
