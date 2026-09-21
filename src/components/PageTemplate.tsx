@@ -81,7 +81,6 @@ export function CTASection() {
               <Link to="/contato">
                 <Button variant="gradient">Orçamento por e-mail</Button>
               </Link>
-              {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <WhiteButton>Orçamento pelo WhatsApp</WhiteButton>
               </a>

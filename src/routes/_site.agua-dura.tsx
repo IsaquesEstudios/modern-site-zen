@@ -69,7 +69,6 @@ function AguaDuraPage() {
                   suas tubulações, seus eletrodomésticos e o seu bem-estar.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <Button variant="gradient">Falar com um Especialista e Resolver o Problema</Button>
                   </a>
@@ -298,7 +297,6 @@ function AguaDuraPage() {
                       <Button type="submit" variant="gradient">
                         Solicitar Orçamento de Abrandador
                       </Button>
-                      {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                         <Button variant="outline" type="button">
                           Falar no WhatsApp

@@ -98,7 +98,6 @@ function TratamentoDeAguaPage() {
                   processos da sua empresa.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  {/* TODO: trocar pelo número de WhatsApp oficial da Vid'Água */}
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <Button variant="gradient">Falar com um Especialista no WhatsApp</Button>
                   </a>
