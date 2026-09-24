@@ -47,7 +47,7 @@ export const HOME: PageDef = {
     "Empresa de análise e tratamento de água confiável. A Vid'Água oferece soluções em potabilidade, poços e adequação à Portaria 888. Fale com um especialista!",
   h1: "Vid'Água – Mais de 30 anos tratando e cuidando da qualidade da água.",
   intro:
-    "Laudos técnicos em conformidade com a Portaria 888 e registro junto ao DAEE. Atendemos residências, condomínios e indústrias em todo o Brasil.",
+    "Laudos técnicos em conformidade com a Portaria 888 e monitoramento de poços junto à Vigilância Sanitária (Covisa). Atendemos residências, condomínios e indústrias em todo o Brasil.",
   sections: [],
 };
 
@@ -211,22 +211,22 @@ export const PAGES: PageDef[] = [
   },
   {
     slug: "monitoramento-poco-artesiano",
-    nav: "Legalização de Poço",
+    nav: "Monitoramento de Poço",
     type: "Serviço",
     priority: "Alta",
-    keyword: "outorga de poço artesiano",
+    keyword: "monitoramento de poço artesiano",
     secondary: [
-      "legalização de poço artesiano",
-      "poço artesiano legal",
-      "como legalizar poço artesiano",
-      "poço artesiano registro DAEE",
-      "poço artesiano documentação",
+      "monitoramento de poço Covisa",
+      "análise de água de poço artesiano",
+      "laudo de potabilidade poço",
+      "vigilância sanitária poço artesiano",
+      "controle de qualidade da água de poço",
     ],
-    title: "Legalização e Outorga de Poço Artesiano | Vid'Água",
+    title: "Monitoramento de Poço Artesiano junto à Covisa | Vid'Água",
     description:
-      "Como legalizar poço artesiano: outorga, registro no DAEE, documentos e prazos. Assessoria técnica completa.",
-    h1: "Legalização de Poço Artesiano",
-    intro: "Processo burocrático descomplicado: entenda a outorga e quando ela é necessária.",
+      "Monitoramento da qualidade da água de poços artesianos já legalizados, com análises periódicas e laudos para a Vigilância Sanitária (Covisa).",
+    h1: "Monitoramento de Poço Artesiano",
+    intro: "Análises periódicas e laudos para manter seu poço legalizado em dia com a Vigilância Sanitária.",
     sections: [],
     related: [{ label: "Manutenção de Poço Artesiano", to: "/servicos/manutencao-poco-artesiano" }],
   },
@@ -248,7 +248,7 @@ export const PAGES: PageDef[] = [
     h1: "Manutenção e Tratamento de Poço Artesiano",
     intro: "Poço bem mantido entrega água segura e evita paradas não programadas.",
     sections: [],
-    related: [{ label: "Legalização de Poço Artesiano", to: "/servicos/monitoramento-poco-artesiano" }],
+    related: [{ label: "Monitoramento de Poço Artesiano", to: "/servicos/monitoramento-poco-artesiano" }],
   },
   {
     slug: "bomba-dosadora-cloro",
@@ -666,7 +666,7 @@ export const PAGES: PageDef[] = [
       },
       {
         heading: "Conformidade legal como padrão",
-        body: "Emitimos laudos com validade legal, em conformidade com a Portaria 888 do Ministério da Saúde, e cuidamos de todo o processo de outorga e regularização de poços artesianos junto ao DAEE e demais órgãos ambientais.",
+        body: "Emitimos laudos com validade legal, em conformidade com a Portaria 888 do Ministério da Saúde, e realizamos o monitoramento periódico de poços artesianos já legalizados junto à Vigilância Sanitária (Covisa).",
       },
       {
         heading: "Equipe técnica própria",
@@ -699,7 +699,7 @@ export const PAGES: PageDef[] = [
     related: [
       { label: "Análise de Água", to: "/servicos/analise-de-agua" },
       { label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" },
-      { label: "Legalização de Poço Artesiano", to: "/servicos/monitoramento-poco-artesiano" },
+      { label: "Monitoramento de Poço Artesiano", to: "/servicos/monitoramento-poco-artesiano" },
       { label: "Manutenção de Poço Artesiano", to: "/servicos/manutencao-poco-artesiano" },
       { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
       { label: "Manutenção de Sistemas", to: "/servicos/manutencao-sistemas-tratamento" },
