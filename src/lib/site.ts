@@ -210,7 +210,7 @@ export const PAGES: PageDef[] = [
     ],
   },
   {
-    slug: "legalizacao-poco-artesiano",
+    slug: "monitoramento-poco-artesiano",
     nav: "Legalização de Poço",
     type: "Serviço",
     priority: "Alta",
@@ -248,7 +248,7 @@ export const PAGES: PageDef[] = [
     h1: "Manutenção e Tratamento de Poço Artesiano",
     intro: "Poço bem mantido entrega água segura e evita paradas não programadas.",
     sections: [],
-    related: [{ label: "Legalização de Poço Artesiano", to: "/servicos/legalizacao-poco-artesiano" }],
+    related: [{ label: "Legalização de Poço Artesiano", to: "/servicos/monitoramento-poco-artesiano" }],
   },
   {
     slug: "bomba-dosadora-cloro",
@@ -699,7 +699,7 @@ export const PAGES: PageDef[] = [
     related: [
       { label: "Análise de Água", to: "/servicos/analise-de-agua" },
       { label: "Tratamento de Água", to: "/servicos/tratamento-de-agua" },
-      { label: "Legalização de Poço Artesiano", to: "/servicos/legalizacao-poco-artesiano" },
+      { label: "Legalização de Poço Artesiano", to: "/servicos/monitoramento-poco-artesiano" },
       { label: "Manutenção de Poço Artesiano", to: "/servicos/manutencao-poco-artesiano" },
       { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
       { label: "Manutenção de Sistemas", to: "/servicos/manutencao-sistemas-tratamento" },
@@ -806,7 +806,7 @@ export const NAV = [
 export const SERVICE_SLUGS = [
   "analise-de-agua",
   "tratamento-de-agua",
-  "legalizacao-poco-artesiano",
+  "monitoramento-poco-artesiano",
   "manutencao-poco-artesiano",
   "monitoramento-qualidade-agua",
   "manutencao-sistemas-tratamento",

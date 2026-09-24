@@ -241,7 +241,7 @@ function SobrePage() {
                   <p className="leading-relaxed text-muted">
                     A burocracia não precisa ser um problema para você. Nosso departamento ambiental
                     cuida de todo o escopo de{" "}
-                    <Link to="/servicos/legalizacao-poco-artesiano" className={inlineLink}>
+                    <Link to="/servicos/monitoramento-poco-artesiano" className={inlineLink}>
                       legalização de poços artesianos
                     </Link>{" "}
                     de forma ágil. Como sabemos que a legislação (especialmente em SP) é rígida,

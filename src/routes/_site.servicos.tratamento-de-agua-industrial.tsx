@@ -189,7 +189,7 @@ function TratamentoIndustrialPage() {
               </ul>
               <p className="leading-relaxed text-muted">
                 Para indústrias com captação própria, o projeto normalmente envolve também a{" "}
-                <Link to="/servicos/legalizacao-poco-artesiano" className={inlineLink}>
+                <Link to="/servicos/monitoramento-poco-artesiano" className={inlineLink}>
                   legalização do poço artesiano
                 </Link>{" "}
                 e a{" "}

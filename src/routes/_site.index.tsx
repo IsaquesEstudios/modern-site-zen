@@ -73,7 +73,7 @@ const problems = [
   {
     q: "Seu poço artesiano está sem outorga ou documentação?",
     action: "Ver como legalizar seu poço",
-    to: "/servicos/legalizacao-poco-artesiano",
+    to: "/servicos/monitoramento-poco-artesiano",
   },
   {
     q: "Água muito “dura”, entupindo torneiras, canos e chuveiros?",

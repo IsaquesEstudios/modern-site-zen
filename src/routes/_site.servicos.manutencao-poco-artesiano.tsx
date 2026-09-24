@@ -159,7 +159,7 @@ function ManutencaoPocoPage() {
                 Ao final da manutenção emitimos o relatório técnico do serviço e, quando solicitado,
                 o laudo de potabilidade da água. Para poços que ainda não têm outorga ou estão com a
                 documentação vencida, cuidamos de todo o processo de{" "}
-                <Link to="/servicos/legalizacao-poco-artesiano" className={inlineLink}>
+                <Link to="/servicos/monitoramento-poco-artesiano" className={inlineLink}>
                   legalização junto ao DAEE
                 </Link>
                 .

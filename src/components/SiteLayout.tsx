@@ -150,7 +150,7 @@ function Footer() {
           <Link to="/servicos/tratamento-de-agua" className={footerLink}>
             Tratamento de Água
           </Link>
-          <Link to="/servicos/legalizacao-poco-artesiano" className={footerLink}>
+          <Link to="/servicos/monitoramento-poco-artesiano" className={footerLink}>
             Legalização de Poço
           </Link>
           <Link to="/servicos/monitoramento-qualidade-agua" className={footerLink}>

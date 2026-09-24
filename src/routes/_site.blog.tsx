@@ -49,7 +49,7 @@ const guias = [
     cat: "Legislação",
     title: "Legalização de poço artesiano: outorga, prazos e documentos",
     body: "O que o DAEE exige, quais laudos acompanham o processo e o que acontece com quem opera um poço sem outorga.",
-    to: "/servicos/legalizacao-poco-artesiano",
+    to: "/servicos/monitoramento-poco-artesiano",
   },
   {
     cat: "Manutenção",
