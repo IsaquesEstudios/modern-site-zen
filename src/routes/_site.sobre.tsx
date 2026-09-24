@@ -46,7 +46,7 @@ const valores = [
   },
   {
     title: "Responsabilidade Legal",
-    body: "Transparência e ética na legalização ambiental e sanitária.",
+    body: "Transparência e ética em cada laudo e análise.",
   },
 ];
 
@@ -239,15 +239,13 @@ function SobrePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="leading-relaxed text-muted">
-                    A burocracia não precisa ser um problema para você. Nosso departamento ambiental
-                    cuida de todo o escopo de{" "}
+                    Para poços artesianos já legalizados, realizamos o{" "}
                     <Link to="/servicos/monitoramento-poco-artesiano" className={inlineLink}>
-                      legalização de poços artesianos
+                      monitoramento periódico da qualidade da água
                     </Link>{" "}
-                    de forma ágil. Como sabemos que a legislação (especialmente em SP) é rígida,
-                    elaboramos os relatórios técnicos completos e cuidamos da emissão oficial da
-                    outorga de poços artesianos, atestando que sua fonte de abastecimento opere 100%
-                    amparada pela lei perante o DAEE e demais órgãos reguladores.
+                    junto à Vigilância Sanitária (Covisa). Coletamos, analisamos e emitimos os laudos
+                    exigidos, para que sua fonte de abastecimento continue segura e em dia com a
+                    fiscalização sanitária.
                   </p>
                 </CardContent>
               </Card>

@@ -47,8 +47,8 @@ const guias = [
   },
   {
     cat: "Legislação",
-    title: "Legalização de poço artesiano: outorga, prazos e documentos",
-    body: "O que o DAEE exige, quais laudos acompanham o processo e o que acontece com quem opera um poço sem outorga.",
+    title: "Monitoramento de poço artesiano: o que a Covisa exige",
+    body: "Quais análises e laudos a Vigilância Sanitária pede para poços já legalizados e com que frequência.",
     to: "/servicos/monitoramento-poco-artesiano",
   },
   {

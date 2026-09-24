@@ -190,7 +190,7 @@ function TratamentoIndustrialPage() {
               <p className="leading-relaxed text-muted">
                 Para indústrias com captação própria, o projeto normalmente envolve também a{" "}
                 <Link to="/servicos/monitoramento-poco-artesiano" className={inlineLink}>
-                  legalização do poço artesiano
+                  monitoramento do poço artesiano junto à Covisa
                 </Link>{" "}
                 e a{" "}
                 <Link to="/servicos/manutencao-poco-artesiano" className={inlineLink}>

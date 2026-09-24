@@ -234,8 +234,8 @@ function MonitoramentoQualidadeAguaPage() {
               </p>
               <H2>A importância do monitoramento de poço artesiano</H2>
               <p className="leading-relaxed text-muted">
-                Se a sua empresa capta água do subsolo, a responsabilidade legal é dobrada. Órgãos
-                como o DAEE exigem a comprovação periódica da qualidade da água outorgada.
+                Se a sua empresa capta água do subsolo, a responsabilidade legal é dobrada. A Vigilância
+                Sanitária (Covisa) exige a comprovação periódica da qualidade da água do poço.
               </p>
               <p className="leading-relaxed text-muted">
                 O{" "}

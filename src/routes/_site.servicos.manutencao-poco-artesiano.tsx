@@ -154,13 +154,12 @@ function ManutencaoPocoPage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-accent">
                 Documentação
               </p>
-              <H2>Laudo técnico e regularidade perante os órgãos</H2>
+              <H2>Laudo técnico e acompanhamento sanitário</H2>
               <p className="leading-relaxed text-muted">
                 Ao final da manutenção emitimos o relatório técnico do serviço e, quando solicitado,
-                o laudo de potabilidade da água. Para poços que ainda não têm outorga ou estão com a
-                documentação vencida, cuidamos de todo o processo de{" "}
+                o laudo de potabilidade da água. Para poços já legalizados, também fazemos o{" "}
                 <Link to="/servicos/monitoramento-poco-artesiano" className={inlineLink}>
-                  legalização junto ao DAEE
+                  monitoramento periódico junto à Covisa
                 </Link>
                 .
               </p>

@@ -71,8 +71,8 @@ const problems = [
     to: "/contaminacao-agua",
   },
   {
-    q: "Seu poço artesiano está sem outorga ou documentação?",
-    action: "Ver como legalizar seu poço",
+    q: "Seu poço artesiano precisa de laudos para a Vigilância Sanitária?",
+    action: "Ver o monitoramento de poços",
     to: "/servicos/monitoramento-poco-artesiano",
   },
   {
@@ -123,7 +123,7 @@ function Home() {
           <Reveal>
             <div className="flex flex-col gap-6">
               <div className="flex">
-                <Badge>Portaria 888 · DAEE</Badge>
+                <Badge>Portaria 888 · Covisa</Badge>
               </div>
               <h1 className="font-display text-3xl font-extrabold leading-[1.15] md:text-5xl">
                 Vid&rsquo;Água – Mais de 30 anos tratando e cuidando da qualidade da água.
@@ -131,7 +131,7 @@ function Home() {
               <p className="max-w-xl text-lg leading-relaxed text-muted">
                 Empresa de tratamento de água, segurança hídrica absoluta para o seu projeto.
                 Emitimos laudos técnicos, operando em total conformidade com a Portaria 888 do
-                Ministério da Saúde e as exigências do DAEE.
+                Ministério da Saúde e as exigências da Vigilância Sanitária.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contato">
@@ -180,7 +180,7 @@ function Home() {
                 Desde a nossa fundação, a Vid&rsquo;Água consolidou-se como uma empresa de análise
                 de água e purificação de altíssima confiabilidade. Com mais de 30 anos de atuação
                 prática, somos especialistas e referência não apenas no tratamento hídrico, mas
-                também na legalização completa de poços artesianos. Soluções para residências,
+                também no monitoramento de poços artesianos junto à Vigilância Sanitária. Soluções para residências,
                 condomínios e complexos industriais, garantindo a qualidade da água.
               </p>
               <Link to="/sobre">
