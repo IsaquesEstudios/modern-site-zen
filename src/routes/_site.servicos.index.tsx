@@ -48,12 +48,12 @@ function ServicosPage() {
             <div className="flex max-w-3xl flex-col gap-6">
               <Badge>Serviços</Badge>
               <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
-                Serviços de análise, tratamento e legalização de água
+                Serviços de análise, tratamento e monitoramento de água
               </h1>
               <p className="text-lg leading-relaxed text-muted">
                 Há mais de 30 anos a Vid&rsquo;Água resolve problemas de água em residências,
-                condomínios, hotéis, restaurantes e indústrias — da análise laboratorial à outorga do
-                poço artesiano, com equipe técnica e laboratório próprios.
+                condomínios, hotéis, restaurantes e indústrias — da análise laboratorial ao monitoramento
+                do poço artesiano, com equipe técnica e laboratório próprios.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contato">

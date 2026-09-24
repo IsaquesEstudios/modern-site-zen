@@ -45,7 +45,7 @@ const documentos = [
   },
   {
     title: "Laudo técnico água",
-    body: "Documento oficial e assinado (ART), indispensável para apresentações à Vigilância Sanitária, DAEE, prefeituras e auditorias.",
+    body: "Documento oficial e assinado (ART), indispensável para apresentações à Vigilância Sanitária, prefeituras e auditorias.",
   },
 ];
 
@@ -129,8 +129,8 @@ function AnaliseDeAguaPage() {
                   livre de patógenos nocivos.
                 </Bullet>
                 <Bullet>
-                  <strong className="text-foreground">Regularização e Outorga:</strong> exigência de
-                  órgãos como o DAEE para a perfuração e{" "}
+                  <strong className="text-foreground">Vigilância Sanitária:</strong> exigência da
+                  Covisa para o monitoramento e a{" "}
                   <Link to="/servicos/manutencao-poco-artesiano" className={inlineLink}>
                     manutenção de poços artesianos
                   </Link>
@@ -175,7 +175,7 @@ function AnaliseDeAguaPage() {
                 <strong className="text-foreground">Portaria 888</strong> do Ministério da Saúde.
               </p>
               <p className="leading-relaxed text-muted">
-                Dependendo da sua necessidade (residencial, comercial ou outorga), entregamos as
+                Dependendo da sua necessidade (residencial, comercial ou Vigilância Sanitária), entregamos as
                 seguintes documentações com validade legal:
               </p>
               <div className="grid gap-6 md:grid-cols-2">
@@ -208,7 +208,7 @@ function AnaliseDeAguaPage() {
                 O <strong className="text-foreground">análise de água preço</strong> varia de acordo
                 com o escopo analítico exigido. Uma análise básica de potabilidade para uma
                 residência terá um valor diferente de uma análise completa com pesquisa de metais
-                pesados exigida para a legalização de um poço artesiano industrial.
+                pesados exigida no monitoramento de um poço artesiano industrial.
               </p>
 
               <Card tone="soft">

@@ -113,7 +113,7 @@ function Footer() {
             className="h-10 w-auto self-start"
           />
           <p className="max-w-xs text-sm leading-relaxed text-muted">
-            Análise, tratamento e legalização de poços há mais de 30 anos. Atendemos em todo o
+            Análise, tratamento e monitoramento de poços há mais de 30 anos. Atendemos em todo o
             Brasil.
           </p>
           <div className="flex flex-col gap-1">
@@ -150,8 +150,8 @@ function Footer() {
           <Link to="/servicos/tratamento-de-agua" className={footerLink}>
             Tratamento de Água
           </Link>
-          <Link to="/servicos/legalizacao-poco-artesiano" className={footerLink}>
-            Legalização de Poço
+          <Link to="/servicos/monitoramento-poco-artesiano" className={footerLink}>
+            Monitoramento de Poço
           </Link>
           <Link to="/servicos/monitoramento-qualidade-agua" className={footerLink}>
             Monitoramento

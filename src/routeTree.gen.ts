@@ -45,6 +45,7 @@ import { Route as SiteServicosTratamentoEfluentesRouteImport } from './routes/_s
 import { Route as SiteServicosTratamentoDeAguaIndustrialRouteImport } from './routes/_site.servicos.tratamento-de-agua-industrial'
 import { Route as SiteServicosTratamentoDeAguaRouteImport } from './routes/_site.servicos.tratamento-de-agua'
 import { Route as SiteServicosMonitoramentoQualidadeAguaRouteImport } from './routes/_site.servicos.monitoramento-qualidade-agua'
+import { Route as SiteServicosMonitoramentoPocoArtesianoRouteImport } from './routes/_site.servicos.monitoramento-poco-artesiano'
 import { Route as SiteServicosManutencaoSistemasTratamentoRouteImport } from './routes/_site.servicos.manutencao-sistemas-tratamento'
 import { Route as SiteServicosManutencaoPocoArtesianoRouteImport } from './routes/_site.servicos.manutencao-poco-artesiano'
 import { Route as SiteServicosLegalizacaoPocoArtesianoRouteImport } from './routes/_site.servicos.legalizacao-poco-artesiano'
@@ -255,6 +256,12 @@ const SiteServicosMonitoramentoQualidadeAguaRoute =
     path: '/servicos/monitoramento-qualidade-agua',
     getParentRoute: () => SiteRoute,
   } as any)
+const SiteServicosMonitoramentoPocoArtesianoRoute =
+  SiteServicosMonitoramentoPocoArtesianoRouteImport.update({
+    id: '/servicos/monitoramento-poco-artesiano',
+    path: '/servicos/monitoramento-poco-artesiano',
+    getParentRoute: () => SiteRoute,
+  } as any)
 const SiteServicosManutencaoSistemasTratamentoRoute =
   SiteServicosManutencaoSistemasTratamentoRouteImport.update({
     id: '/servicos/manutencao-sistemas-tratamento',
@@ -383,6 +390,7 @@ export interface FileRoutesByFullPath {
   '/servicos/legalizacao-poco-artesiano': typeof SiteServicosLegalizacaoPocoArtesianoRoute
   '/servicos/manutencao-poco-artesiano': typeof SiteServicosManutencaoPocoArtesianoRoute
   '/servicos/manutencao-sistemas-tratamento': typeof SiteServicosManutencaoSistemasTratamentoRoute
+  '/servicos/monitoramento-poco-artesiano': typeof SiteServicosMonitoramentoPocoArtesianoRoute
   '/servicos/monitoramento-qualidade-agua': typeof SiteServicosMonitoramentoQualidadeAguaRoute
   '/servicos/tratamento-de-agua': typeof SiteServicosTratamentoDeAguaRoute
   '/servicos/tratamento-de-agua-industrial': typeof SiteServicosTratamentoDeAguaIndustrialRoute
@@ -434,6 +442,7 @@ export interface FileRoutesByTo {
   '/servicos/legalizacao-poco-artesiano': typeof SiteServicosLegalizacaoPocoArtesianoRoute
   '/servicos/manutencao-poco-artesiano': typeof SiteServicosManutencaoPocoArtesianoRoute
   '/servicos/manutencao-sistemas-tratamento': typeof SiteServicosManutencaoSistemasTratamentoRoute
+  '/servicos/monitoramento-poco-artesiano': typeof SiteServicosMonitoramentoPocoArtesianoRoute
   '/servicos/monitoramento-qualidade-agua': typeof SiteServicosMonitoramentoQualidadeAguaRoute
   '/servicos/tratamento-de-agua': typeof SiteServicosTratamentoDeAguaRoute
   '/servicos/tratamento-de-agua-industrial': typeof SiteServicosTratamentoDeAguaIndustrialRoute
@@ -487,6 +496,7 @@ export interface FileRoutesById {
   '/_site/servicos/legalizacao-poco-artesiano': typeof SiteServicosLegalizacaoPocoArtesianoRoute
   '/_site/servicos/manutencao-poco-artesiano': typeof SiteServicosManutencaoPocoArtesianoRoute
   '/_site/servicos/manutencao-sistemas-tratamento': typeof SiteServicosManutencaoSistemasTratamentoRoute
+  '/_site/servicos/monitoramento-poco-artesiano': typeof SiteServicosMonitoramentoPocoArtesianoRoute
   '/_site/servicos/monitoramento-qualidade-agua': typeof SiteServicosMonitoramentoQualidadeAguaRoute
   '/_site/servicos/tratamento-de-agua': typeof SiteServicosTratamentoDeAguaRoute
   '/_site/servicos/tratamento-de-agua-industrial': typeof SiteServicosTratamentoDeAguaIndustrialRoute
@@ -540,6 +550,7 @@ export interface FileRouteTypes {
     | '/servicos/legalizacao-poco-artesiano'
     | '/servicos/manutencao-poco-artesiano'
     | '/servicos/manutencao-sistemas-tratamento'
+    | '/servicos/monitoramento-poco-artesiano'
     | '/servicos/monitoramento-qualidade-agua'
     | '/servicos/tratamento-de-agua'
     | '/servicos/tratamento-de-agua-industrial'
@@ -591,6 +602,7 @@ export interface FileRouteTypes {
     | '/servicos/legalizacao-poco-artesiano'
     | '/servicos/manutencao-poco-artesiano'
     | '/servicos/manutencao-sistemas-tratamento'
+    | '/servicos/monitoramento-poco-artesiano'
     | '/servicos/monitoramento-qualidade-agua'
     | '/servicos/tratamento-de-agua'
     | '/servicos/tratamento-de-agua-industrial'
@@ -643,6 +655,7 @@ export interface FileRouteTypes {
     | '/_site/servicos/legalizacao-poco-artesiano'
     | '/_site/servicos/manutencao-poco-artesiano'
     | '/_site/servicos/manutencao-sistemas-tratamento'
+    | '/_site/servicos/monitoramento-poco-artesiano'
     | '/_site/servicos/monitoramento-qualidade-agua'
     | '/_site/servicos/tratamento-de-agua'
     | '/_site/servicos/tratamento-de-agua-industrial'
@@ -911,6 +924,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteServicosMonitoramentoQualidadeAguaRouteImport
       parentRoute: typeof SiteRoute
     }
+    '/_site/servicos/monitoramento-poco-artesiano': {
+      id: '/_site/servicos/monitoramento-poco-artesiano'
+      path: '/servicos/monitoramento-poco-artesiano'
+      fullPath: '/servicos/monitoramento-poco-artesiano'
+      preLoaderRoute: typeof SiteServicosMonitoramentoPocoArtesianoRouteImport
+      parentRoute: typeof SiteRoute
+    }
     '/_site/servicos/manutencao-sistemas-tratamento': {
       id: '/_site/servicos/manutencao-sistemas-tratamento'
       path: '/servicos/manutencao-sistemas-tratamento'
@@ -1054,6 +1074,7 @@ interface SiteRouteChildren {
   SiteServicosLegalizacaoPocoArtesianoRoute: typeof SiteServicosLegalizacaoPocoArtesianoRoute
   SiteServicosManutencaoPocoArtesianoRoute: typeof SiteServicosManutencaoPocoArtesianoRoute
   SiteServicosManutencaoSistemasTratamentoRoute: typeof SiteServicosManutencaoSistemasTratamentoRoute
+  SiteServicosMonitoramentoPocoArtesianoRoute: typeof SiteServicosMonitoramentoPocoArtesianoRoute
   SiteServicosMonitoramentoQualidadeAguaRoute: typeof SiteServicosMonitoramentoQualidadeAguaRoute
   SiteServicosTratamentoDeAguaRoute: typeof SiteServicosTratamentoDeAguaRoute
   SiteServicosTratamentoDeAguaIndustrialRoute: typeof SiteServicosTratamentoDeAguaIndustrialRoute
@@ -1108,6 +1129,8 @@ const SiteRouteChildren: SiteRouteChildren = {
     SiteServicosManutencaoPocoArtesianoRoute,
   SiteServicosManutencaoSistemasTratamentoRoute:
     SiteServicosManutencaoSistemasTratamentoRoute,
+  SiteServicosMonitoramentoPocoArtesianoRoute:
+    SiteServicosMonitoramentoPocoArtesianoRoute,
   SiteServicosMonitoramentoQualidadeAguaRoute:
     SiteServicosMonitoramentoQualidadeAguaRoute,
   SiteServicosTratamentoDeAguaRoute: SiteServicosTratamentoDeAguaRoute,
