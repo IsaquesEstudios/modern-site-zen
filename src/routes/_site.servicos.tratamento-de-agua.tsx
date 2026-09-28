@@ -110,7 +110,7 @@ function TratamentoDeAguaPage() {
               <img
                 src={tratamentoImage.url}
                 alt="Sistema de tratamento de água da Vid'Água"
-                className="w-full rounded-md border border-border object-cover"
+                className="w-full"
               />
             </div>
           </Reveal>

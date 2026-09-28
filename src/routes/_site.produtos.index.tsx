@@ -65,7 +65,7 @@ function ProdutosPage() {
               <img
                 src={produtosImage.url}
                 alt="Equipamentos para tratamento de água"
-                className="w-full rounded-md border border-border object-cover"
+                className="w-full"
               />
             </div>
           </Reveal>

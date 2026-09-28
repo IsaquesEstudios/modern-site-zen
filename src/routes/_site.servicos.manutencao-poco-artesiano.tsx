@@ -97,7 +97,7 @@ function ManutencaoPocoPage() {
               <img
                 src={pocoImage.url}
                 alt="Estrutura hidráulica de poço artesiano"
-                className="w-full rounded-md border border-border object-cover"
+                className="w-full"
               />
             </div>
           </Reveal>
