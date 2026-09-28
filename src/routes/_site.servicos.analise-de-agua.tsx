@@ -103,7 +103,7 @@ function AnaliseDeAguaPage() {
               <img
                 src={analiseImage.url}
                 alt="Coleta de amostra para análise de água"
-                className="aspect-[4/3] w-full rounded-md border border-border object-cover"
+                className="w-full rounded-md border border-border object-cover"
               />
             </div>
           </Reveal>

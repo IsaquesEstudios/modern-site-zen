@@ -223,7 +223,7 @@ function Home() {
                     <img
                       src={item.image}
                       alt={item.alt}
-                      className="aspect-video w-full rounded-md border border-border object-cover"
+                      className="w-full rounded-md border border-border object-cover"
                     />
                   </CardContent>
                   <CardHeader>

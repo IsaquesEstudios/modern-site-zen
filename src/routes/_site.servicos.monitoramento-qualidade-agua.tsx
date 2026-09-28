@@ -81,7 +81,7 @@ function MonitoramentoQualidadeAguaPage() {
               <img
                 src={monitoramentoImage.url}
                 alt="Equipamentos da Vid'Água para monitoramento da qualidade da água"
-                className="aspect-[4/3] w-full rounded-md border border-border object-cover"
+                className="w-full rounded-md border border-border object-cover"
               />
             </div>
           </Reveal>

@@ -42,7 +42,7 @@ function ProdutosPage() {
       <section className="bg-gradient-surface">
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-24">
           <Reveal>
-            <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-center">
+            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div className="flex flex-col gap-6">
                 <Badge>Produtos</Badge>
                 <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
@@ -65,7 +65,7 @@ function ProdutosPage() {
               <img
                 src={produtosImage.url}
                 alt="Equipamentos para tratamento de água"
-                className="aspect-[4/3] w-full rounded-md border border-border object-cover"
+                className="w-full rounded-md border border-border object-cover"
               />
             </div>
           </Reveal>

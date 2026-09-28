@@ -105,7 +105,7 @@ function TratamentoIndustrialPage() {
               <img
                 src={solucoesImage.url}
                 alt="Sistema industrial de tratamento de água"
-                className="aspect-[4/3] w-full rounded-md border border-border object-cover"
+                className="w-full rounded-md border border-border object-cover"
               />
             </div>
           </Reveal>
