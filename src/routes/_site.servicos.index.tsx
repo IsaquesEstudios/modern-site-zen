@@ -120,6 +120,16 @@ function ServicosPage() {
             <Reveal key={item.to} delay={i * 50}>
               <Link to={item.to} className="group block h-full">
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
+                  {SERVICE_IMAGES[item.slug] ? (
+                    <CardContent>
+                      <img
+                        src={SERVICE_IMAGES[item.slug]!.url}
+                        alt={SERVICE_IMAGES[item.slug]!.alt}
+                        loading="lazy"
+                        className="w-full"
+                      />
+                    </CardContent>
+                  ) : null}
                   <CardHeader>
                     <CardTitle>{item.label}</CardTitle>
                     <CardDescription>{summaryForPath(item.to)}</CardDescription>
