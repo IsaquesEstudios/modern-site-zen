@@ -12,6 +12,51 @@ import { Reveal } from "@/components/Reveal";
 import { CTASection, Section, SectionTitle, LinkGrid } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, SERVICE_LINKS, summaryForPath, headFor } from "@/lib/site";
+import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
+import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
+import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
+import monitoramentoImage from "@/assets/monitoramento.jpg.asset.json";
+import solucoesImage from "@/assets/solucoes-empresariais.jpg.asset.json";
+import produtosImage from "@/assets/equipamentos-e-produtos.jpg.asset.json";
+
+const SERVICE_IMAGES: Record<string, { url: string; alt: string }> = {
+  "analise-de-agua": {
+    url: analiseImage.url,
+    alt: "Coleta de amostra para análise de água",
+  },
+  "tratamento-de-agua": {
+    url: tratamentoImage.url,
+    alt: "Sistema de tratamento de água da Vid'Água",
+  },
+  "monitoramento-poco-artesiano": {
+    url: pocoImage.url,
+    alt: "Estrutura hidráulica de poço artesiano",
+  },
+  "manutencao-poco-artesiano": {
+    url: pocoImage.url,
+    alt: "Manutenção de poço artesiano",
+  },
+  "monitoramento-qualidade-agua": {
+    url: monitoramentoImage.url,
+    alt: "Equipamentos da Vid'Água para monitoramento da qualidade da água",
+  },
+  "manutencao-sistemas-tratamento": {
+    url: produtosImage.url,
+    alt: "Equipamentos de tratamento de água em manutenção",
+  },
+  "tratamento-efluentes": {
+    url: solucoesImage.url,
+    alt: "Estação industrial de tratamento de efluentes",
+  },
+  "agua-de-reuso": {
+    url: solucoesImage.url,
+    alt: "Sistema industrial de reuso de água",
+  },
+  "tratamento-de-agua-industrial": {
+    url: solucoesImage.url,
+    alt: "Sistema industrial de tratamento de água",
+  },
+};
 
 const page = PAGES_BY_SLUG["servicos"];
 
