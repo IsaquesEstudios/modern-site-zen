@@ -154,7 +154,12 @@ function AnaliseDeAguaPage() {
                 </Link>{" "}
                 ou casos de virose para agir. A prevenção é sempre o caminho mais barato e seguro.
               </p>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img
+                src={aguaPuraImage.url}
+                alt="Ilustração de água contaminada por microrganismos em contraste com água limpa e tratada"
+                loading="lazy"
+                className="w-full"
+              />
             </section>
           </Reveal>
 
