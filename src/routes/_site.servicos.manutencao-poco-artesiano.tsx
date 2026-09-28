@@ -16,6 +16,7 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
 
 const page = PAGES_BY_SLUG["manutencao-poco-artesiano"];
 
@@ -93,7 +94,11 @@ function ManutencaoPocoPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img
+                src={pocoImage.url}
+                alt="Estrutura hidráulica de poço artesiano"
+                className="aspect-[4/3] w-full rounded-md border border-border object-cover"
+              />
             </div>
           </Reveal>
         </div>

@@ -15,6 +15,12 @@ import { Section, SectionTitle } from "@/components/PageTemplate";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { HOME, headFor, CONTACT } from "@/lib/site";
+import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
+import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
+import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
+import monitoramentoImage from "@/assets/monitoramento.jpg.asset.json";
+import solucoesImage from "@/assets/solucoes-empresariais.jpg.asset.json";
+import produtosImage from "@/assets/equipamentos-e-produtos.jpg.asset.json";
 
 export const Route = createFileRoute("/_site/")({
   head: () => headFor(HOME),
@@ -26,31 +32,43 @@ const services = [
     label: "Análise de Água",
     to: "/servicos/analise-de-agua",
     desc: "Diagnóstico laboratorial completo e emissão de laudos técnicos de potabilidade.",
+    image: analiseImage.url,
+    alt: "Coleta de amostra para análise de água",
   },
   {
     label: "Tratamento de Água",
     to: "/servicos/tratamento-de-agua",
     desc: "Sistemas eficientes e sob medida para purificação e adequação hídrica.",
+    image: tratamentoImage.url,
+    alt: "Sistema de tratamento de água da Vid'Água",
   },
   {
     label: "Poço Artesiano",
     to: "/servicos/manutencao-poco-artesiano",
     desc: "Manutenção técnica, adequação estrutural e soluções para captação subterrânea.",
+    image: pocoImage.url,
+    alt: "Estrutura hidráulica de poço artesiano",
   },
   {
     label: "Monitoramento Contínuo",
     to: "/servicos/monitoramento-qualidade-agua",
     desc: "Controle recorrente e preventivo da qualidade para indústrias e condomínios.",
+    image: monitoramentoImage.url,
+    alt: "Equipamentos da Vid'Água para monitoramento da qualidade da água",
   },
   {
     label: "Soluções para Empresas",
     to: "/servicos/tratamento-de-agua-industrial",
     desc: "Projetos de tratamento de água industrial para hotéis, restaurantes e fábricas.",
+    image: solucoesImage.url,
+    alt: "Sistema industrial de tratamento de água",
   },
   {
     label: "Produtos e Equipamentos",
     to: "/produtos",
     desc: "Linha completa de filtros, abrandadores, bombas dosadoras e químicos.",
+    image: produtosImage.url,
+    alt: "Equipamentos para tratamento de água",
   },
 ] as const;
 
@@ -202,7 +220,11 @@ function Home() {
               <Link to={item.to} className="group block h-full">
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
                   <CardContent>
-                    <ImagePlaceholder label="Ícone" ratio="aspect-[16/9]" />
+                    <img
+                      src={item.image}
+                      alt={item.alt}
+                      className="aspect-video w-full rounded-md border border-border object-cover"
+                    />
                   </CardContent>
                   <CardHeader>
                     <CardTitle>{item.label}</CardTitle>

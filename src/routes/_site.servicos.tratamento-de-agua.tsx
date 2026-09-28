@@ -16,6 +16,7 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
 
 const page = PAGES_BY_SLUG["tratamento-de-agua"];
 
@@ -106,7 +107,11 @@ function TratamentoDeAguaPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img
+                src={tratamentoImage.url}
+                alt="Sistema de tratamento de água da Vid'Água"
+                className="aspect-[4/3] w-full rounded-md border border-border object-cover"
+              />
             </div>
           </Reveal>
         </div>
