@@ -10,12 +10,12 @@ import {
   Input,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
 import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
+import aguaPuraImage from "@/assets/agua-contaminada-vs-pura.jpg.asset.json";
 
 const page = PAGES_BY_SLUG["analise-de-agua"];
 
@@ -153,7 +153,12 @@ function AnaliseDeAguaPage() {
                 </Link>{" "}
                 ou casos de virose para agir. A prevenção é sempre o caminho mais barato e seguro.
               </p>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img
+                src={aguaPuraImage.url}
+                alt="Ilustração de água contaminada por microrganismos em contraste com água limpa e tratada"
+                loading="lazy"
+                className="w-full"
+              />
             </section>
           </Reveal>
 
