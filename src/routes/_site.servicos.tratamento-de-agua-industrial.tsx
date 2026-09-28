@@ -16,6 +16,7 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import solucoesImage from "@/assets/solucoes-empresariais.jpg.asset.json";
 
 const page = PAGES_BY_SLUG["tratamento-de-agua-industrial"];
 
@@ -101,7 +102,11 @@ function TratamentoIndustrialPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img
+                src={solucoesImage.url}
+                alt="Sistema industrial de tratamento de água"
+                className="w-full"
+              />
             </div>
           </Reveal>
         </div>

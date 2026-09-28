@@ -12,6 +12,7 @@ import { Reveal } from "@/components/Reveal";
 import { CTASection, Section, SectionTitle } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, PRODUCT_LINKS, summaryForPath, headFor } from "@/lib/site";
+import produtosImage from "@/assets/equipamentos-e-produtos.jpg.asset.json";
 
 const page = PAGES_BY_SLUG["produtos"];
 
@@ -41,24 +42,31 @@ function ProdutosPage() {
       <section className="bg-gradient-surface">
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-24">
           <Reveal>
-            <div className="flex max-w-3xl flex-col gap-6">
-              <Badge>Produtos</Badge>
-              <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
-                Equipamentos e insumos para tratamento de água
-              </h1>
-              <p className="text-lg leading-relaxed text-muted">
-                Filtros, abrandadores, bombas dosadoras, desmineralizadores, água destilada e
-                produtos químicos — dimensionados a partir da análise da sua água e com suporte
-                técnico da mesma equipe que instala e mantém o sistema.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/contato">
-                  <Button variant="gradient">Solicitar orçamento</Button>
-                </Link>
-                <a href="#lista">
-                  <Button variant="outline">Ver a linha completa</Button>
-                </a>
+            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+              <div className="flex flex-col gap-6">
+                <Badge>Produtos</Badge>
+                <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
+                  Equipamentos e insumos para tratamento de água
+                </h1>
+                <p className="text-lg leading-relaxed text-muted">
+                  Filtros, abrandadores, bombas dosadoras, desmineralizadores, água destilada e
+                  produtos químicos — dimensionados a partir da análise da sua água e com suporte
+                  técnico da mesma equipe que instala e mantém o sistema.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link to="/contato">
+                    <Button variant="gradient">Solicitar orçamento</Button>
+                  </Link>
+                  <a href="#lista">
+                    <Button variant="outline">Ver a linha completa</Button>
+                  </a>
+                </div>
               </div>
+              <img
+                src={produtosImage.url}
+                alt="Equipamentos para tratamento de água"
+                className="w-full"
+              />
             </div>
           </Reveal>
         </div>

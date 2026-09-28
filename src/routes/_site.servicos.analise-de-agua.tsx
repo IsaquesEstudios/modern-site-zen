@@ -15,6 +15,7 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
 
 const page = PAGES_BY_SLUG["analise-de-agua"];
 
@@ -99,7 +100,11 @@ function AnaliseDeAguaPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img
+                src={analiseImage.url}
+                alt="Coleta de amostra para análise de água"
+                className="w-full"
+              />
             </div>
           </Reveal>
         </div>
