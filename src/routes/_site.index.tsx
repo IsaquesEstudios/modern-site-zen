@@ -15,6 +15,7 @@ import { Section, SectionTitle } from "@/components/PageTemplate";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { HOME, headFor, CONTACT } from "@/lib/site";
+import heroAguaImage from "@/assets/hero-agua.jpg.asset.json";
 import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
 import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
 import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
@@ -136,8 +137,15 @@ function Home() {
   return (
     <>
       {/* SEÇÃO 1 — Hero */}
-      <section className="bg-gradient-surface">
-        <div className="mx-auto grid max-w-6xl gap-16 px-6 pb-24 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <section className="relative overflow-hidden">
+        <img
+          src={heroAguaImage.url}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20"
+        />
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-surface" />
+        <div className="relative mx-auto grid max-w-6xl gap-16 px-6 pb-24 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <Reveal>
             <div className="flex flex-col gap-6">
               <div className="flex">
