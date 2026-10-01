@@ -10,6 +10,7 @@ import {
 import { Reveal } from "@/components/Reveal";
 import { CTASection, Section, SectionTitle } from "@/components/PageTemplate";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
+import { BLOG_POSTS } from "@/lib/blog";
 
 const page = PAGES_BY_SLUG["blog"];
 
@@ -20,44 +21,7 @@ export const Route = createFileRoute("/_site/blog")({
 
 const categories = ["Problemas Comuns", "Qualidade da Água", "Legislação", "Manutenção"];
 
-const guias = [
-  {
-    cat: "Problemas Comuns",
-    title: "Água dura: por que o sabão não faz espuma e o chuveiro entope",
-    body: "Como o excesso de cálcio e magnésio incrusta tubulações, danifica aquecedores e o que resolve o problema de forma definitiva.",
-    to: "/agua-dura",
-  },
-  {
-    cat: "Problemas Comuns",
-    title: "Manchas amareladas na roupa e na louça: ferro e manganês na água",
-    body: "Os sinais que identificam a presença de ferro e manganês e o tratamento por oxidação e filtração indicado para cada faixa de concentração.",
-    to: "/agua-com-ferro-manganes",
-  },
-  {
-    cat: "Qualidade da Água",
-    title: "Água turva, com cheiro ou gosto de cloro: o que está acontecendo",
-    body: "Turbidez, odor e sabor alterados quase sempre indicam matéria orgânica ou excesso de cloro. Entenda a causa antes de trocar o filtro.",
-    to: "/agua-turva-cheiro-cloro",
-  },
-  {
-    cat: "Qualidade da Água",
-    title: "Contaminação biológica e química: o risco que não se vê",
-    body: "Coliformes, bactérias e contaminantes químicos não mudam a aparência da água. Só a análise laboratorial revela o problema.",
-    to: "/contaminacao-agua",
-  },
-  {
-    cat: "Legislação",
-    title: "Monitoramento de poço artesiano: o que a Covisa exige",
-    body: "Quais análises e laudos a Vigilância Sanitária pede para poços já legalizados e com que frequência.",
-    to: "/servicos/monitoramento-poco-artesiano",
-  },
-  {
-    cat: "Manutenção",
-    title: "Com que frequência manter o sistema de tratamento de água",
-    body: "Prazos de troca de mídias filtrantes, calibração de dosadoras e periodicidade das análises em uso residencial, comercial e industrial.",
-    to: "/servicos/manutencao-sistemas-tratamento",
-  },
-] as const;
+const guias = BLOG_POSTS;
 
 function BlogPage() {
   return (
@@ -93,6 +57,12 @@ function BlogPage() {
             <Reveal key={post.title} delay={i * 50}>
               <Link to={post.to} className="group block h-full">
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
+                  <img
+                    src={post.image}
+                    alt={post.alt}
+                    loading="lazy"
+                    className="aspect-video w-full object-cover"
+                  />
                   <CardHeader>
                     <Badge variant="neutral">{post.cat}</Badge>
                     <CardTitle>{post.title}</CardTitle>

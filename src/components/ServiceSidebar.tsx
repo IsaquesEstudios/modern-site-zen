@@ -1,11 +1,15 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { Button } from "@/design-system/cozy-code-library-1062b4";
 import { SERVICE_LINKS } from "@/lib/site";
+import { BLOG_POSTS } from "@/lib/blog";
 
 export const QUOTE_ANCHOR = "orcamento";
 
 /** Coluna lateral padrão (20%) das páginas de serviço. */
 export function ServiceSidebar({ currentSlug }: { currentSlug?: string }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isPost = BLOG_POSTS.some((p) => p.to === pathname);
+  const related = BLOG_POSTS.filter((p) => p.to !== pathname).slice(0, 5);
   return (
     <div className="flex flex-col gap-6 lg:sticky lg:top-24">
       <a href={`#${QUOTE_ANCHOR}`} className="block">
@@ -39,6 +43,29 @@ export function ServiceSidebar({ currentSlug }: { currentSlug?: string }) {
           Ver todos os serviços
         </Link>
       </nav>
+
+      {isPost && (
+        <nav aria-label="Posts referentes" className="flex flex-col gap-2">
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted">
+            Posts referentes
+          </p>
+          <ul className="flex flex-col divide-y divide-border border-t border-border">
+            {related.map((post) => (
+              <li key={post.to}>
+                <Link
+                  to={post.to}
+                  className="block py-3 text-sm leading-snug text-muted transition-colors duration-200 hover:text-primary"
+                >
+                  {post.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link to="/blog" className="pt-2 text-sm font-semibold text-accent hover:text-primary">
+            Ver todos os posts
+          </Link>
+        </nav>
+      )}
     </div>
   );
 }
