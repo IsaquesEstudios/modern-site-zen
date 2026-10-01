@@ -15,7 +15,7 @@ import { Section, SectionTitle } from "@/components/PageTemplate";
 import { BLOG_POSTS } from "@/lib/blog";
 import { useEffect, useState } from "react";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { HOME, headFor, CONTACT } from "@/lib/site";
+import { HOME, headFor, CONTACT, PRODUCT_LINKS, PAGES_BY_SLUG } from "@/lib/site";
 import heroAguaImage from "@/assets/hero-agua.jpg.asset.json";
 import analistaImage from "@/assets/analista-vidagua.png.asset.json";
 import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
@@ -67,13 +67,18 @@ const services = [
     alt: "Sistema industrial de tratamento de água",
   },
   {
-    label: "Produtos e Equipamentos",
-    to: "/produtos",
-    desc: "Linha completa de filtros, abrandadores, bombas dosadoras e químicos.",
-    image: produtosImage.url,
-    alt: "Equipamentos para tratamento de água",
+    label: "Manutenção de Sistemas",
+    to: "/servicos/manutencao-sistemas-tratamento",
+    desc: "Manutenção preventiva e corretiva de filtros, abrandadores e sistemas de tratamento.",
+    image: tratamentoImage.url,
+    alt: "Técnico realizando manutenção em sistema de tratamento de água",
   },
 ] as const;
+
+const products = PRODUCT_LINKS.map((p) => ({
+  ...p,
+  desc: PAGES_BY_SLUG[p.slug]?.description ?? "",
+}));
 
 const problems = [
   {
@@ -246,6 +251,45 @@ function Home() {
               </Link>
             </Reveal>
           ))}
+        </div>
+      </Section>
+
+      {/* SEÇÃO 3B — Produtos e Equipamentos */}
+      <Section>
+        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <Reveal>
+            <div className="flex flex-col items-start gap-6">
+              <SectionTitle
+                eyebrow="Produtos e Equipamentos"
+                title="Equipamentos e insumos para tratar a sua água"
+              />
+              <p className="max-w-xl text-lg leading-relaxed text-muted">
+                Fornecemos e instalamos filtros, abrandadores, bombas dosadoras, desmineralizadores,
+                água destilada e produtos químicos — com orientação técnica na escolha certa.
+              </p>
+              <img src={produtosImage.url} alt="Equipamentos para tratamento de água" className="w-full rounded-lg" loading="lazy" />
+              <Link to="/produtos">
+                <Button variant="outline">Ver catálogo completo</Button>
+              </Link>
+            </div>
+          </Reveal>
+          <ul className="grid gap-4 sm:grid-cols-2">
+            {products.map((p, i) => (
+              <Reveal as="li" key={p.to} delay={i * 50}>
+                <Link to={p.to} className="group block h-full">
+                  <Card tone="soft" className="h-full transition-transform duration-300 group-hover:-translate-y-1">
+                    <CardHeader>
+                      <CardTitle>{p.label}</CardTitle>
+                      <CardDescription className="line-clamp-3">{p.desc}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <span className="text-sm font-semibold text-accent">Ver produto →</span>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </Reveal>
+            ))}
+          </ul>
         </div>
       </Section>
 
