@@ -11,7 +11,7 @@ import {
   Textarea,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import soloCalcario from "@/assets/agua-dura-solo-calcario.jpg";
 import torneiraImage from "@/assets/agua-dura-torneira.jpg.asset.json";
 import cromadosImage from "@/assets/cromados-agua-dura.png.asset.json";
 import panelasImage from "@/assets/dureza-panelas.png.asset.json";
@@ -116,7 +116,7 @@ function AguaDuraPage() {
                 necessariamente tóxicos para a saúde humana na água de beber, os danos materiais e
                 estéticos causados por eles são enormes e de rápida progressão.
               </p>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src={soloCalcario} alt="Corte do solo calcário liberando cálcio e magnésio na água subterrânea" loading="lazy" width={1600} height={704} className="w-full" />
             </section>
           </Reveal>
 
