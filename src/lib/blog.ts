@@ -36,4 +36,12 @@ export const BLOG_POSTS = [
     image: contInvisivel,
     alt: "Água cristalina com bactérias e compostos químicos em destaque",
   },
+  {
+    cat: "Legislação",
+    title: "Qual a qualidade da água potável segundo a ANVISA e Portaria 888?",
+    body: "RDC 275 da ANVISA e Portaria GM/MS 888: o que a lei exige de empresas, condomínios e quais parâmetros aprovam a água potável.",
+    to: "/qualidade-agua-anvisa",
+    image: laudoImage,
+    alt: "Copo de amostra de água ao lado de laudo técnico e lupa em bancada de laboratório",
+  },
 ] as const;
