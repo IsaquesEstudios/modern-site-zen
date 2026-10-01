@@ -12,6 +12,10 @@ import {
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import torneiraImage from "@/assets/agua-dura-torneira.jpg.asset.json";
+import cromadosImage from "@/assets/cromados-agua-dura.png.asset.json";
+import panelasImage from "@/assets/dureza-panelas.png.asset.json";
+import resistenciaImage from "@/assets/dureza-resistencia.png.asset.json";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -77,7 +81,11 @@ function AguaDuraPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img
+                src={torneiraImage.url}
+                alt="Torneira cromada com manchas brancas de calcário causadas pela água dura"
+                className="w-full"
+              />
             </div>
           </Reveal>
         </div>
@@ -148,6 +156,107 @@ function AguaDuraPage() {
                   ásperos, opacos e sem vida.
                 </Bullet>
               </ul>
+              <img
+                src={cromadosImage.url}
+                alt="Torneiras, chuveiro, registro e outros cromados manchados pelo calcário da água dura"
+                loading="lazy"
+                className="w-full"
+              />
+            </section>
+          </Reveal>
+
+          {/* SEÇÃO 3.1 — Complemento: química da incrustação */}
+          <Reveal>
+            <section className="flex flex-col gap-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+                A química por trás do problema
+              </p>
+              <H2>O inimigo invisível: como a química da água dura sabota seus equipamentos</H2>
+              <p className="leading-relaxed text-muted">
+                Você já se perguntou por que aquela resistência do chuveiro ou da máquina industrial
+                queima com tanta frequência, ou por que o fundo da sua panela de inox ganha uma
+                crosta branca impossível de limpar? A resposta geralmente está na própria água que
+                utilizamos. A chamada &ldquo;água dura&rdquo; é rica em minerais invisíveis a olho
+                nu, principalmente{" "}
+                <strong className="text-foreground">
+                  íons de cálcio (Ca²⁺) e magnésio (Mg²⁺)
+                </strong>
+                .
+              </p>
+              <p className="leading-relaxed text-muted">
+                O verdadeiro problema começa quando aplicamos calor. Ao aquecer essa água,
+                desencadeamos uma reação química: a solubilidade desses sais diminui, ocorre a
+                liberação de dióxido de carbono (CO₂) e aqueles íons livres se transformam em
+                carbonatos sólidos (como o carbonato de cálcio, o CaCO₃). O resultado é um
+                precipitado branco e duro, o famoso{" "}
+                <strong className="text-foreground">calcário</strong>, que se agarra
+                obstinadamente às superfícies metálicas mais quentes. É um processo cumulativo; a
+                cada ciclo de aquecimento, a camada de incrustação se torna mais espessa, dura e
+                problemática.
+              </p>
+              <img
+                src={panelasImage.url}
+                alt="Infográfico: como a dureza da água forma incrustação de carbonato de cálcio em panelas"
+                loading="lazy"
+                className="w-full"
+              />
+            </section>
+          </Reveal>
+
+          {/* SEÇÃO 3.2 — Complemento: isolamento térmico */}
+          <Reveal>
+            <section className="flex flex-col gap-6">
+              <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+                Eficiência energética
+              </p>
+              <H2>O custo oculto da incrustação: isolamento térmico e superaquecimento</H2>
+              <p className="leading-relaxed text-muted">
+                Seja na resistência de um aquecedor ou no fundo de uma panela, o efeito dessa camada
+                de calcário é devastador para a eficiência energética. Isso porque essa crosta atua
+                como um excelente isolante térmico. Ela literalmente forma uma barreira porosa que
+                impede o calor de passar do metal para a água.
+              </p>
+              <p className="leading-relaxed text-muted">
+                As consequências formam um efeito dominó que pesa no bolso:
+              </p>
+              <ul className="flex flex-col gap-3">
+                <Bullet>
+                  <strong className="text-foreground">Perda de eficiência:</strong> como o calor não
+                  é transferido corretamente, a água demora muito mais para aquecer, o que dispara o
+                  consumo de energia elétrica ou de gás.
+                </Bullet>
+                <Bullet>
+                  <strong className="text-foreground">Superaquecimento do metal:</strong> o calor
+                  gerado que não consegue escapar para a água acaba se concentrando na própria
+                  resistência (ou no fundo da panela).
+                </Bullet>
+                <Bullet>
+                  <strong className="text-foreground">Risco de queima:</strong> esse aumento
+                  drástico na temperatura interna do metal gera pontos de superaquecimento (os
+                  chamados <em>hot spots</em>), que são a causa número um da fadiga do material,
+                  redução drástica da vida útil e queima prematura das resistências elétricas.
+                </Bullet>
+              </ul>
+              <img
+                src={resistenciaImage.url}
+                alt="Infográfico: resistência elétrica limpa comparada a resistência incrustada pela dureza da água"
+                loading="lazy"
+                className="w-full"
+              />
+              <p className="leading-relaxed text-muted">
+                Em termos práticos: você gasta mais energia para gerar um calor que não é
+                aproveitado e, de quebra, destrói seu equipamento de dentro para fora. A solução
+                definitiva para esse ciclo, especialmente em aplicações industriais e comerciais,
+                passa invariavelmente pelo tratamento prévio da água, utilizando sistemas de{" "}
+                <Link to="/produtos/abrandador-de-agua" className={inlineLink}>
+                  abrandamento
+                </Link>{" "}
+                ou{" "}
+                <Link to="/produtos/desmineralizador-de-agua" className={inlineLink}>
+                  desmineralização
+                </Link>{" "}
+                para remover esses íons antes que o problema se forme.
+              </p>
             </section>
           </Reveal>
 
