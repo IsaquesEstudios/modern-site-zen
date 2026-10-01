@@ -210,6 +210,30 @@ export const PAGES: PageDef[] = [
     ],
   },
   {
+    slug: "qualidade-agua-anvisa",
+    nav: "Qualidade ANVISA",
+    type: "Blog",
+    priority: "Média",
+    keyword: "qualidade da água potável",
+    secondary: [
+      "anvisa qualidade da água",
+      "portaria 888 potabilidade",
+      "rdc 275 anvisa",
+      "parâmetros de potabilidade",
+      "laudo de potabilidade",
+    ],
+    title: "Qual a qualidade da água potável segundo a ANVISA e Portaria 888? | Vid'Água",
+    description:
+      "Entenda as exigências da ANVISA (RDC 275) e os parâmetros da Portaria 888 para aprovar a qualidade da água potável na sua empresa ou condomínio.",
+    h1: "Qualidade da Água Potável: o que exigem a ANVISA e a Portaria 888",
+    intro: "O que a lei exige e como ter certeza de que a sua água está aprovada.",
+    sections: [],
+    related: [
+      { label: "Análise de Água", to: "/servicos/analise-de-agua" },
+      { label: "Monitoramento da Qualidade da Água", to: "/servicos/monitoramento-qualidade-agua" },
+    ],
+  },
+  {
     slug: "monitoramento-poco-artesiano",
     nav: "Monitoramento de Poço",
     type: "Serviço",
