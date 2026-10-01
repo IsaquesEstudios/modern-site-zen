@@ -1,7 +1,5 @@
 import torneira from "@/assets/agua-dura-torneira.jpg.asset.json";
 import ferroHero from "@/assets/ferro-agua-amarela.jpg";
-import poco from "@/assets/poco-artesiano.jpg.asset.json";
-import tratamento from "@/assets/tratamento-de-agua.jpg.asset.json";
 import turvaLimpa from "@/assets/agua-turva-vs-limpa.jpg";
 import contInvisivel from "@/assets/contaminacao-invisivel.jpg";
 
@@ -37,21 +35,5 @@ export const BLOG_POSTS = [
     to: "/contaminacao-agua",
     image: contInvisivel,
     alt: "Água cristalina com bactérias e compostos químicos em destaque",
-  },
-  {
-    cat: "Legislação",
-    title: "Monitoramento de poço artesiano: o que a Covisa exige",
-    body: "Quais análises e laudos a Vigilância Sanitária pede para poços já legalizados e com que frequência.",
-    to: "/servicos/monitoramento-poco-artesiano",
-    image: poco.url,
-    alt: "Cabeçote de poço artesiano",
-  },
-  {
-    cat: "Manutenção",
-    title: "Com que frequência manter o sistema de tratamento de água",
-    body: "Prazos de troca de mídias filtrantes, calibração de dosadoras e periodicidade das análises em uso residencial, comercial e industrial.",
-    to: "/servicos/manutencao-sistemas-tratamento",
-    image: tratamento.url,
-    alt: "Tanques de tratamento de água com tubulações",
   },
 ] as const;

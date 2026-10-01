@@ -13,6 +13,8 @@ import {
 import { Reveal } from "@/components/Reveal";
 import { Section, SectionTitle } from "@/components/PageTemplate";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import { BLOG_POSTS } from "@/lib/blog";
+import { useEffect, useState } from "react";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { HOME, headFor, CONTACT } from "@/lib/site";
 import heroAguaImage from "@/assets/hero-agua.jpg.asset.json";
@@ -124,11 +126,6 @@ const differentials = [
   },
 ];
 
-const posts = [
-  { title: "Título do artigo mais recente", cat: "Problemas Comuns", date: "00/00/0000" },
-  { title: "Título do segundo artigo", cat: "Qualidade da Água", date: "00/00/0000" },
-  { title: "Título do terceiro artigo", cat: "Legislação", date: "00/00/0000" },
-];
 
 const field = "flex flex-col gap-2";
 const labelClass = "text-sm font-medium";
@@ -298,29 +295,7 @@ function Home() {
       {/* SEÇÃO 6 — Blog */}
       <Section>
         <SectionTitle eyebrow="Conteúdo" title="Informação técnica de qualidade e dicas úteis" />
-        <div className="grid gap-6 md:grid-cols-3">
-          {posts.map((post, i) => (
-            <Reveal key={post.title} delay={i * 60}>
-              <Card className="h-full">
-                <CardContent>
-                  <ImagePlaceholder label="Imagem do artigo" ratio="aspect-[16/9]" />
-                </CardContent>
-                <CardHeader>
-                  <Badge variant="neutral">{post.cat}</Badge>
-                  <CardTitle>{post.title}</CardTitle>
-                  <CardDescription>{post.date}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Link to="/blog">
-                    <Button variant="ghost" size="sm">
-                      Ler mais
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            </Reveal>
-          ))}
-        </div>
+        <BlogCarousel />
         <div className="mt-10">
           <Link to="/blog">
             <Button variant="outline">Acessar o Blog da Vid&rsquo;Água</Button>
@@ -429,5 +404,44 @@ function Home() {
 
       <WhatsAppFloat />
     </>
+  );
+}
+
+function BlogCarousel() {
+  const [start, setStart] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const n = BLOG_POSTS.length;
+  useEffect(() => {
+    if (paused || n <= 3) return;
+    const id = setInterval(() => setStart((s) => (s + 1) % n), 4000);
+    return () => clearInterval(id);
+  }, [paused, n]);
+  const visible = [0, 1, 2].map((k) => BLOG_POSTS[(start + k) % n]!);
+  return (
+    <div
+      className="grid gap-6 md:grid-cols-3"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      {visible.map((post, k) => (
+        <div key={post.to} className={k > 0 ? "hidden md:block animate-in fade-in" : "animate-in fade-in"}>
+          <Link to={post.to} className="block h-full">
+            <Card className="h-full">
+              <CardContent>
+                <img src={post.image} alt={post.alt} loading="lazy" className="aspect-video w-full object-cover" />
+              </CardContent>
+              <CardHeader>
+                <Badge variant="neutral">{post.cat}</Badge>
+                <CardTitle>{post.title}</CardTitle>
+                <CardDescription>{post.body}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <span className="text-sm font-semibold text-accent">Ler o artigo →</span>
+              </CardContent>
+            </Card>
+          </Link>
+        </div>
+      ))}
+    </div>
   );
 }
