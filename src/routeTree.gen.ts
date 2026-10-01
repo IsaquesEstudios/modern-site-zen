@@ -31,6 +31,7 @@ import { Route as SiteManutencaoSistemasTratamentoRouteImport } from './routes/_
 import { Route as SiteMonitoramentoQualidadeAguaRouteImport } from './routes/_site.monitoramento-qualidade-agua'
 import { Route as SitePorQueVidaguaRouteImport } from './routes/_site.por-que-vidagua'
 import { Route as SiteProdutosQuimicosAguaRouteImport } from './routes/_site.produtos-quimicos-agua'
+import { Route as SiteQualidadeAguaAnvisaRouteImport } from './routes/_site.qualidade-agua-anvisa'
 import { Route as SiteSobreRouteImport } from './routes/_site.sobre'
 import { Route as SiteTratamentoAguaComercialRouteImport } from './routes/_site.tratamento-agua-comercial'
 import { Route as SiteTratamentoAguaHotelRouteImport } from './routes/_site.tratamento-agua-hotel'
@@ -178,6 +179,11 @@ const SiteProdutosQuimicosAguaRoute =
     path: '/produtos-quimicos-agua',
     getParentRoute: () => SiteRoute,
   } as any)
+const SiteQualidadeAguaAnvisaRoute = SiteQualidadeAguaAnvisaRouteImport.update({
+  id: '/qualidade-agua-anvisa',
+  path: '/qualidade-agua-anvisa',
+  getParentRoute: () => SiteRoute,
+} as any)
 const SiteSobreRoute = SiteSobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
@@ -368,6 +374,7 @@ export interface FileRoutesByFullPath {
   '/monitoramento-qualidade-agua': typeof SiteMonitoramentoQualidadeAguaRoute
   '/por-que-vidagua': typeof SitePorQueVidaguaRoute
   '/produtos-quimicos-agua': typeof SiteProdutosQuimicosAguaRoute
+  '/qualidade-agua-anvisa': typeof SiteQualidadeAguaAnvisaRoute
   '/sobre': typeof SiteSobreRoute
   '/tratamento-agua-comercial': typeof SiteTratamentoAguaComercialRoute
   '/tratamento-agua-hotel': typeof SiteTratamentoAguaHotelRoute
@@ -419,6 +426,7 @@ export interface FileRoutesByTo {
   '/monitoramento-qualidade-agua': typeof SiteMonitoramentoQualidadeAguaRoute
   '/por-que-vidagua': typeof SitePorQueVidaguaRoute
   '/produtos-quimicos-agua': typeof SiteProdutosQuimicosAguaRoute
+  '/qualidade-agua-anvisa': typeof SiteQualidadeAguaAnvisaRoute
   '/sobre': typeof SiteSobreRoute
   '/tratamento-agua-comercial': typeof SiteTratamentoAguaComercialRoute
   '/tratamento-agua-hotel': typeof SiteTratamentoAguaHotelRoute
@@ -473,6 +481,7 @@ export interface FileRoutesById {
   '/_site/monitoramento-qualidade-agua': typeof SiteMonitoramentoQualidadeAguaRoute
   '/_site/por-que-vidagua': typeof SitePorQueVidaguaRoute
   '/_site/produtos-quimicos-agua': typeof SiteProdutosQuimicosAguaRoute
+  '/_site/qualidade-agua-anvisa': typeof SiteQualidadeAguaAnvisaRoute
   '/_site/sobre': typeof SiteSobreRoute
   '/_site/tratamento-agua-comercial': typeof SiteTratamentoAguaComercialRoute
   '/_site/tratamento-agua-hotel': typeof SiteTratamentoAguaHotelRoute
@@ -528,6 +537,7 @@ export interface FileRouteTypes {
     | '/monitoramento-qualidade-agua'
     | '/por-que-vidagua'
     | '/produtos-quimicos-agua'
+    | '/qualidade-agua-anvisa'
     | '/sobre'
     | '/tratamento-agua-comercial'
     | '/tratamento-agua-hotel'
@@ -579,6 +589,7 @@ export interface FileRouteTypes {
     | '/monitoramento-qualidade-agua'
     | '/por-que-vidagua'
     | '/produtos-quimicos-agua'
+    | '/qualidade-agua-anvisa'
     | '/sobre'
     | '/tratamento-agua-comercial'
     | '/tratamento-agua-hotel'
@@ -632,6 +643,7 @@ export interface FileRouteTypes {
     | '/_site/monitoramento-qualidade-agua'
     | '/_site/por-que-vidagua'
     | '/_site/produtos-quimicos-agua'
+    | '/_site/qualidade-agua-anvisa'
     | '/_site/sobre'
     | '/_site/tratamento-agua-comercial'
     | '/_site/tratamento-agua-hotel'
@@ -824,6 +836,13 @@ declare module '@tanstack/react-router' {
       path: '/produtos-quimicos-agua'
       fullPath: '/produtos-quimicos-agua'
       preLoaderRoute: typeof SiteProdutosQuimicosAguaRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/qualidade-agua-anvisa': {
+      id: '/_site/qualidade-agua-anvisa'
+      path: '/qualidade-agua-anvisa'
+      fullPath: '/qualidade-agua-anvisa'
+      preLoaderRoute: typeof SiteQualidadeAguaAnvisaRouteImport
       parentRoute: typeof SiteRoute
     }
     '/_site/sobre': {
@@ -1053,6 +1072,7 @@ interface SiteRouteChildren {
   SiteMonitoramentoQualidadeAguaRoute: typeof SiteMonitoramentoQualidadeAguaRoute
   SitePorQueVidaguaRoute: typeof SitePorQueVidaguaRoute
   SiteProdutosQuimicosAguaRoute: typeof SiteProdutosQuimicosAguaRoute
+  SiteQualidadeAguaAnvisaRoute: typeof SiteQualidadeAguaAnvisaRoute
   SiteSobreRoute: typeof SiteSobreRoute
   SiteTratamentoAguaComercialRoute: typeof SiteTratamentoAguaComercialRoute
   SiteTratamentoAguaHotelRoute: typeof SiteTratamentoAguaHotelRoute
@@ -1104,6 +1124,7 @@ const SiteRouteChildren: SiteRouteChildren = {
   SiteMonitoramentoQualidadeAguaRoute: SiteMonitoramentoQualidadeAguaRoute,
   SitePorQueVidaguaRoute: SitePorQueVidaguaRoute,
   SiteProdutosQuimicosAguaRoute: SiteProdutosQuimicosAguaRoute,
+  SiteQualidadeAguaAnvisaRoute: SiteQualidadeAguaAnvisaRoute,
   SiteSobreRoute: SiteSobreRoute,
   SiteTratamentoAguaComercialRoute: SiteTratamentoAguaComercialRoute,
   SiteTratamentoAguaHotelRoute: SiteTratamentoAguaHotelRoute,

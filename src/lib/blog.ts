@@ -2,6 +2,7 @@ import torneira from "@/assets/agua-dura-torneira.jpg.asset.json";
 import ferroHero from "@/assets/ferro-agua-amarela.jpg";
 import turvaLimpa from "@/assets/agua-turva-vs-limpa.jpg";
 import contInvisivel from "@/assets/contaminacao-invisivel.jpg";
+import laudoImage from "@/assets/qualidade-agua-laudo.jpg";
 
 export const BLOG_POSTS = [
   {
