@@ -10,7 +10,8 @@ import {
   Input,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import contInvisivel from "@/assets/contaminacao-invisivel.jpg";
+import contCategorias from "@/assets/contaminacao-categorias.jpg";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -68,7 +69,7 @@ function ContaminacaoAguaPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img src={contInvisivel} alt="Copo de água cristalina com bactérias e compostos químicos invisíveis em destaque" width={1200} height={912} className="w-full" />
             </div>
           </Reveal>
         </div>
@@ -119,7 +120,7 @@ function ContaminacaoAguaPage() {
                   </CardHeader>
                 </Card>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src={contCategorias} alt="Contaminação biológica, química e por excesso de sais" loading="lazy" width={1600} height={704} className="w-full" />
             </section>
           </Reveal>
 
