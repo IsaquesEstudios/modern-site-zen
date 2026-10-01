@@ -178,7 +178,7 @@ function Home() {
                 alt="Analista da Vid'Água examinando amostra de água em laboratório"
                 className="w-full"
               />
-              <div className="absolute inset-x-4 bottom-4 grid gap-4 sm:grid-cols-2">
+              <div className="absolute inset-x-4 bottom-0 grid translate-y-2/5 gap-4 sm:grid-cols-2">
                 <Card tone="gradientSoft">
                   <CardContent>
                     <Stat label="Experiência" value="30+" detail="anos no setor" trend="up" />
