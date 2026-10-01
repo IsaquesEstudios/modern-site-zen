@@ -12,12 +12,12 @@ import {
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
 import { Section, SectionTitle } from "@/components/PageTemplate";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { BLOG_POSTS } from "@/lib/blog";
 import { useEffect, useState } from "react";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { HOME, headFor, CONTACT } from "@/lib/site";
 import heroAguaImage from "@/assets/hero-agua.jpg.asset.json";
+import analistaImage from "@/assets/analista-vidagua.png.asset.json";
 import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
 import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
 import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
@@ -172,9 +172,13 @@ function Home() {
           </Reveal>
 
           <Reveal delay={150}>
-            <div className="flex flex-col gap-4">
-              <ImagePlaceholder label="Imagem principal" ratio="aspect-[4/3]" />
-              <div className="grid gap-4 sm:grid-cols-2">
+            <div className="relative">
+              <img
+                src={analistaImage.url}
+                alt="Analista da Vid'Água examinando amostra de água em laboratório"
+                className="w-full"
+              />
+              <div className="absolute inset-x-4 bottom-4 grid gap-4 sm:grid-cols-2">
                 <Card tone="gradientSoft">
                   <CardContent>
                     <Stat label="Experiência" value="30+" detail="anos no setor" trend="up" />
