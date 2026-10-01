@@ -1,5 +1,5 @@
 import torneira from "@/assets/agua-dura-torneira.jpg.asset.json";
-import filtros from "@/assets/filtros-vidagua.png.asset.json";
+import ferroHero from "@/assets/ferro-agua-amarela.jpg";
 import poco from "@/assets/poco-artesiano.jpg.asset.json";
 import tratamento from "@/assets/tratamento-de-agua.jpg.asset.json";
 import turvaLimpa from "@/assets/agua-turva-vs-limpa.jpg";
@@ -19,8 +19,8 @@ export const BLOG_POSTS = [
     title: "Manchas amareladas na roupa e na louça: ferro e manganês na água",
     body: "Os sinais que identificam a presença de ferro e manganês e o tratamento por oxidação e filtração indicado para cada faixa de concentração.",
     to: "/agua-com-ferro-manganes",
-    image: filtros.url,
-    alt: "Filtros de tratamento de água para remoção de ferro e manganês",
+    image: ferroHero,
+    alt: "Água amarelada por ferro e manganês saindo da torneira",
   },
   {
     cat: "Qualidade da Água",
