@@ -142,7 +142,7 @@ function Home() {
           src={heroAguaImage.url}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-35"
         />
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-surface" />
         <div className="relative mx-auto grid max-w-6xl gap-16 px-6 pb-24 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
