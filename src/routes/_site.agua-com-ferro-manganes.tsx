@@ -11,7 +11,8 @@ import {
   Textarea,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import ferroHero from "@/assets/ferro-agua-amarela.jpg";
+import ferroCausas from "@/assets/ferro-oxidacao-causas.jpg";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -78,7 +79,7 @@ function FerroManganesPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img src={ferroHero} alt="Torneira enchendo copo com água amarelada por ferro e manganês" width={1200} height={912} className="w-full" />
             </div>
           </Reveal>
         </div>
@@ -120,7 +121,7 @@ function FerroManganesPage() {
                   </CardHeader>
                 </Card>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src={ferroCausas} alt="Ilustração da oxidação do ferro e manganês da água do poço e de tubulações antigas" width={1600} height={704} loading="lazy" className="w-full" />
             </section>
           </Reveal>
 
