@@ -1,3 +1,4 @@
+import { schemasFor } from "@/lib/schema";
 export type PageType =
   | "Serviço"
   | "Problema"
