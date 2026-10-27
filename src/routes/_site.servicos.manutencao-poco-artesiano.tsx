@@ -20,9 +20,9 @@ import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
 
 const page = PAGES_BY_SLUG["manutencao-poco-artesiano"];
 
-const TITLE = "Manutenção e Tratamento de Poço Artesiano | Vid'Água";
+const TITLE = "Tratamento de Água de Poço Artesiano | Vid'Água";
 const DESCRIPTION =
-  "Limpeza, desinfecção e tratamento de água de poço artesiano com laudo técnico. Manutenção preventiva e corretiva em São Paulo e região.";
+  "Tratamento da água de poço artesiano com análise, filtração, cloração e laudo técnico em São Paulo e região.";
 
 export const Route = createFileRoute("/_site/servicos/manutencao-poco-artesiano")({
   head: () => headFor({ ...page, title: TITLE, description: DESCRIPTION }),
@@ -46,20 +46,20 @@ const inlineLink = "font-semibold text-accent underline-offset-4 hover:underline
 
 const escopo = [
   {
-    title: "Limpeza e desinfecção do poço",
-    body: "Remoção de material acumulado no fundo, higienização das paredes e desinfecção com produto adequado, seguida de esgotamento até a água voltar a sair limpa.",
+    title: "Análise da água do poço",
+    body: "Coleta e análise laboratorial para identificar ferro, manganês, dureza, turbidez ou contaminação bacteriológica. É o laudo que define o tratamento certo.",
   },
   {
-    title: "Verificação da bomba submersa",
-    body: "Teste de rendimento, medição de corrente, avaliação do cabo elétrico e do quadro de comando. Uma bomba trabalhando forçada é a causa mais comum de parada inesperada.",
+    title: "Filtração sob medida",
+    body: "Dimensionamos filtros com a mídia adequada para cada caso: remoção de ferro e manganês, turbidez, cor ou odor.",
   },
   {
-    title: "Níveis estático e dinâmico",
-    body: "Medimos o nível da água parada e em bombeamento para saber se o poço está sendo explorado acima da sua capacidade — informação que evita queimar equipamento e comprometer o aquífero.",
+    title: "Desinfecção da água",
+    body: "Instalação e calibração de bomba dosadora de cloro para manter a água livre de bactérias, na medida certa.",
   },
   {
-    title: "Tratamento da água captada",
-    body: "Água de poço costuma trazer ferro, manganês, dureza ou carga bacteriológica. Depois da manutenção, dimensionamos a filtração e a cloração necessárias.",
+    title: "Laudo e acompanhamento",
+    body: "Após o tratamento, emitimos laudo de potabilidade e acompanhamos a qualidade da água com análises periódicas.",
   },
 ];
 
@@ -73,24 +73,23 @@ function ManutencaoPocoPage() {
               <div className="flex flex-col gap-6">
                 <Badge>Serviço</Badge>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
-                  Manutenção e Tratamento de Poço Artesiano
+                  Tratamento de Água de Poço Artesiano
                 </h1>
                 <p className="leading-relaxed text-muted">
-                  Um poço artesiano não é uma obra que se faz e se esquece. Com o tempo, o fundo
-                  acumula material, a bomba perde rendimento e a água pode voltar a apresentar ferro,
-                  turbidez ou contaminação bacteriológica.
+                  A água de poço artesiano pode trazer ferro, manganês, turbidez ou contaminação
+                  bacteriológica, e sua qualidade pode mudar ao longo do tempo.
                 </p>
                 <p className="leading-relaxed text-muted">
-                  A Vid&rsquo;Água realiza a{" "}
-                  <strong className="text-foreground">manutenção completa do poço artesiano</strong>{" "}
-                  e o tratamento da água captada, com laudo técnico ao final do serviço.
+                  A Vid&rsquo;Água realiza o{" "}
+                  <strong className="text-foreground">tratamento da água de poço</strong>, com
+                  análise, equipamentos adequados e laudo técnico ao final do serviço.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <Button variant="gradient">Falar com um Especialista no WhatsApp</Button>
                   </a>
                   <a href="#escopo">
-                    <Button variant="outline">Ver o que a manutenção inclui</Button>
+                    <Button variant="outline">Ver o que o tratamento inclui</Button>
                   </a>
                 </div>
               </div>
@@ -109,21 +108,19 @@ function ManutencaoPocoPage() {
           <Reveal>
             <section className="flex flex-col gap-6">
               <p className="text-xs font-semibold uppercase tracking-widest text-accent">
-                Quando chamar a manutenção
+                Quando tratar a água
               </p>
-              <H2>Sinais de que o seu poço precisa de atenção</H2>
+              <H2>Sinais de que a água do seu poço precisa de tratamento</H2>
               <p className="leading-relaxed text-muted">
-                Na maioria dos casos, o poço avisa antes de parar. Fique atento a:
+                Fique atento a estes sinais na água do seu poço:
               </p>
               <ul className="flex flex-col gap-3">
-                <Bullet>Queda de vazão ou pressão nas torneiras do imóvel</Bullet>
                 <Bullet>Água saindo turva, com areia ou com coloração amarelada</Bullet>
                 <Bullet>Cheiro de terra, de ovo podre ou gosto metálico</Bullet>
-                <Bullet>Bomba ligando e desligando com frequência ou disjuntor desarmando</Bullet>
                 <Bullet>Resultado de análise fora dos padrões de potabilidade</Bullet>
               </ul>
               <p className="leading-relaxed text-muted">
-                Como referência, recomendamos manutenção preventiva a cada 12 meses e{" "}
+                Como referência, recomendamos{" "}
                 <Link to="/servicos/analise-de-agua" className={inlineLink}>
                   análise da água
                 </Link>{" "}
@@ -138,7 +135,7 @@ function ManutencaoPocoPage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-accent">
                 Escopo do serviço
               </p>
-              <H2>O que a manutenção da Vid&rsquo;Água inclui</H2>
+              <H2>O que o tratamento da Vid&rsquo;Água inclui</H2>
               <div className="grid gap-6 md:grid-cols-2">
                 {escopo.map((s, i) => (
                   <Reveal key={s.title} delay={i * 60}>
@@ -161,7 +158,7 @@ function ManutencaoPocoPage() {
               </p>
               <H2>Laudo técnico e acompanhamento sanitário</H2>
               <p className="leading-relaxed text-muted">
-                Ao final da manutenção emitimos o relatório técnico do serviço e, quando solicitado,
+                Ao final do tratamento emitimos o relatório técnico do serviço e, quando solicitado,
                 o laudo de potabilidade da água. Para poços já legalizados, também fazemos o{" "}
                 <Link to="/servicos/monitoramento-poco-artesiano" className={inlineLink}>
                   monitoramento periódico junto à Covisa
@@ -181,10 +178,10 @@ function ManutencaoPocoPage() {
 
           <Reveal>
             <section id={QUOTE_ANCHOR} className="flex flex-col gap-6 scroll-mt-28">
-              <H2>Solicite a manutenção do seu poço</H2>
+              <H2>Solicite o orçamento para tratamento de água de poço</H2>
               <p className="leading-relaxed text-muted">
-                Conte o que está acontecendo com o seu poço e nossa equipe técnica retorna com a
-                orientação e o orçamento adequados.
+                Conte o que está acontecendo com a água do seu poço e nossa equipe técnica retorna
+                com a orientação e o orçamento adequados.
               </p>
 
               <Card>
@@ -212,7 +209,7 @@ function ManutencaoPocoPage() {
                     </div>
                     <div className="flex flex-col gap-2">
                       <label htmlFor="situacao" className="text-sm font-semibold">
-                        Situação do poço
+                        Situação da água do poço
                       </label>
                       <select
                         id="situacao"
@@ -223,10 +220,10 @@ function ManutencaoPocoPage() {
                         <option value="" disabled>
                           Selecione uma opção
                         </option>
-                        <option>Manutenção preventiva anual</option>
-                        <option>Queda de vazão ou bomba com problema</option>
-                        <option>Água suja, com cheiro ou fora do padrão</option>
-                        <option>Poço parado, quero reativar</option>
+                        <option>Água amarelada ou com gosto metálico</option>
+                        <option>Água turva ou com cheiro</option>
+                        <option>Análise fora do padrão de potabilidade</option>
+                        <option>Quero uma análise preventiva</option>
                       </select>
                     </div>
                     <div className="flex flex-col gap-2">
@@ -237,11 +234,11 @@ function ManutencaoPocoPage() {
                     </div>
                     <div>
                       <Button type="submit" variant="gradient">
-                        Solicitar Orçamento de Manutenção
+                        Solicitar Orçamento de Tratamento
                       </Button>
                     </div>
                     <p className="text-xs italic text-muted">
-                      Equipe técnica com certificações NR-33 e NR-35. Atendimento a residências,
+                      Atendimento a residências,
                       propriedades rurais, condomínios e indústrias.
                     </p>
                   </form>
