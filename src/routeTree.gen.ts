@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SiteRouteImport } from './routes/_site'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SiteIndexRouteImport } from './routes/_site.index'
 import { Route as SiteAbrandadorDeAguaRouteImport } from './routes/_site.abrandador-de-agua'
 import { Route as SiteAguaComFerroManganesRouteImport } from './routes/_site.agua-com-ferro-manganes'
@@ -64,6 +65,11 @@ import { Route as SiteServicosTratamentoEfluentesRouteImport } from './routes/_s
 
 const SiteRoute = SiteRouteImport.update({
   id: '/_site',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SiteIndexRoute = SiteIndexRouteImport.update({
@@ -354,6 +360,7 @@ const SiteServicosTratamentoEfluentesRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof SiteIndexRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/abrandador-de-agua': typeof SiteAbrandadorDeAguaRoute
   '/agua-com-ferro-manganes': typeof SiteAguaComFerroManganesRoute
   '/agua-de-reuso': typeof SiteAguaDeReusoRoute
@@ -406,6 +413,7 @@ export interface FileRoutesByFullPath {
   '/servicos/': typeof SiteServicosIndexRoute
 }
 export interface FileRoutesByTo {
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/abrandador-de-agua': typeof SiteAbrandadorDeAguaRoute
   '/agua-com-ferro-manganes': typeof SiteAguaComFerroManganesRoute
   '/agua-de-reuso': typeof SiteAguaDeReusoRoute
@@ -461,6 +469,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_site': typeof SiteRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/_site/abrandador-de-agua': typeof SiteAbrandadorDeAguaRoute
   '/_site/agua-com-ferro-manganes': typeof SiteAguaComFerroManganesRoute
   '/_site/agua-de-reuso': typeof SiteAguaDeReusoRoute
@@ -517,6 +526,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/sitemap.xml'
     | '/abrandador-de-agua'
     | '/agua-com-ferro-manganes'
     | '/agua-de-reuso'
@@ -569,6 +579,7 @@ export interface FileRouteTypes {
     | '/servicos/'
   fileRoutesByTo: FileRoutesByTo
   to:
+    | '/sitemap.xml'
     | '/abrandador-de-agua'
     | '/agua-com-ferro-manganes'
     | '/agua-de-reuso'
@@ -623,6 +634,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/_site'
+    | '/sitemap.xml'
     | '/_site/abrandador-de-agua'
     | '/_site/agua-com-ferro-manganes'
     | '/_site/agua-de-reuso'
@@ -678,6 +690,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   SiteRoute: typeof SiteRouteWithChildren
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   Char91__componentChar93PreviewSplatRoute: typeof Char91__componentChar93PreviewSplatRoute
   Char91__mockupChar93PreviewSplatRoute: typeof Char91__mockupChar93PreviewSplatRoute
 }
@@ -689,6 +702,13 @@ declare module '@tanstack/react-router' {
       path: ''
       fullPath: '/'
       preLoaderRoute: typeof SiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_site/': {
@@ -1166,6 +1186,7 @@ const SiteRouteWithChildren = SiteRoute._addFileChildren(SiteRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   SiteRoute: SiteRouteWithChildren,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   Char91__componentChar93PreviewSplatRoute:
     Char91__componentChar93PreviewSplatRoute,
   Char91__mockupChar93PreviewSplatRoute: Char91__mockupChar93PreviewSplatRoute,
