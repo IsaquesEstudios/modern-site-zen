@@ -126,7 +126,7 @@ function ManutencaoPocoPage() {
                 </Link>{" "}
                 no mínimo semestral para poços de uso coletivo.
               </p>
-              <img src=contextPhoto1 alt="Amostras de água com diferentes aspectos em bancada de laboratório" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
+              <img src={contextPhoto1} alt="Amostras de água com diferentes aspectos em bancada de laboratório" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

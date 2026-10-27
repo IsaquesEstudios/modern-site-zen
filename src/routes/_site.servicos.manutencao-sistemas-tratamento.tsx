@@ -99,7 +99,7 @@ function ManutencaoSistemasTratamentoPage() {
                   </a>
                 </div>
               </div>
-              <img src=contextPhoto1 alt="Profissional com prancheta e frascos para acompanhamento da qualidade da água" width={1440} height={1088} className="w-full h-auto rounded-md" />
+              <img src={contextPhoto1} alt="Profissional com prancheta e frascos para acompanhamento da qualidade da água" width={1440} height={1088} className="w-full h-auto rounded-md" />
             </div>
           </Reveal>
         </div>
@@ -128,7 +128,7 @@ function ManutencaoSistemasTratamentoPage() {
                 rompimento de cilindros, a queima de bombas e forçar a troca precoce do equipamento
                 inteiro.
               </p>
-              <img src=contextPhoto2 alt="Copo sendo preenchido com água cristalina em uma cozinha" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
+              <img src={contextPhoto2} alt="Copo sendo preenchido com água cristalina em uma cozinha" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

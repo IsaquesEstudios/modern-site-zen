@@ -253,7 +253,7 @@ function BombaDosadoraCloroPage() {
                 </CardContent>
               </Card>
 
-              <img src=contextPhoto1 alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} loading="lazy" className="w-full h-auto rounded-md" />
+              <img src={contextPhoto1} alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

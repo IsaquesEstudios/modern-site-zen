@@ -138,7 +138,7 @@ function TratamentoDeAguaPage() {
                 entregue não apenas água cristalina, mas total segurança biológica e físico-química,
                 livrando você de multas em fiscalizações e protegendo a saúde de quem consome.
               </p>
-              <img src=contextPhoto1 alt="Vidrarias com água pura em ambiente de laboratório" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
+              <img src={contextPhoto1} alt="Vidrarias com água pura em ambiente de laboratório" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

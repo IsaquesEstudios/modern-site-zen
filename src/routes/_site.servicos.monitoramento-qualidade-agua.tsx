@@ -114,7 +114,7 @@ function MonitoramentoQualidadeAguaPage() {
                 físico-químico e bacteriológico da sua rede, antecipando problemas antes que a água
                 turva chegue às torneiras ou que uma contaminação paralise sua produção.
               </p>
-              <img src=contextPhoto1 alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} loading="lazy" className="w-full h-auto rounded-md" />
+              <img src={contextPhoto1} alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

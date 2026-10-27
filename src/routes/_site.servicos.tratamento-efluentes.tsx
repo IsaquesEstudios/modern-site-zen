@@ -94,7 +94,7 @@ function TratamentoEfluentesPage() {
                   </a>
                 </div>
               </div>
-              <img src=contextPhoto1 alt="Ambiente industrial com áreas verdes e profissional em visita" width={1536} height={1024} className="w-full h-auto rounded-md" />
+              <img src={contextPhoto1} alt="Ambiente industrial com áreas verdes e profissional em visita" width={1536} height={1024} className="w-full h-auto rounded-md" />
             </div>
           </Reveal>
         </div>
@@ -123,7 +123,7 @@ function TratamentoEfluentesPage() {
                 Com esses dados definimos a combinação de processos e o padrão de lançamento exigido
                 pelo órgão ambiental ou pela concessionária que recebe o efluente.
               </p>
-              <img src=contextPhoto2 alt="Amostras de água com diferentes aspectos em bancada de laboratório" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
+              <img src={contextPhoto2} alt="Amostras de água com diferentes aspectos em bancada de laboratório" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 
