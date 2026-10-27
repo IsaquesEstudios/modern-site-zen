@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://modern-site-zen.lovable.app/sitemap.xml
+Sitemap: https://www.vidagua.com.br/sitemap.xml
