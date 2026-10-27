@@ -107,8 +107,8 @@ function TratamentoDeAguaPage() {
                   </a>
                 </div>
               </div>
-              <img
-                src={tratamentoImage.url}
+              <img decoding="async" fetchPriority="high"
+                width={1740} height={1086} src={tratamentoImage.url}
                 alt="Sistema de tratamento de água da Vid'Água"
                 className="w-full"
               />
@@ -138,7 +138,7 @@ function TratamentoDeAguaPage() {
                 entregue não apenas água cristalina, mas total segurança biológica e físico-química,
                 livrando você de multas em fiscalizações e protegendo a saúde de quem consome.
               </p>
-              <img src={contextPhoto1} alt="Vidrarias com água pura em ambiente de laboratório" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto1} alt="Amostras de água tratada conferidas em laboratório" width={1152} height={768} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

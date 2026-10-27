@@ -98,7 +98,7 @@ function MonitoramentoPocoArtesianoPage() {
                   </a>
                 </div>
               </div>
-              <img src={contextPhoto1} alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} className="w-full h-auto rounded-md" />
+              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Técnico coletando amostra da água de poço artesiano para monitoramento" width={1440} height={1088} className="w-full h-auto rounded-md" />
             </div>
           </Reveal>
         </div>
@@ -124,7 +124,7 @@ function MonitoramentoPocoArtesianoPage() {
                 <Bullet>Menos risco de autuações e interrupção do uso do poço.</Bullet>
                 <Bullet>Histórico técnico da água para auditorias e alvarás.</Bullet>
               </ul>
-              <img src={contextPhoto2} alt="Vidrarias com água pura em ambiente de laboratório" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto2} alt="Amostras da água do poço analisadas em laboratório para o laudo da Covisa" width={1152} height={768} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

@@ -77,10 +77,9 @@ function BombaDosadoraCloroPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-20">
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-center">
-              <img
-                src={filtrosAsset.url}
+              <img decoding="async" fetchPriority="high"
+                width={800} height={706} src={filtrosAsset.url}
                 alt="Filtros e sistema de tratamento de água instalados pela Vid'Água"
-                loading="lazy"
                 className="aspect-3/4 w-full rounded-md border border-border object-cover"
               />
               <div className="flex flex-col gap-6">
@@ -253,7 +252,7 @@ function BombaDosadoraCloroPage() {
                 </CardContent>
               </Card>
 
-              <img src={contextPhoto1} alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto1} alt="Coleta de amostra para conferir o nível de cloro na água tratada" width={1440} height={1088} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

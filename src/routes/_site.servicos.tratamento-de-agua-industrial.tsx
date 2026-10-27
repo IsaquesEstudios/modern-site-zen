@@ -102,8 +102,8 @@ function TratamentoIndustrialPage() {
                   </a>
                 </div>
               </div>
-              <img
-                src={solucoesImage.url}
+              <img decoding="async" fetchPriority="high"
+                width={1740} height={1086} src={solucoesImage.url}
                 alt="Sistema industrial de tratamento de água"
                 className="w-full"
               />
@@ -129,7 +129,7 @@ function TratamentoIndustrialPage() {
                 <Bullet>Queima de resistências e perda de eficiência térmica</Bullet>
                 <Bullet>Produto final com cor, sabor ou aspecto alterado</Bullet>
               </ul>
-              <img src={contextPhoto1} alt="Ambiente industrial com áreas verdes e profissional em visita" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto1} alt="Técnico em visita a planta industrial para avaliar o tratamento de água" width={1536} height={1024} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

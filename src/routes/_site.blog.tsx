@@ -57,10 +57,9 @@ function BlogPage() {
             <Reveal key={post.title} delay={i * 50}>
               <Link to={post.to} className="group block h-full">
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src={post.image}
                     alt={post.alt}
-                    loading="lazy"
                     className="aspect-video w-full object-cover"
                   />
                   <CardHeader>

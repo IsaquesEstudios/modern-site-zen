@@ -81,8 +81,8 @@ function AguaDuraPage() {
                   </a>
                 </div>
               </div>
-              <img
-                src={torneiraImage.url}
+              <img decoding="async" fetchPriority="high"
+                width={444} height={298} src={torneiraImage.url}
                 alt="Torneira cromada com manchas brancas de calcário causadas pela água dura"
                 className="w-full"
               />
@@ -116,7 +116,7 @@ function AguaDuraPage() {
                 necessariamente tóxicos para a saúde humana na água de beber, os danos materiais e
                 estéticos causados por eles são enormes e de rápida progressão.
               </p>
-              <img src={soloCalcario} alt="Corte do solo calcário liberando cálcio e magnésio na água subterrânea" loading="lazy" width={1600} height={704} className="w-full" />
+              <img decoding="async" loading="lazy" src={soloCalcario} alt="Corte do solo calcário liberando cálcio e magnésio na água subterrânea" width={1600} height={704} className="w-full" />
             </section>
           </Reveal>
 
@@ -156,10 +156,9 @@ function AguaDuraPage() {
                   ásperos, opacos e sem vida.
                 </Bullet>
               </ul>
-              <img
-                src={cromadosImage.url}
+              <img decoding="async" loading="lazy"
+                width={1402} height={1122} src={cromadosImage.url}
                 alt="Torneiras, chuveiro, registro e outros cromados manchados pelo calcário da água dura"
-                loading="lazy"
                 className="w-full"
               />
             </section>
@@ -194,10 +193,9 @@ function AguaDuraPage() {
                 cada ciclo de aquecimento, a camada de incrustação se torna mais espessa, dura e
                 problemática.
               </p>
-              <img
-                src={panelasImage.url}
+              <img decoding="async" loading="lazy"
+                width={1402} height={1122} src={panelasImage.url}
                 alt="Infográfico: como a dureza da água forma incrustação de carbonato de cálcio em panelas"
-                loading="lazy"
                 className="w-full"
               />
             </section>
@@ -237,10 +235,9 @@ function AguaDuraPage() {
                   redução drástica da vida útil e queima prematura das resistências elétricas.
                 </Bullet>
               </ul>
-              <img
-                src={resistenciaImage.url}
+              <img decoding="async" loading="lazy"
+                width={1536} height={1024} src={resistenciaImage.url}
                 alt="Infográfico: resistência elétrica limpa comparada a resistência incrustada pela dureza da água"
-                loading="lazy"
                 className="w-full"
               />
               <p className="leading-relaxed text-muted">

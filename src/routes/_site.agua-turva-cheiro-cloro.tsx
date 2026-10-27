@@ -77,7 +77,7 @@ function AguaTurvaPage() {
                   </a>
                 </div>
               </div>
-              <img src={turvaLimpa} alt="Copo de água turva ao lado de copo de água limpa tratada" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={turvaLimpa} alt="Copo de água turva ao lado de copo de água limpa tratada" width={1200} height={912} className="w-full" />
             </div>
           </Reveal>
         </div>
@@ -126,7 +126,7 @@ function AguaTurvaPage() {
                   </CardHeader>
                 </Card>
               </div>
-              <img src={turvaCausas} alt="Barro em suspensão, matéria orgânica, cloro reagindo e gás sulfídrico na água" loading="lazy" width={1600} height={704} className="w-full" />
+              <img decoding="async" loading="lazy" src={turvaCausas} alt="Barro em suspensão, matéria orgânica, cloro reagindo e gás sulfídrico na água" width={1600} height={704} className="w-full" />
             </section>
           </Reveal>
 

@@ -78,8 +78,8 @@ function MonitoramentoQualidadeAguaPage() {
                   </a>
                 </div>
               </div>
-              <img
-                src={monitoramentoImage.url}
+              <img decoding="async" fetchPriority="high"
+                width={1740} height={1086} src={monitoramentoImage.url}
                 alt="Equipamentos da Vid'Água para monitoramento da qualidade da água"
                 className="w-full"
               />
@@ -114,7 +114,7 @@ function MonitoramentoQualidadeAguaPage() {
                 físico-químico e bacteriológico da sua rede, antecipando problemas antes que a água
                 turva chegue às torneiras ou que uma contaminação paralise sua produção.
               </p>
-              <img src={contextPhoto1} alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto1} alt="Coleta de amostra de água durante visita mensal de monitoramento" width={1440} height={1088} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

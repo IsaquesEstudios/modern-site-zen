@@ -100,8 +100,8 @@ function AnaliseDeAguaPage() {
                   </a>
                 </div>
               </div>
-              <img
-                src={analiseImage.url}
+              <img decoding="async" fetchPriority="high"
+                width={1740} height={1086} src={analiseImage.url}
                 alt="Coleta de amostra para análise de água"
                 className="w-full"
               />
@@ -153,10 +153,9 @@ function AnaliseDeAguaPage() {
                 </Link>{" "}
                 ou casos de virose para agir. A prevenção é sempre o caminho mais barato e seguro.
               </p>
-              <img
-                src={aguaPuraImage.url}
+              <img decoding="async" loading="lazy"
+                width={1740} height={654} src={aguaPuraImage.url}
                 alt="Ilustração de água contaminada por microrganismos em contraste com água limpa e tratada"
-                loading="lazy"
                 className="w-full"
               />
             </section>

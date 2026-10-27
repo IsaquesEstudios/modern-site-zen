@@ -69,7 +69,7 @@ function ContaminacaoAguaPage() {
                   </a>
                 </div>
               </div>
-              <img src={contInvisivel} alt="Copo de água cristalina com bactérias e compostos químicos invisíveis em destaque" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={contInvisivel} alt="Copo de água cristalina com bactérias e compostos químicos invisíveis em destaque" width={1200} height={912} className="w-full" />
             </div>
           </Reveal>
         </div>
@@ -120,7 +120,7 @@ function ContaminacaoAguaPage() {
                   </CardHeader>
                 </Card>
               </div>
-              <img src={contCategorias} alt="Contaminação biológica, química e por excesso de sais" loading="lazy" width={1600} height={704} className="w-full" />
+              <img decoding="async" loading="lazy" src={contCategorias} alt="Contaminação biológica, química e por excesso de sais" width={1600} height={704} className="w-full" />
             </section>
           </Reveal>
 

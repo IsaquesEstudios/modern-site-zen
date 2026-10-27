@@ -93,8 +93,8 @@ function ManutencaoPocoPage() {
                   </a>
                 </div>
               </div>
-              <img
-                src={pocoImage.url}
+              <img decoding="async" fetchPriority="high"
+                width={1740} height={1086} src={pocoImage.url}
                 alt="Estrutura hidráulica de poço artesiano"
                 className="w-full"
               />
@@ -126,7 +126,7 @@ function ManutencaoPocoPage() {
                 </Link>{" "}
                 no mínimo semestral para poços de uso coletivo.
               </p>
-              <img src={contextPhoto1} alt="Amostras de água com diferentes aspectos em bancada de laboratório" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto1} alt="Amostras de água com diferentes aspectos em bancada de laboratório" width={1536} height={1024} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

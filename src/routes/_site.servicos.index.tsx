@@ -122,10 +122,9 @@ function ServicosPage() {
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
                   {SERVICE_IMAGES[item.slug] ? (
                     <CardContent>
-                      <img
+                      <img decoding="async" loading="lazy"
                         src={SERVICE_IMAGES[item.slug]!.url}
                         alt={SERVICE_IMAGES[item.slug]!.alt}
-                        loading="lazy"
                         className="w-full"
                       />
                     </CardContent>

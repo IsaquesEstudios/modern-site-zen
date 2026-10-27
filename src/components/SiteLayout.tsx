@@ -26,9 +26,9 @@ function Header() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link to="/" aria-label="Vid'Água — Soluções para Água">
-          <img
-            src={logo.url}
-            alt="Vid'Água — Soluções para Água"
+          <img decoding="async" fetchPriority="high"
+            width={1538} height={263} src={logo.url}
+            alt="Vid'Água — tratamento de água"
             className="h-10 w-auto md:h-11"
           />
         </Link>
@@ -107,9 +107,9 @@ function Footer() {
     <footer className="border-t border-border bg-surface-soft">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-4">
         <div className="flex flex-col gap-4">
-          <img
-            src={logo.url}
-            alt="Vid'Água — Soluções para Água"
+          <img decoding="async" loading="lazy"
+            width={1538} height={263} src={logo.url}
+            alt="Vid'Água — tratamento de água"
             className="h-10 w-auto self-start"
           />
           <p className="max-w-xs text-sm leading-relaxed text-muted">
