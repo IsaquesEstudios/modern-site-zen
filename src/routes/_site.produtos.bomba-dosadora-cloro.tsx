@@ -8,7 +8,7 @@ import {
   Textarea,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import contextPhoto1 from "@/assets/coleta-agua-campo.jpg";
 import { ProductGrid } from "@/components/ProductSidebar";
 import { QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection } from "@/components/PageTemplate";
@@ -253,7 +253,7 @@ function BombaDosadoraCloroPage() {
                 </CardContent>
               </Card>
 
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src=contextPhoto1 alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

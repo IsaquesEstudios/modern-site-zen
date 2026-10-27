@@ -11,7 +11,7 @@ import {
   Textarea,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import contextPhoto1 from "@/assets/agua-pura-laboratorio-panorama.jpg";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -138,7 +138,7 @@ function TratamentoDeAguaPage() {
                 entregue não apenas água cristalina, mas total segurança biológica e físico-química,
                 livrando você de multas em fiscalizações e protegendo a saúde de quem consome.
               </p>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src=contextPhoto1 alt="Vidrarias com água pura em ambiente de laboratório" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

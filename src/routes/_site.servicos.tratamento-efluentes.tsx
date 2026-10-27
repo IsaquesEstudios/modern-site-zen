@@ -11,7 +11,8 @@ import {
   Textarea,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import contextPhoto1 from "@/assets/agua-contexto-industrial.jpg";
+import contextPhoto2 from "@/assets/amostras-efluentes-laboratorio.jpg";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -93,7 +94,7 @@ function TratamentoEfluentesPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img src=contextPhoto1 alt="Ambiente industrial com áreas verdes e profissional em visita" width={1536} height={1024} className="w-full h-auto rounded-md" />
             </div>
           </Reveal>
         </div>
@@ -122,7 +123,7 @@ function TratamentoEfluentesPage() {
                 Com esses dados definimos a combinação de processos e o padrão de lançamento exigido
                 pelo órgão ambiental ou pela concessionária que recebe o efluente.
               </p>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src=contextPhoto2 alt="Amostras de água com diferentes aspectos em bancada de laboratório" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 
