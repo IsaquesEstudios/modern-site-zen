@@ -187,16 +187,6 @@ function ContaminacaoAguaPage() {
                     </CardDescription>
                   </CardHeader>
                 </Card>
-                <Card className="h-full">
-                  <CardHeader>
-                    <CardTitle>Água salobra ou com nitrato</CardTitle>
-                    <CardDescription>
-                      Osmose reversa: membranas de alta pressão separam as moléculas de água dos
-                      sais e toxinas em nível microscópico, transformando água intragável em água
-                      100% pura.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
               </div>
             </section>
           </Reveal>
@@ -216,8 +206,7 @@ function ContaminacaoAguaPage() {
               <p className="leading-relaxed text-muted">
                 A Vid&rsquo;Água oferece contratos de monitoramento contínuo. Nossa equipe realiza
                 visitas periódicas, recolhe amostras, calibra as bombas dosadoras e emite laudos
-                regulares, garantindo que o seu sistema de desinfecção esteja operando 24 horas por
-                dia, 7 dias por semana.{" "}
+                regulares, garantindo que o seu sistema de desinfecção esteja sempre operando corretamente.{" "}
                 <Link to="/servicos/monitoramento-qualidade-agua" className={inlineLink}>
                   Conheça nosso serviço de Monitoramento da Qualidade da Água
                 </Link>

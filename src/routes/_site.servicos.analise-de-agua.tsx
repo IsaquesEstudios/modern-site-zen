@@ -135,9 +135,9 @@ function AnaliseDeAguaPage() {
                 </Bullet>
                 <Bullet>
                   <strong className="text-foreground">Vigilância Sanitária:</strong> exigência da
-                  Covisa para o monitoramento e a{" "}
+                  Covisa para o monitoramento e o{" "}
                   <Link to="/servicos/manutencao-poco-artesiano" className={inlineLink}>
-                    manutenção de poços artesianos
+                    tratamento da água de poços artesianos
                   </Link>
                   .
                 </Bullet>

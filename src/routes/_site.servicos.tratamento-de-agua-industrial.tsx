@@ -54,7 +54,7 @@ const setores = [
 const etapas = [
   {
     title: "Diagnóstico e análise laboratorial",
-    body: "Coleta em todos os pontos relevantes da instalação e análise no nosso laboratório. É o laudo que define a rota de tratamento, não o catálogo de equipamentos.",
+    body: "Coleta em todos os pontos relevantes da instalação e análise no nosso laboratório. É o laudo que define a rota de tratamento.",
   },
   {
     title: "Projeto e dimensionamento",
@@ -128,8 +128,6 @@ function TratamentoIndustrialPage() {
                 <Bullet>Incrustação em caldeiras, trocadores e torres de resfriamento</Bullet>
                 <Bullet>Queima de resistências e perda de eficiência térmica</Bullet>
                 <Bullet>Produto final com cor, sabor ou aspecto alterado</Bullet>
-                <Bullet>Parada não programada de linha para limpeza química</Bullet>
-                <Bullet>Ausência de laudo válido em uma fiscalização</Bullet>
               </ul>
               <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
             </section>

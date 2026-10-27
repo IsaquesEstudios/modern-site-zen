@@ -48,7 +48,7 @@ const services = [
   {
     label: "Poço Artesiano",
     to: "/servicos/manutencao-poco-artesiano",
-    desc: "Manutenção técnica, adequação estrutural e soluções para captação subterrânea.",
+    desc: "Tratamento da água de poço com filtração, cloração e laudo técnico.",
     image: pocoImage.url,
     alt: "Estrutura hidráulica de poço artesiano",
   },

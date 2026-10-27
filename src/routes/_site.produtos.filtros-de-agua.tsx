@@ -64,7 +64,7 @@ const aplicacoes = [
     title: "Filtro água poço artesiano",
     body: "Equipamentos desenhados para suportar a alta pressão das bombas submersas e lidar com as variações químicas naturais das águas subterrâneas.",
     to: "/servicos/manutencao-poco-artesiano",
-    linkLabel: "Veja a manutenção de poço artesiano",
+    linkLabel: "Veja o tratamento de água de poço",
   },
   {
     title: "Filtro industrial água",
