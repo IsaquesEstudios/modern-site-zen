@@ -887,6 +887,7 @@ export function headFor(p: PageDef) {
       { name: "twitter:description", content: p.description },
     ],
     links: [{ rel: "canonical", href: url }],
+    scripts: schemasFor(p, url, CONTACT),
   };
 }
 
