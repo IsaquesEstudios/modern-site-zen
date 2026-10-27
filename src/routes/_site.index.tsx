@@ -140,8 +140,8 @@ function Home() {
     <>
       {/* SEÇÃO 1 — Hero */}
       <section className="relative overflow-hidden">
-        <img
-          src={heroAguaImage.url}
+        <img decoding="async"
+          width={1920} height={1200} src={heroAguaImage.url}
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-35"
@@ -178,8 +178,8 @@ function Home() {
 
           <Reveal delay={150}>
             <div className="relative">
-              <img
-                src={analistaImage.url}
+              <img decoding="async" fetchPriority="high"
+                width={1806} height={1712} src={analistaImage.url}
                 alt="Analista da Vid'Água examinando amostra de água em laboratório"
                 className="w-full"
               />
@@ -234,7 +234,7 @@ function Home() {
               <Link to={item.to} className="group block h-full">
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
                   <CardContent>
-                    <img
+                    <img decoding="async" loading="lazy"
                       src={item.image}
                       alt={item.alt}
                       className="w-full"
@@ -267,7 +267,7 @@ function Home() {
                 Fornecemos e instalamos filtros, abrandadores, bombas dosadoras, desmineralizadores,
                 água destilada e produtos químicos — com orientação técnica na escolha certa.
               </p>
-              <img src={produtosImage.url} alt="Equipamentos para tratamento de água" className="w-full rounded-lg" loading="lazy" />
+              <img decoding="async" loading="lazy" width={1740} height={1086} src={produtosImage.url} alt="Equipamentos e insumos para tratamento de água fornecidos pela Vid’Água" className="w-full rounded-lg" />
               <Link to="/produtos">
                 <Button variant="outline">Ver catálogo completo</Button>
               </Link>
@@ -476,7 +476,7 @@ function BlogCarousel() {
           <Link to={post.to} className="block h-full">
             <Card className="h-full">
               <CardContent>
-                <img src={post.image} alt={post.alt} loading="lazy" className="aspect-video w-full object-cover" />
+                <img decoding="async" loading="lazy" src={post.image} alt={post.alt} className="aspect-video w-full object-cover" />
               </CardContent>
               <CardHeader>
                 <Badge variant="neutral">{post.cat}</Badge>

@@ -80,9 +80,9 @@ function ProdutosPage() {
                   </a>
                 </div>
               </div>
-              <img
-                src={produtosImage.url}
-                alt="Equipamentos para tratamento de água"
+              <img decoding="async" fetchPriority="high"
+                width={1740} height={1086} src={produtosImage.url}
+                alt="Linha de equipamentos e insumos para tratamento de água da Vid’Água"
                 className="w-full"
               />
             </div>
@@ -99,12 +99,11 @@ function ProdutosPage() {
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
                   <CardContent>
                     {PRODUCT_PHOTOS[item.slug] ? (
-                      <img
+                      <img decoding="async" loading="lazy"
                         src={PRODUCT_PHOTOS[item.slug]?.src}
                         alt={PRODUCT_PHOTOS[item.slug]?.alt}
                         width={PRODUCT_PHOTOS[item.slug]?.width}
                         height={PRODUCT_PHOTOS[item.slug]?.height}
-                        loading="lazy"
                         className="w-full h-auto rounded-md"
                       />
                     ) : null}

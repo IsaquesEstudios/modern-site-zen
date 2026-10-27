@@ -79,7 +79,7 @@ function FerroManganesPage() {
                   </a>
                 </div>
               </div>
-              <img src={ferroHero} alt="Torneira enchendo copo com água amarelada por ferro e manganês" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={ferroHero} alt="Torneira enchendo copo com água amarelada por ferro e manganês" width={1200} height={912} className="w-full" />
             </div>
           </Reveal>
         </div>
@@ -121,7 +121,7 @@ function FerroManganesPage() {
                   </CardHeader>
                 </Card>
               </div>
-              <img src={ferroCausas} alt="Ilustração da oxidação do ferro e manganês da água do poço e de tubulações antigas" width={1600} height={704} loading="lazy" className="w-full" />
+              <img decoding="async" loading="lazy" src={ferroCausas} alt="Ilustração da oxidação do ferro e manganês da água do poço e de tubulações antigas" width={1600} height={704} className="w-full" />
             </section>
           </Reveal>
 

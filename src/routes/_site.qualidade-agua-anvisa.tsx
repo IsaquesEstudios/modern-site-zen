@@ -83,7 +83,7 @@ function QualidadeAguaAnvisaPage() {
                   </a>
                 </div>
               </div>
-              <img
+              <img decoding="async" fetchPriority="high"
                 src={laudoImage}
                 alt="Copo de amostra de água cristalina ao lado de laudo técnico e lupa em bancada de laboratório"
                 width={1200}
@@ -267,10 +267,9 @@ function QualidadeAguaAnvisaPage() {
                   ).
                 </Bullet>
               </ul>
-              <img
+              <img decoding="async" loading="lazy"
                 src={parametrosImage}
                 alt="Infográfico: parâmetros de potabilidade da Portaria GM/MS 888 com limites de E. coli, cloro, turbidez, pH e cor"
-                loading="lazy"
                 width={1600}
                 height={800}
                 className="w-full"

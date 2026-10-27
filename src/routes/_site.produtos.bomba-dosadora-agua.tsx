@@ -78,7 +78,7 @@ function BombaDosadoraAguaPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-20">
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-center">
-              <img src={contextPhoto1} alt="Conferência de recipientes fechados em área de armazenamento de insumos" width={1024} height={1360} className="w-full h-auto rounded-md" />
+              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Recipientes de produtos para dosagem conferidos em área de armazenamento" width={1024} height={1360} className="w-full h-auto rounded-md" />
               <div className="flex flex-col gap-6">
                 <Badge>Produto</Badge>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
@@ -231,7 +231,7 @@ function BombaDosadoraAguaPage() {
                 </CardContent>
               </Card>
 
-              <img src={contextPhoto2} alt="Ambiente industrial com áreas verdes e profissional em visita" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto2} alt="Ambiente industrial com áreas verdes e profissional em visita" width={1536} height={1024} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

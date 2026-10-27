@@ -95,7 +95,7 @@ function AguaDeReusoPage() {
                   </a>
                 </div>
               </div>
-              <img src={contextPhoto1} alt="Irrigação de jardim em condomínio, aplicação de água de reuso" width={1536} height={1024} className="w-full h-auto rounded-md" />
+              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Irrigação de jardim em condomínio, aplicação de água de reuso" width={1536} height={1024} className="w-full h-auto rounded-md" />
             </div>
           </Reveal>
         </div>
@@ -121,7 +121,7 @@ function AguaDeReusoPage() {
                   </Reveal>
                 ))}
               </div>
-              <img src={contextPhoto2} alt="Ambiente industrial com áreas verdes e profissional em visita" width={1536} height={1024} loading="lazy" className="w-full h-auto rounded-md" />
+              <img decoding="async" loading="lazy" src={contextPhoto2} alt="Profissional em visita a área industrial que reaproveita água tratada" width={1536} height={1024} className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 
