@@ -11,7 +11,8 @@ import {
   Textarea,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import contextPhoto1 from "@/assets/visita-tecnica-agua.jpg";
+import contextPhoto2 from "@/assets/agua-cristalina-uso-panorama.jpg";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -98,7 +99,7 @@ function ManutencaoSistemasTratamentoPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img src={contextPhoto1} alt="Profissional com prancheta e frascos para acompanhamento da qualidade da água" width={1440} height={1088} className="w-full h-auto rounded-md" />
             </div>
           </Reveal>
         </div>
@@ -127,7 +128,7 @@ function ManutencaoSistemasTratamentoPage() {
                 rompimento de cilindros, a queima de bombas e forçar a troca precoce do equipamento
                 inteiro.
               </p>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src={contextPhoto2} alt="Copo sendo preenchido com água cristalina em uma cozinha" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

@@ -10,7 +10,8 @@ import {
   Input,
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import contextPhoto1 from "@/assets/coleta-agua-campo.jpg";
+import contextPhoto2 from "@/assets/agua-pura-laboratorio-panorama.jpg";
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -97,7 +98,7 @@ function MonitoramentoPocoArtesianoPage() {
                   </a>
                 </div>
               </div>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[4/3]" />
+              <img src={contextPhoto1} alt="Coleta de amostra de água em ponto externo" width={1440} height={1088} className="w-full h-auto rounded-md" />
             </div>
           </Reveal>
         </div>
@@ -123,7 +124,7 @@ function MonitoramentoPocoArtesianoPage() {
                 <Bullet>Menos risco de autuações e interrupção do uso do poço.</Bullet>
                 <Bullet>Histórico técnico da água para auditorias e alvarás.</Bullet>
               </ul>
-              <ImagePlaceholder label="Imagem" ratio="aspect-[16/7]" />
+              <img src={contextPhoto2} alt="Vidrarias com água pura em ambiente de laboratório" width={1152} height={768} loading="lazy" className="w-full h-auto rounded-md" />
             </section>
           </Reveal>
 

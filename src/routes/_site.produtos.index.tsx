@@ -14,6 +14,24 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, PRODUCT_LINKS, summaryForPath, headFor } from "@/lib/site";
 import produtosImage from "@/assets/equipamentos-e-produtos.jpg.asset.json";
 
+import productPhoto1 from "@/assets/coleta-agua-campo.jpg";
+import productPhoto2 from "@/assets/insumos-tratamento-agua-panorama.jpg";
+import productPhoto3 from "@/assets/agua-cristalina-uso-panorama.jpg";
+import productPhoto4 from "@/assets/agua-conforto-dia-a-dia.jpg";
+import productPhoto5 from "@/assets/agua-pura-laboratorio-panorama.jpg";
+import productPhoto6 from "@/assets/bombonas-agua-pura-panorama.jpg";
+import productPhoto7 from "@/assets/insumos-tratamento-agua-panorama.jpg";
+
+const PRODUCT_PHOTOS: Record<string, { src: string; alt: string; width: number; height: number }> = {
+  "bomba-dosadora-cloro": { src: productPhoto1, alt: "Coleta de amostra de água em ponto externo", width: 1440, height: 1088 },
+  "bomba-dosadora-agua": { src: productPhoto2, alt: "Conferência de recipientes fechados em área de armazenamento de insumos", width: 1152, height: 768 },
+  "filtros-de-agua": { src: productPhoto3, alt: "Copo sendo preenchido com água cristalina em uma cozinha", width: 1152, height: 768 },
+  "abrandador-de-agua": { src: productPhoto4, alt: "Uso cotidiano de água para higiene das mãos", width: 1536, height: 1024 },
+  "desmineralizador-de-agua": { src: productPhoto5, alt: "Vidrarias com água pura em ambiente de laboratório", width: 1152, height: 768 },
+  "agua-destilada": { src: productPhoto6, alt: "Bombonas fechadas para armazenamento de água pura", width: 1152, height: 768 },
+  "produtos-quimicos-agua": { src: productPhoto7, alt: "Conferência de recipientes fechados em área de armazenamento de insumos", width: 1152, height: 768 },
+};
+
 const page = PAGES_BY_SLUG["produtos"];
 
 export const Route = createFileRoute("/_site/produtos/")({
@@ -79,6 +97,18 @@ function ProdutosPage() {
             <Reveal key={item.to} delay={i * 50}>
               <Link to={item.to} className="group block h-full">
                 <Card className="h-full transition-transform duration-300 group-hover:-translate-y-1">
+                  <CardContent>
+                    {PRODUCT_PHOTOS[item.slug] ? (
+                      <img
+                        src={PRODUCT_PHOTOS[item.slug]?.src}
+                        alt={PRODUCT_PHOTOS[item.slug]?.alt}
+                        width={PRODUCT_PHOTOS[item.slug]?.width}
+                        height={PRODUCT_PHOTOS[item.slug]?.height}
+                        loading="lazy"
+                        className="w-full h-auto rounded-md"
+                      />
+                    ) : null}
+                  </CardContent>
                   <CardHeader>
                     <CardTitle>{item.label}</CardTitle>
                     <CardDescription>{summaryForPath(item.to)}</CardDescription>
