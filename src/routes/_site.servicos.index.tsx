@@ -16,8 +16,11 @@ import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
 import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
 import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
 import monitoramentoImage from "@/assets/monitoramento.jpg.asset.json";
-import solucoesImage from "@/assets/solucoes-empresariais.jpg.asset.json";
-import produtosImage from "@/assets/equipamentos-e-produtos.jpg.asset.json";
+import pocoTratadaImage from "@/assets/agua-poco-tratada.jpg";
+import visitaImage from "@/assets/visita-tecnica-agua.jpg";
+import efluentesImage from "@/assets/amostras-efluentes-laboratorio.jpg";
+import reusoImage from "@/assets/reuso-irrigacao-jardim.jpg";
+import industrialImage from "@/assets/agua-contexto-industrial.jpg";
 
 const SERVICE_IMAGES: Record<string, { url: string; alt: string }> = {
   "analise-de-agua": {
@@ -33,28 +36,28 @@ const SERVICE_IMAGES: Record<string, { url: string; alt: string }> = {
     alt: "Estrutura hidráulica de poço artesiano",
   },
   "manutencao-poco-artesiano": {
-    url: pocoImage.url,
-    alt: "Tratamento de água de poço artesiano",
+    url: pocoTratadaImage,
+    alt: "Copo sendo enchido com água tratada de poço em uma propriedade",
   },
   "monitoramento-qualidade-agua": {
     url: monitoramentoImage.url,
     alt: "Equipamentos da Vid'Água para monitoramento da qualidade da água",
   },
   "manutencao-sistemas-tratamento": {
-    url: produtosImage.url,
-    alt: "Equipamentos de tratamento de água em manutenção",
+    url: visitaImage,
+    alt: "Técnica da Vid'Água com prancheta e amostras durante visita técnica",
   },
   "tratamento-efluentes": {
-    url: solucoesImage.url,
-    alt: "Estação industrial de tratamento de efluentes",
+    url: efluentesImage,
+    alt: "Amostras de efluente antes e depois do tratamento em laboratório",
   },
   "agua-de-reuso": {
-    url: solucoesImage.url,
-    alt: "Sistema industrial de reuso de água",
+    url: reusoImage,
+    alt: "Jardim de condomínio sendo irrigado com água de reuso",
   },
   "tratamento-de-agua-industrial": {
-    url: solucoesImage.url,
-    alt: "Sistema industrial de tratamento de água",
+    url: industrialImage,
+    alt: "Responsável técnico inspecionando instalações industriais",
   },
 };
 
