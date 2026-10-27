@@ -58,7 +58,7 @@ const servicos = [
   },
   {
     title: "Calibração de dosadoras",
-    body: "Regulagem minuciosa de equipamentos químicos para garantir que a dosagem de cloro, flúor ou corretores de pH esteja exata.",
+    body: "Regulagem minuciosa de equipamentos químicos para garantir que a dosagem de cloro e de corretores de pH fique dentro do ideal.",
   },
 ];
 
@@ -117,7 +117,7 @@ function ManutencaoSistemasTratamentoPage() {
                 Muitas pessoas instalam um sistema robusto e acreditam que o problema da água está
                 resolvido para o resto da vida. No entanto, todo filtro atua como uma barreira física
                 ou química que retém impurezas. Quando essa barreira enche, a sujeira ou os metais
-                começam a passar direto para a sua torneira.
+                passam direto para a sua torneira, deixando a água com cor e manchas.
               </p>
               <p className="leading-relaxed text-muted">
                 Se você está notando diminuição na vazão da água, retorno de odores, água amarelada
@@ -179,13 +179,13 @@ function ManutencaoSistemasTratamentoPage() {
                 </Bullet>
                 <Bullet>
                   <strong className="text-foreground">Sistemas para ferro e manganês:</strong>{" "}
-                  substituição de mídias oxidantes desgastadas.
+                  substituição de mídias catalíticas desgastadas.
                 </Bullet>
                 <Bullet>
-                  <strong className="text-foreground">Abrandadores:</strong> troca de resina
-                  catiônica e manutenção no tanque de salmoura.{" "}
+                  <strong className="text-foreground">Abrandadores e desmineralizadores:</strong>{" "}
+                  troca de resina catiônica e aniônica e manutenção no tanque de salmoura.{" "}
                   <Link to="/produtos/abrandador-de-agua" className={inlineLink}>
-                    Saiba mais sobre abrandadores
+                    Saiba mais sobre abrandadores e desmineralizadores
                   </Link>
                   .
                 </Bullet>
@@ -196,10 +196,6 @@ function ManutencaoSistemasTratamentoPage() {
                     Veja nossas bombas dosadoras
                   </Link>
                   .
-                </Bullet>
-                <Bullet>
-                  <strong className="text-foreground">Sistemas de osmose reversa:</strong> limpeza
-                  química e substituição de membranas para indústrias e laboratórios.
                 </Bullet>
               </ul>
             </section>
@@ -223,8 +219,8 @@ function ManutencaoSistemasTratamentoPage() {
                 </Link>
                 . Nossos técnicos realizam visitas programadas para atestar o funcionamento dos
                 equipamentos, realizar a{" "}
-                <strong className="text-foreground">troca de filtro de água</strong> no prazo correto
-                e emitir laudos de calibração, garantindo tranquilidade 365 dias por ano.
+                <strong className="text-foreground">troca dos elementos filtrantes</strong> e a
+                desinfecção no prazo correto, com emissão de laudos de calibração, garantindo tranquilidade 365 dias por ano.
               </p>
             </section>
           </Reveal>

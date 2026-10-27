@@ -198,14 +198,14 @@ function FerroManganesPage() {
               </div>
               <Card tone="soft">
                 <CardHeader>
-                  <CardTitle>Poço com água suja ou perda de vazão?</CardTitle>
+                  <CardTitle>Água de poço amarelada ou com gosto metálico?</CardTitle>
                   <CardDescription>
-                    Isso pode ser incrustação de ferro na bomba submersa.
+                    É sinal de ferro e manganês. Tratamos a água do seu poço com filtração adequada.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Link to="/servicos/manutencao-poco-artesiano">
-                    <Button variant="outline">Conhecer a Manutenção de Poço Artesiano</Button>
+                    <Button variant="outline">Conhecer o Tratamento de Água de Poço</Button>
                   </Link>
                 </CardContent>
               </Card>

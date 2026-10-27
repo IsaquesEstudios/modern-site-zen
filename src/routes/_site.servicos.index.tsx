@@ -34,7 +34,7 @@ const SERVICE_IMAGES: Record<string, { url: string; alt: string }> = {
   },
   "manutencao-poco-artesiano": {
     url: pocoImage.url,
-    alt: "Manutenção de poço artesiano",
+    alt: "Tratamento de água de poço artesiano",
   },
   "monitoramento-qualidade-agua": {
     url: monitoramentoImage.url,

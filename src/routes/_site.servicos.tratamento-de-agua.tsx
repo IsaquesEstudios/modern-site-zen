@@ -62,7 +62,7 @@ const areas = [
 const etapas = [
   {
     title: "Diagnóstico e dimensionamento",
-    body: "Analisamos o laudo da sua água e indicamos o equipamento de tratamento de água com a capacidade correta (filtros centrais, dosadoras, osmose reversa, entre outros).",
+    body: "Analisamos o laudo da sua água e indicamos o equipamento de tratamento de água com a capacidade correta (filtros centrais, dosadoras, entre outros).",
   },
   {
     title: "Instalação do tratamento de água",

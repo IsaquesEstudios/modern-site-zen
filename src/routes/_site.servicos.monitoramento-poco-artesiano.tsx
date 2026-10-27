@@ -171,9 +171,9 @@ function MonitoramentoPocoArtesianoPage() {
                 ))}
               </div>
               <p className="leading-relaxed text-muted">
-                Se algum resultado sair do padrão, nossa equipe indica a correção e pode executar a{" "}
+                Se algum resultado sair do padrão, nossa equipe indica a correção e pode executar o{" "}
                 <Link to="/servicos/manutencao-poco-artesiano" className={inlineLink}>
-                  manutenção e tratamento do poço artesiano
+                  tratamento da água do poço artesiano
                 </Link>
                 .
               </p>

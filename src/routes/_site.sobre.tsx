@@ -224,8 +224,7 @@ function SobrePage() {
                       monitoramento de poço artesiano
                     </Link>{" "}
                     para garantir a estabilidade do aquífero e a segurança contínua da água extraída.
-                    Acompanhamos os níveis dinâmicos e estáticos, assegurando que o tratamento de
-                    água de poço artesiano continue extremamente eficaz contra ferro, manganês e
+                    Assim, o tratamento de água de poço artesiano continua extremamente eficaz contra ferro, manganês e
                     ameaças bacteriológicas ao longo dos anos.
                   </p>
                 </CardContent>

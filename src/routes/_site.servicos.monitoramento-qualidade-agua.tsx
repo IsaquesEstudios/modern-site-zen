@@ -67,7 +67,7 @@ function MonitoramentoQualidadeAguaPage() {
                   Vid&rsquo;Água oferece um serviço completo de{" "}
                   <strong className="text-foreground">monitoramento da qualidade da água</strong>.
                   Assumimos a coleta regular, as análises laboratoriais e a calibração de
-                  equipamentos, garantindo conformidade com a Portaria 888 24 horas por dia.
+                  equipamentos, garantindo conformidade com a Portaria 888.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a href={`#${QUOTE_ANCHOR}`}>
@@ -108,7 +108,7 @@ function MonitoramentoQualidadeAguaPage() {
               </p>
               <p className="leading-relaxed text-muted">
                 No entanto, a legislação exige garantia contínua. Para hospitais, fábricas de
-                alimentos e condomínios de alto padrão, a nossa{" "}
+                alimentos e condomínios, a nossa{" "}
                 <strong className="text-foreground">consultoria hídrica</strong> transforma essa
                 fotografia em um filme contínuo de segurança. Monitoramos o comportamento
                 físico-químico e bacteriológico da sua rede, antecipando problemas antes que a água
@@ -136,8 +136,8 @@ function MonitoramentoQualidadeAguaPage() {
                   <CardHeader>
                     <CardTitle>Cronograma de coletas</CardTitle>
                     <CardDescription>
-                      Visitas técnicas periódicas agendadas (semanais, quinzenais ou mensais) para
-                      coleta de amostras em pontos estratégicos.
+                      Duas visitas mensais, ou visitas extras em caso de necessidade, para coleta de
+                      amostras em pontos estratégicos.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -154,8 +154,7 @@ function MonitoramentoQualidadeAguaPage() {
                   <CardHeader>
                     <CardTitle>Manutenção preventiva de equipamentos</CardTitle>
                     <CardDescription>
-                      Verificação contínua dos sistemas de tratamento, limpeza de cilindros e
-                      reposição de químicos em bombas dosadoras.
+                      Verificação de bombas dosadoras e verificação de produtos químicos.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -241,17 +240,6 @@ function MonitoramentoQualidadeAguaPage() {
               <p className="leading-relaxed text-muted">
                 Se a sua empresa capta água do subsolo, a responsabilidade legal é dobrada. A Vigilância
                 Sanitária (Covisa) exige a comprovação periódica da qualidade da água do poço.
-              </p>
-              <p className="leading-relaxed text-muted">
-                O{" "}
-                <strong className="text-foreground">monitoramento de poço artesiano</strong>{" "}
-                constante não só garante a renovação das suas licenças (evitando a lacração do poço),
-                como também previne a degradação da bomba submersa e das tubulações devido à variação
-                de{" "}
-                <Link to="/agua-com-ferro-manganes" className={inlineLink}>
-                  ferro e manganês
-                </Link>{" "}
-                ao longo das estações do ano.
               </p>
             </section>
           </Reveal>
