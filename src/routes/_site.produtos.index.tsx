@@ -20,7 +20,7 @@ import productPhoto3 from "@/assets/agua-cristalina-uso-panorama.jpg";
 import productPhoto4 from "@/assets/agua-conforto-dia-a-dia.jpg";
 import productPhoto5 from "@/assets/agua-pura-laboratorio-panorama.jpg";
 import productPhoto6 from "@/assets/bombonas-agua-pura-panorama.jpg";
-import productPhoto7 from "@/assets/insumos-tratamento-agua-panorama.jpg";
+import productPhoto7 from "@/assets/insumos-tratamento-agua.jpg";
 
 const PRODUCT_PHOTOS: Record<string, { src: string; alt: string; width: number; height: number }> = {
   "bomba-dosadora-cloro": { src: productPhoto1, alt: "Coleta de amostra de água em ponto externo", width: 1440, height: 1088 },
