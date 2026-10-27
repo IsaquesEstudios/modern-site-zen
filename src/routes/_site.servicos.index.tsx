@@ -16,7 +16,6 @@ import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
 import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
 import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
 import monitoramentoImage from "@/assets/monitoramento.jpg.asset.json";
-import solucoesImage from "@/assets/solucoes-empresariais.jpg.asset.json";
 import pocoTratadaImage from "@/assets/agua-poco-tratada.jpg";
 import visitaImage from "@/assets/visita-tecnica-agua.jpg";
 import efluentesImage from "@/assets/amostras-efluentes-laboratorio.jpg";
