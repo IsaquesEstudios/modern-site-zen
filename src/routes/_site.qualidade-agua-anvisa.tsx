@@ -139,7 +139,7 @@ function QualidadeAguaAnvisaPage() {
                 para consumo&rdquo;, ela precisa passar por um verdadeiro &ldquo;check-up&rdquo; que
                 avalia três pilares fundamentais:
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="h-full">
                   <CardHeader>
                     <CardTitle>Requisitos biológicos</CardTitle>

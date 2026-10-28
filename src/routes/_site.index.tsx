@@ -181,7 +181,7 @@ function Home() {
               <img decoding="async" fetchPriority="high"
                 width={1806} height={1712} src={analistaImage.url}
                 alt="Analista da Vid'Água examinando amostra de água em laboratório"
-                className="w-full max-lg:aspect-video max-lg:object-cover"
+                className="w-full max-lg:aspect-video max-lg:object-cover max-lg:object-top"
               />
               <div className="absolute inset-x-4 bottom-0 grid translate-y-2/5 gap-4 sm:grid-cols-2">
                 <Card tone="gradientSoft">

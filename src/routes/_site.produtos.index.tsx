@@ -127,7 +127,7 @@ function ProdutosPage() {
           eyebrow="Como indicamos um equipamento"
           title="O produto certo depende da sua água"
         />
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {criterios.map((c, i) => (
             <Reveal key={c.title} delay={i * 60}>
               <Card tone="soft" className="h-full">

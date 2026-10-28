@@ -304,7 +304,7 @@ function AguaDuraPage() {
                 comprar o equipamento com o volume de resina exato para a sua realidade. Para evitar
                 que você gaste dinheiro à toa, a Vid&rsquo;Água segue um protocolo rigoroso:
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="h-full">
                   <CardHeader>
                     <CardTitle>1. Análise de água</CardTitle>
