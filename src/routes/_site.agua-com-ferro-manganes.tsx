@@ -79,7 +79,7 @@ function FerroManganesPage() {
                   </a>
                 </div>
               </div>
-              <img decoding="async" fetchPriority="high" src={ferroHero} alt="Torneira enchendo copo com água amarelada por ferro e manganês" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={ferroHero} alt="Torneira enchendo copo com água amarelada por ferro e manganês" width={1200} height={912} className="w-full max-lg:aspect-video max-lg:object-cover" />
             </div>
           </Reveal>
         </div>
@@ -223,7 +223,7 @@ function FerroManganesPage() {
                 O segredo para remover manganês e ferro de forma definitiva é o dimensionamento
                 correto. A Vid&rsquo;Água segue um protocolo de engenharia seguro:
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="h-full">
                   <CardHeader>
                     <CardTitle>1. Análise da água</CardTitle>

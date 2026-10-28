@@ -69,7 +69,7 @@ function ContaminacaoAguaPage() {
                   </a>
                 </div>
               </div>
-              <img decoding="async" fetchPriority="high" src={contInvisivel} alt="Copo de água cristalina com bactérias e compostos químicos invisíveis em destaque" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={contInvisivel} alt="Copo de água cristalina com bactérias e compostos químicos invisíveis em destaque" width={1200} height={912} className="w-full max-lg:aspect-video max-lg:object-cover" />
             </div>
           </Reveal>
         </div>
@@ -89,7 +89,7 @@ function ContaminacaoAguaPage() {
                 artesianos e as redes desprotegidas estão sujeitos a três grandes categorias de
                 contaminação que exigem tratamentos completamente diferentes:
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="h-full">
                   <CardHeader>
                     <CardTitle>Contaminação biológica</CardTitle>
@@ -167,7 +167,7 @@ function ContaminacaoAguaPage() {
                 A partir do momento em que o laudo identifica o contaminante, a engenharia da
                 Vid&rsquo;Água entra em ação com a tecnologia corretiva exata:
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="h-full">
                   <CardHeader>
                     <CardTitle>Bactérias e coliformes</CardTitle>

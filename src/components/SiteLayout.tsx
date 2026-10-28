@@ -33,7 +33,7 @@ function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {NAV.map((item) => (
             <Link
               key={item.to}
@@ -46,7 +46,7 @@ function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Link to="/contato">
             <Button variant="gradient" size="sm">
               Solicitar orçamento
@@ -59,7 +59,7 @@ function Header() {
           aria-label="Abrir menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="text-primary md:hidden"
+          className="text-primary lg:hidden"
         >
           <span className="block h-px w-6 bg-primary" />
           <span className="mt-1.5 block h-px w-6 bg-primary" />
@@ -69,7 +69,7 @@ function Header() {
 
       <div
         className={[
-          "overflow-hidden border-border transition-all duration-300 md:hidden",
+          "overflow-hidden border-border transition-all duration-300 lg:hidden",
           open ? "max-h-96 border-t" : "max-h-0",
         ].join(" ")}
       >
@@ -79,7 +79,7 @@ function Header() {
               key={item.to}
               to={item.to}
               onClick={() => setOpen(false)}
-              className="text-sm font-medium text-muted transition-colors hover:text-primary"
+              className="text-base font-medium text-muted transition-colors hover:text-primary"
             >
               {item.label}
             </Link>
@@ -105,7 +105,7 @@ const footerLink =
 function Footer() {
   return (
     <footer className="border-t border-border bg-surface-soft">
-      <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-4">
           <img decoding="async" loading="lazy"
             width={1538} height={263} src={logo.url}

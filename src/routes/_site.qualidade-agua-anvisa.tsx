@@ -88,7 +88,7 @@ function QualidadeAguaAnvisaPage() {
                 alt="Copo de amostra de água cristalina ao lado de laudo técnico e lupa em bancada de laboratório"
                 width={1200}
                 height={912}
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>
@@ -139,7 +139,7 @@ function QualidadeAguaAnvisaPage() {
                 para consumo&rdquo;, ela precisa passar por um verdadeiro &ldquo;check-up&rdquo; que
                 avalia três pilares fundamentais:
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="h-full">
                   <CardHeader>
                     <CardTitle>Requisitos biológicos</CardTitle>

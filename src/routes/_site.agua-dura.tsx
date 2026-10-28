@@ -84,7 +84,7 @@ function AguaDuraPage() {
               <img decoding="async" fetchPriority="high"
                 width={444} height={298} src={torneiraImage.url}
                 alt="Torneira cromada com manchas brancas de calcário causadas pela água dura"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>
@@ -304,7 +304,7 @@ function AguaDuraPage() {
                 comprar o equipamento com o volume de resina exato para a sua realidade. Para evitar
                 que você gaste dinheiro à toa, a Vid&rsquo;Água segue um protocolo rigoroso:
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="h-full">
                   <CardHeader>
                     <CardTitle>1. Análise de água</CardTitle>

@@ -94,7 +94,7 @@ function ServicosPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-24">
           <Reveal>
             <div className="flex max-w-3xl flex-col gap-6">
-              <Badge>Serviços</Badge>
+              <div className="flex"><Badge>Serviços</Badge></div>
               <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
                 Serviços de análise, tratamento e monitoramento de água
               </h1>

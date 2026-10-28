@@ -62,7 +62,7 @@ function ProdutosPage() {
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div className="flex flex-col gap-6">
-                <Badge>Produtos</Badge>
+                <div className="flex"><Badge>Produtos</Badge></div>
                 <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
                   Equipamentos e insumos para tratamento de água
                 </h1>
@@ -83,7 +83,7 @@ function ProdutosPage() {
               <img decoding="async" fetchPriority="high"
                 width={1740} height={1086} src={produtosImage.url}
                 alt="Linha de equipamentos e insumos para tratamento de água da Vid’Água"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>
@@ -127,7 +127,7 @@ function ProdutosPage() {
           eyebrow="Como indicamos um equipamento"
           title="O produto certo depende da sua água"
         />
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {criterios.map((c, i) => (
             <Reveal key={c.title} delay={i * 60}>
               <Card tone="soft" className="h-full">

@@ -52,7 +52,7 @@ function MonitoramentoQualidadeAguaPage() {
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-center">
               <div className="flex flex-col gap-6">
-                <Badge>Serviço</Badge>
+                <div className="flex"><Badge>Serviço</Badge></div>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
                   Monitoramento da Qualidade da Água: Segurança Contínua para o seu Negócio
                 </h1>
@@ -81,7 +81,7 @@ function MonitoramentoQualidadeAguaPage() {
               <img decoding="async" fetchPriority="high"
                 width={1740} height={1086} src={monitoramentoImage.url}
                 alt="Equipamentos da Vid'Água para monitoramento da qualidade da água"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>
