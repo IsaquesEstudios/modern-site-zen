@@ -99,7 +99,7 @@ function ManutencaoSistemasTratamentoPage() {
                   </a>
                 </div>
               </div>
-              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Profissional com prancheta e frascos para acompanhamento da qualidade da água" width={1440} height={1088} className="w-full h-auto rounded-md" />
+              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Profissional com prancheta e frascos para acompanhamento da qualidade da água" width={1440} height={1088} className="w-full h-auto rounded-md max-lg:aspect-video max-lg:object-cover" />
             </div>
           </Reveal>
         </div>

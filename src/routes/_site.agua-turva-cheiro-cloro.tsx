@@ -77,7 +77,7 @@ function AguaTurvaPage() {
                   </a>
                 </div>
               </div>
-              <img decoding="async" fetchPriority="high" src={turvaLimpa} alt="Copo de água turva ao lado de copo de água limpa tratada" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={turvaLimpa} alt="Copo de água turva ao lado de copo de água limpa tratada" width={1200} height={912} className="w-full max-lg:aspect-video max-lg:object-cover" />
             </div>
           </Reveal>
         </div>

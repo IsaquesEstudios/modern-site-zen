@@ -88,7 +88,7 @@ function QualidadeAguaAnvisaPage() {
                 alt="Copo de amostra de água cristalina ao lado de laudo técnico e lupa em bancada de laboratório"
                 width={1200}
                 height={912}
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>

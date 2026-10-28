@@ -84,7 +84,7 @@ function AguaDuraPage() {
               <img decoding="async" fetchPriority="high"
                 width={444} height={298} src={torneiraImage.url}
                 alt="Torneira cromada com manchas brancas de calcário causadas pela água dura"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>

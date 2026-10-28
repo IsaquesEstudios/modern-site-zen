@@ -181,7 +181,7 @@ function Home() {
               <img decoding="async" fetchPriority="high"
                 width={1806} height={1712} src={analistaImage.url}
                 alt="Analista da Vid'Água examinando amostra de água em laboratório"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
               <div className="absolute inset-x-4 bottom-0 grid translate-y-2/5 gap-4 sm:grid-cols-2">
                 <Card tone="gradientSoft">
@@ -467,7 +467,7 @@ function BlogCarousel() {
   const visible = [0, 1, 2].map((k) => BLOG_POSTS[(start + k) % n]!);
   return (
     <div
-      className="grid gap-6 md:grid-cols-3"
+      className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

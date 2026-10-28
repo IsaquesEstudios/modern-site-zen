@@ -83,7 +83,7 @@ function ProdutosPage() {
               <img decoding="async" fetchPriority="high"
                 width={1740} height={1086} src={produtosImage.url}
                 alt="Linha de equipamentos e insumos para tratamento de água da Vid’Água"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>

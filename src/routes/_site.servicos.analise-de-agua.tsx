@@ -103,7 +103,7 @@ function AnaliseDeAguaPage() {
               <img decoding="async" fetchPriority="high"
                 width={1740} height={1086} src={analiseImage.url}
                 alt="Coleta de amostra para análise de água"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>

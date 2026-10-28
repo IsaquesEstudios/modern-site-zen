@@ -69,7 +69,7 @@ function ContaminacaoAguaPage() {
                   </a>
                 </div>
               </div>
-              <img decoding="async" fetchPriority="high" src={contInvisivel} alt="Copo de água cristalina com bactérias e compostos químicos invisíveis em destaque" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={contInvisivel} alt="Copo de água cristalina com bactérias e compostos químicos invisíveis em destaque" width={1200} height={912} className="w-full max-lg:aspect-video max-lg:object-cover" />
             </div>
           </Reveal>
         </div>

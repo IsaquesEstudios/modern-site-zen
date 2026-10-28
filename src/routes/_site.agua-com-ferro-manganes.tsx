@@ -79,7 +79,7 @@ function FerroManganesPage() {
                   </a>
                 </div>
               </div>
-              <img decoding="async" fetchPriority="high" src={ferroHero} alt="Torneira enchendo copo com água amarelada por ferro e manganês" width={1200} height={912} className="w-full" />
+              <img decoding="async" fetchPriority="high" src={ferroHero} alt="Torneira enchendo copo com água amarelada por ferro e manganês" width={1200} height={912} className="w-full max-lg:aspect-video max-lg:object-cover" />
             </div>
           </Reveal>
         </div>

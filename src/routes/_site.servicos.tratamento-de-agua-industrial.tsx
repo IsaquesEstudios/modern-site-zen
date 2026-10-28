@@ -105,7 +105,7 @@ function TratamentoIndustrialPage() {
               <img decoding="async" fetchPriority="high"
                 width={1740} height={1086} src={solucoesImage.url}
                 alt="Sistema industrial de tratamento de água"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>

@@ -81,7 +81,7 @@ function MonitoramentoQualidadeAguaPage() {
               <img decoding="async" fetchPriority="high"
                 width={1740} height={1086} src={monitoramentoImage.url}
                 alt="Equipamentos da Vid'Água para monitoramento da qualidade da água"
-                className="w-full"
+                className="w-full max-lg:aspect-video max-lg:object-cover"
               />
             </div>
           </Reveal>

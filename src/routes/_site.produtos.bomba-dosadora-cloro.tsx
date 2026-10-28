@@ -80,7 +80,7 @@ function BombaDosadoraCloroPage() {
               <img decoding="async" fetchPriority="high"
                 width={800} height={706} src={filtrosAsset.url}
                 alt="Filtros e sistema de tratamento de água instalados pela Vid'Água"
-                className="aspect-3/4 w-full rounded-md border border-border object-cover"
+                className="aspect-3/4 w-full rounded-md border border-border object-cover max-lg:aspect-video max-lg:object-cover"
               />
               <div className="flex flex-col gap-6">
                 <Badge>Produto</Badge>

@@ -95,7 +95,7 @@ function AguaDeReusoPage() {
                   </a>
                 </div>
               </div>
-              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Irrigação de jardim em condomínio, aplicação de água de reuso" width={1536} height={1024} className="w-full h-auto rounded-md" />
+              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Irrigação de jardim em condomínio, aplicação de água de reuso" width={1536} height={1024} className="w-full h-auto rounded-md max-lg:aspect-video max-lg:object-cover" />
             </div>
           </Reveal>
         </div>

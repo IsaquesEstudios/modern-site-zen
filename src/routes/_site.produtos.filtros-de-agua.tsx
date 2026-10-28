@@ -95,7 +95,7 @@ function FiltrosDeAguaPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-20">
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-center">
-              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Água cristalina saindo da torneira para um copo, resultado de uma água bem filtrada" width={1024} height={1360} className="w-full h-auto rounded-md" />
+              <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Água cristalina saindo da torneira para um copo, resultado de uma água bem filtrada" width={1024} height={1360} className="w-full h-auto rounded-md max-lg:aspect-video max-lg:object-cover" />
               <div className="flex flex-col gap-6">
                 <Badge>Produto</Badge>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
