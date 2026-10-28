@@ -14,8 +14,10 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
-import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
-import aguaPuraImage from "@/assets/agua-contaminada-vs-pura.jpg.asset.json";
+import analiseImageSrc from "@/assets/analise-de-agua.jpg";
+const analiseImage = { url: analiseImageSrc };
+import aguaPuraImageSrc from "@/assets/agua-contaminada-vs-pura.jpg";
+const aguaPuraImage = { url: aguaPuraImageSrc };
 
 const page = PAGES_BY_SLUG["analise-de-agua"];
 

@@ -1,4 +1,5 @@
-import torneira from "@/assets/agua-dura-torneira.jpg.asset.json";
+import torneiraSrc from "@/assets/agua-dura-torneira.jpg";
+const torneira = { url: torneiraSrc };
 import ferroHero from "@/assets/ferro-agua-amarela.jpg";
 import turvaLimpa from "@/assets/agua-turva-vs-limpa.jpg";
 import contInvisivel from "@/assets/contaminacao-invisivel.jpg";

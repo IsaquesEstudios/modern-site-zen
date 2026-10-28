@@ -2,7 +2,8 @@ import { Link, Outlet } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { Button } from "@/design-system/cozy-code-library-1062b4";
 import { NAV, CONTACT } from "@/lib/site";
-import logo from "@/assets/vidagua-logo.png.asset.json";
+import logoSrc from "@/assets/vidagua-logo.png";
+const logo = { url: logoSrc };
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);

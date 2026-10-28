@@ -15,7 +15,8 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
-import monitoramentoImage from "@/assets/monitoramento.jpg.asset.json";
+import monitoramentoImageSrc from "@/assets/monitoramento.jpg";
+const monitoramentoImage = { url: monitoramentoImageSrc };
 
 const page = PAGES_BY_SLUG["monitoramento-qualidade-agua"];
 

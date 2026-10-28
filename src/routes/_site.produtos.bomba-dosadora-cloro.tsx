@@ -14,7 +14,8 @@ import { QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
-import filtrosAsset from "@/assets/filtros-vidagua.png.asset.json";
+import filtrosAssetSrc from "@/assets/filtros-vidagua.png";
+const filtrosAsset = { url: filtrosAssetSrc };
 
 const page = PAGES_BY_SLUG["bomba-dosadora-cloro"];
 

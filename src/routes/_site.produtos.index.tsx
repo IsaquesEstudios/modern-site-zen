@@ -12,7 +12,8 @@ import { Reveal } from "@/components/Reveal";
 import { CTASection, Section, SectionTitle } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, PRODUCT_LINKS, summaryForPath, headFor } from "@/lib/site";
-import produtosImage from "@/assets/equipamentos-e-produtos.jpg.asset.json";
+import produtosImageSrc from "@/assets/equipamentos-e-produtos.jpg";
+const produtosImage = { url: produtosImageSrc };
 
 import productPhoto1 from "@/assets/coleta-agua-campo.jpg";
 import productPhoto2 from "@/assets/insumos-tratamento-agua-panorama.jpg";

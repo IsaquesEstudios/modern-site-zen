@@ -16,7 +16,8 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
-import solucoesImage from "@/assets/solucoes-empresariais.jpg.asset.json";
+import solucoesImageSrc from "@/assets/solucoes-empresariais.jpg";
+const solucoesImage = { url: solucoesImageSrc };
 
 const page = PAGES_BY_SLUG["tratamento-de-agua-industrial"];
 
