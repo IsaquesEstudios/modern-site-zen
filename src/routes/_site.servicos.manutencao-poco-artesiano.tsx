@@ -16,7 +16,8 @@ import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { PAGES_BY_SLUG, headFor } from "@/lib/site";
-import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
+import pocoImageSrc from "@/assets/poco-artesiano.jpg";
+const pocoImage = { url: pocoImageSrc };
 
 const page = PAGES_BY_SLUG["manutencao-poco-artesiano"];
 

@@ -12,10 +12,14 @@ import {
 } from "@/design-system/cozy-code-library-1062b4";
 import { Reveal } from "@/components/Reveal";
 import soloCalcario from "@/assets/agua-dura-solo-calcario.jpg";
-import torneiraImage from "@/assets/agua-dura-torneira.jpg.asset.json";
-import cromadosImage from "@/assets/cromados-agua-dura.png.asset.json";
-import panelasImage from "@/assets/dureza-panelas.png.asset.json";
-import resistenciaImage from "@/assets/dureza-resistencia.png.asset.json";
+import torneiraImageSrc from "@/assets/agua-dura-torneira.jpg";
+const torneiraImage = { url: torneiraImageSrc };
+import cromadosImageSrc from "@/assets/cromados-agua-dura.png";
+const cromadosImage = { url: cromadosImageSrc };
+import panelasImageSrc from "@/assets/dureza-panelas.png";
+const panelasImage = { url: panelasImageSrc };
+import resistenciaImageSrc from "@/assets/dureza-resistencia.png";
+const resistenciaImage = { url: resistenciaImageSrc };
 import { ServiceGrid, QUOTE_ANCHOR } from "@/components/ServiceSidebar";
 import { CTASection, WHATSAPP_URL } from "@/components/PageTemplate";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";

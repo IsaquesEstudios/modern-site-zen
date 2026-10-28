@@ -16,14 +16,22 @@ import { BLOG_POSTS } from "@/lib/blog";
 import { useEffect, useState } from "react";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { HOME, headFor, CONTACT, PRODUCT_LINKS, PAGES_BY_SLUG } from "@/lib/site";
-import heroAguaImage from "@/assets/hero-agua.jpg.asset.json";
-import analistaImage from "@/assets/analista-vidagua.png.asset.json";
-import analiseImage from "@/assets/analise-de-agua.jpg.asset.json";
-import tratamentoImage from "@/assets/tratamento-de-agua.jpg.asset.json";
-import pocoImage from "@/assets/poco-artesiano.jpg.asset.json";
-import monitoramentoImage from "@/assets/monitoramento.jpg.asset.json";
-import solucoesImage from "@/assets/solucoes-empresariais.jpg.asset.json";
-import produtosImage from "@/assets/equipamentos-e-produtos.jpg.asset.json";
+import heroAguaImageSrc from "@/assets/hero-agua.jpg";
+const heroAguaImage = { url: heroAguaImageSrc };
+import analistaImageSrc from "@/assets/analista-vidagua.png";
+const analistaImage = { url: analistaImageSrc };
+import analiseImageSrc from "@/assets/analise-de-agua.jpg";
+const analiseImage = { url: analiseImageSrc };
+import tratamentoImageSrc from "@/assets/tratamento-de-agua.jpg";
+const tratamentoImage = { url: tratamentoImageSrc };
+import pocoImageSrc from "@/assets/poco-artesiano.jpg";
+const pocoImage = { url: pocoImageSrc };
+import monitoramentoImageSrc from "@/assets/monitoramento.jpg";
+const monitoramentoImage = { url: monitoramentoImageSrc };
+import solucoesImageSrc from "@/assets/solucoes-empresariais.jpg";
+const solucoesImage = { url: solucoesImageSrc };
+import produtosImageSrc from "@/assets/equipamentos-e-produtos.jpg";
+const produtosImage = { url: produtosImageSrc };
 
 export const Route = createFileRoute("/_site/")({
   head: () => headFor(HOME),

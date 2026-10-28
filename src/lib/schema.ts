@@ -1,5 +1,6 @@
 import { BLOG_POSTS } from "@/lib/blog";
-import logo from "@/assets/vidagua-logo.png.asset.json";
+import logoSrc from "@/assets/vidagua-logo.png";
+const logo = { url: logoSrc };
 
 /** Dados estruturados (schema.org) lidos por buscadores. */
 export const SITE_URL = "https://www.vidagua.com.br";
