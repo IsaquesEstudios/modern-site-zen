@@ -871,8 +871,15 @@ export const PRODUCT_LINKS = PRODUCT_SLUGS.map((slug) => ({
   to: `/produtos/${slug}`,
 }));
 
+/** Domínio oficial usado nas URLs canônicas. */
+export const CANONICAL_ORIGIN = "https://www.vidagua.com.br";
+
+export function canonicalUrl(path: string) {
+  return path === "/" ? `${CANONICAL_ORIGIN}/` : `${CANONICAL_ORIGIN}${path}`;
+}
+
 export function headFor(p: PageDef) {
-  const url = pathFor(p.slug);
+  const url = canonicalUrl(pathFor(p.slug));
 
   return {
     meta: [
