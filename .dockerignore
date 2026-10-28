@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.gitignore
+.workspace
+.wrangler
+.lovable
+src/.generated
+*.log
+tsconfig.tsbuildinfo
+Dockerfile
+.dockerignore
