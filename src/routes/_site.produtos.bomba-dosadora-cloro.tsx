@@ -83,7 +83,7 @@ function BombaDosadoraCloroPage() {
                 className="aspect-3/4 w-full rounded-md border border-border object-cover max-lg:aspect-video max-lg:object-cover"
               />
               <div className="flex flex-col gap-6">
-                <Badge>Produto</Badge>
+                <div className="flex"><Badge>Produto</Badge></div>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
                   Bomba Dosadora de Cloro: Precisão Absoluta para a Desinfecção da sua Água
                 </h1>

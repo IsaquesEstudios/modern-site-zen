@@ -62,7 +62,7 @@ function ProdutosPage() {
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div className="flex flex-col gap-6">
-                <Badge>Produtos</Badge>
+                <div className="flex"><Badge>Produtos</Badge></div>
                 <h1 className="font-display text-4xl font-extrabold leading-tight md:text-5xl">
                   Equipamentos e insumos para tratamento de água
                 </h1>

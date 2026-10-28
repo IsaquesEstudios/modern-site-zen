@@ -75,7 +75,7 @@ function AguaDestiladaPage() {
             <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-center">
               <img decoding="async" fetchPriority="high" src={contextPhoto1} alt="Bombonas fechadas para armazenamento de água pura" width={1024} height={1360} className="w-full h-auto rounded-md max-lg:aspect-video max-lg:object-cover" />
               <div className="flex flex-col gap-6">
-                <Badge>Produto</Badge>
+                <div className="flex"><Badge>Produto</Badge></div>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
                   Água Destilada: Pureza para os seus Processos Mais Exigentes
                 </h1>

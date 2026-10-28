@@ -71,7 +71,7 @@ function TratamentoEfluentesPage() {
           <Reveal>
             <div className="grid gap-12 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-center">
               <div className="flex flex-col gap-6">
-                <Badge>Serviço</Badge>
+                <div className="flex"><Badge>Serviço</Badge></div>
                 <h1 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
                   Tratamento de Efluentes: conformidade ambiental sem desperdício
                 </h1>
