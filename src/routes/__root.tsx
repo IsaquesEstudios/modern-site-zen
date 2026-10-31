@@ -9,6 +9,9 @@ import type { ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 
+// GA4 measurement IDs are public identifiers, not private API credentials.
+const measurementId = 'G-KQ161GTBPH';
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -49,6 +52,22 @@ function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
+        {measurementId ? (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${measurementId}');`,
+              }}
+            />
+          </>
+        ) : null}
         <HeadContent />
       </head>
       <body>
