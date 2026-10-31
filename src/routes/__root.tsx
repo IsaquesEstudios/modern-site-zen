@@ -6,10 +6,20 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import type { ReactNode } from "react";
+import { createServerFn } from "@tanstack/react-start";
 
 import appCss from "../styles.css?url";
 
+const getAnalyticsMeasurementId = createServerFn({ method: "GET" }).handler(() => {
+  const measurementId = process.env['GOOGLE_ANALYTICS_MEASUREMENT_ID']?.trim();
+  // Only a public GA4 measurement ID may be included in the page HTML.
+  return measurementId && /^G-[A-Z0-9]+$/.test(measurementId)
+    ? measurementId
+    : null;
+});
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  loader: async () => ({ measurementId: await getAnalyticsMeasurementId() }),
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -46,9 +56,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const { measurementId } = Route.useLoaderData();
+
   return (
     <html lang="pt-BR">
       <head>
+        {measurementId ? (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${measurementId}');`,
+              }}
+            />
+          </>
+        ) : null}
         <HeadContent />
       </head>
       <body>
